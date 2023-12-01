@@ -52,6 +52,7 @@ DE : classic but cool
 # To apply
 
 ```bash
+git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
