@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Xfce</Name>
+	<DefaultAppDirs />
+	<DefaultDirectoryDirs />
+	<DefaultMergeDirs />
+	<Include>
+		<Category>X-Xfce-Toplevel</Category>
+	</Include>
+	<MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+    		<Name>Pendidikan</Name>
+    		<Directory>pendidikan.directory</Directory>
+   		 <Layout>
+			<Merge type="menus" />
+			<Filename>pendidikan-virtualbox.desktop</Filename>
+			<Filename>pendidikan-cisco.desktop</Filename>
+			<Filename>pendidikan-winbox.desktop</Filename>
+			<Filename>pendidikan-vs-code.desktop</Filename>
+			<Filename>pendidikan-obs-studio.desktop</Filename>
+			<Filename>pendidikan-gimp.desktop</Filename>
+			<Filename>pendidikan-pitivi.desktop</Filename>
+			<Merge type="files" />
+    		</Layout>
+    		<Include>
+        		<Category>Pendidikan</Category>
+    		</Include>
+    	</Menu>
+    		<MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+    		<Name>Microsoft Office 365</Name>
+    		<Directory>microsoft-office-365.directory</Directory>
+   		 <Layout>
+			<Merge type="menus" />
+			<Filename>microsoft-365.desktop</Filename>
+			<Filename>microsoft-word-365.desktop</Filename>
+			<Filename>atril.desktop</Filename>
+			<Filename>microsoft-excel-365.desktop</Filename>
+			<Filename>microsoft-powerpoint-365.desktop</Filename>
+			<Filename>microsoft-outlook-365.desktop</Filename>
+			<Filename>microsoft-onedrive-365.desktop</Filename>
+			<Merge type="files" />
+    		</Layout>
+    		<Include>
+        		<Category>Microsoft</Category>
+    		</Include>
+    	</Menu>
+	<Menu>
+    		<Name>Advanced Utilities</Name>
+    		<Directory>advanced-utilities.directory</Directory>
+   		 <Layout>
+        		<Merge type="menus" />
+        		<Merge type="files" />
+    		</Layout>
+    		<Include>
+        		<Category>advanced-utilities</Category>
+    		</Include>
+	</Menu>
+</Menu>

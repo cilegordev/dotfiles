@@ -1,5 +1,4 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config compact */
 
 /* ---- Configuration ---- */
 configuration {
@@ -7,7 +6,7 @@ configuration {
     font:                       "Fira Code SemiBold 14";
     show-icons:                 true;
     display-drun:               "";
-	display-run:                "";
+    display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
 	drun-display-format:        "{name}";
@@ -15,8 +14,7 @@ configuration {
     me-select-entry:            "MouseSecondary";
     me-accept-entry:            "MousePrimary";
     window-format:              "{w} · {c} · {t}";
-	dpi:						1;
-    fake-transparency:          true;
+    
 }
 
 /* ---- Load pywal colors (custom wal template) ---- */
@@ -24,53 +22,51 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:						20%;
+    width:						30%;
+	height:						25%;
     x-offset:                   0px;
     y-offset:                   0px;
     spacing:                    0px;
-    padding:                    2px;
+    padding:                    0px;
     margin:                     0px; 
+    color:                      transparent;
     border:                     2px;
-    border-color:               @active-background;
+    border-color:               @background;
     cursor:                     "default";
+    transparency:               "real";
     location:                   center;
     anchor:                     center;
     fullscreen:                 false;
     enabled:                    true;
-    border-radius:              15px;
-    border-radius:              15px;
- 	background-color:           @background-color;
+    border-radius:              10px;
 }
 
 /* ---- Mainbox ---- */
 mainbox {
     enabled:                    true;
     orientation:                horizontal;
-	padding:					15px;
+    spacing:                    0px;
+    margin:                     0px;
+    background-color:           transparent;
     background-image:           url("~/.config/rofi/.current_wallpaper", height);
-    children:                   [ "imagebox"];
-    border-radius:              12px;
-    background-color:      		@background;
+    children:                   [ "imagebox", "listbox" ];
 }
 
 /* ---- Imagebox ---- */
 imagebox {
+    padding:                    18px;
     background-color:           transparent;
     orientation:                vertical;
-    children:                   [ "inputbar", "listbox"];
+    children:                   [ "inputbar", "dummy", "mode-switcher" ];
 }
 
 /* ---- Listbox ---- */
 listbox {
-    spacing:                    4px;
+    spacing:                    20px;
+    background-color:           transparent;
     orientation:                vertical;
-    children:                   [ "listview" ];
-    border-radius:              10px;
-    border:                     1px;
-    border-color:               @active-background;
-	background-color:		    @background;
+    children:                   [ "message", "listview" ];
 }
-
 /* ---- Dummy ---- */
 dummy {
     background-color:           transparent;
@@ -81,47 +77,68 @@ inputbar {
     enabled:                    true;
     text-color:                 @foreground;
     spacing:                    10px;
-    padding:                    14px;
+    padding:                    15px;
     border-radius:              10px;
     border-color:               @foreground;
-	background-color:		    @background;
     children:                   [ "textbox-prompt-colon", "entry" ];
-    border:                     1px;
-    border-color:               @active-background;
 }
 
 textbox-prompt-colon {
     enabled:                    true;
     expand:                     false;
-    str:                        "";
+    str:                        "🔎 ";
     text-color:                 inherit;
-	background-color:			transparent;
 }
 
 entry {
     enabled:                    true;
+    background-color:           transparent;
     text-color:                 inherit;
     cursor:                     text;
-    placeholder:                "View / Edit Hyprland Configs";
+    placeholder:                "Choose";
     placeholder-color:          inherit;
-	background-color:			transparent;
+}
+
+/* ---- Mode Switcher ---- */
+mode-switcher{
+    enabled:                    true;
+    spacing:                    20px;
+    background-color:           transparent;
+    text-color:                 @foreground;
+}
+
+button {
+    padding:                    10px;
+    border-radius:              10px;
+    background-color:           @background;
+    text-color:                 inherit;
+    cursor:                     pointer;
+    border:                     0px;
+}
+
+button selected {
+    background-color:           @selected-normal-background;
+    text-color:                 @foreground;
 }
 
 /* ---- Listview ---- */
 listview {
-	enabled:					 true;
-	columns:					 1;
-	lines:						 7;
-	spacing:                     4px;
-	dynamic:                     true;
-	cycle:                       true;
-	scrollbar:                   false;
-	layout:                      vertical;
-	reverse:                     false;
-	fixed-height:                true;
-	fixed-columns:               false;
-	background-color:            transparent;
-	border-radius:             	 10px;
+    enabled:                    true;
+    columns:                    1;
+    lines:                      8;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+    spacing:                    0px;
+    padding:                    10px;
+    margin:                     0px;
+    border-radius:              10px;
+    border:                     0px;
+    background-image:           url("~/.config/rofi/.current_wallpaper", height);
 }
 
 /* ---- Element ---- */
@@ -130,7 +147,7 @@ element {
     padding:                    5px;
     margin:                     2px;
     cursor:                     pointer;
-    background-color:         	transparent;
+    background-color:           @background;
     border-radius:              10px;
     border:                     0px;
 }
@@ -197,20 +214,27 @@ element-text {
 
 /*****----- Message -----*****/
 message {
-    background-color:           @background;
+    background-color:           transparent;
+    border:						0px;
     margin:						20px 0px 0px 0px;
+    padding:					0px;
+    spacing:					0px;
     border-radius: 				10px;
 }
 
 textbox {
     padding:                    15px;
-    background-color:      @background;
+    margin:                     0px;
+    border-radius:              0px;
+    background-color:           @background;
     text-color:                 @foreground;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
 }
 
 error-message {
     padding:                    15px;
-    border-radius:            20px;
-    background-color:      @background;
+    border-radius:              20px;
+    background-color:           @background;
     text-color:                 @foreground;
 }

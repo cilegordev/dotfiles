@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Xfce</Name>
+	<DefaultAppDirs />
+	<DefaultDirectoryDirs />
+	<DefaultMergeDirs />
+	<Include>
+		<Category>X-Xfce-Toplevel</Category>
+	</Include>
+	<MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
+	<Menu>
+		<Name>Settings</Name>
+		<Directory>xfce-settings.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>Screensavers</Name>
+			<Directory>xfce-screensavers.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>xfce-settings-manager.desktop</Filename>
+			<Separator />
+			<Filename>redhat-userinfo.desktop</Filename>
+			<Filename>xfce4-accessibility-settings.desktop</Filename>
+			<Filename>nm-connection-editor.desktop</Filename>
+			<Filename>xfce-ui-settings.desktop</Filename>
+			<Filename>blueman-adapters.desktop</Filename>
+			<Filename>xfce4-color-settings.desktop</Filename>
+			<Filename>xfce4-mime-settings.desktop</Filename>
+			<Filename>xfce-backdrop-settings.desktop</Filename>
+			<Filename>xfce-display-settings.desktop</Filename>
+			<Filename>kali-tweaks.desktop</Filename>
+			<Filename>xfce-keyboard-settings.desktop</Filename>
+			<Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+			<Filename>menulibre.desktop</Filename>
+			<Filename>xfce-mouse-settings.desktop</Filename>
+			<Filename>xfce4-notifyd-config.desktop</Filename>
+			<Filename>openjdk-8-policytool.desktop</Filename>
+			<Filename>panel-preferences.desktop</Filename>
+			<Filename>org.xfce.PanelProfiles.desktop</Filename>
+			<Filename>redhat-userpasswd.desktop</Filename>
+			<Filename>xfce4-power-manager-settings.desktop</Filename>
+			<Filename>pavucontrol.desktop</Filename>
+			<Filename>qt5ct.desktop</Filename>
+			<Filename>thunar-volman-settings.desktop</Filename>
+			<Menuname>Screensavers</Menuname>
+			<Filename>xfce-session-settings.desktop</Filename>
+			<Filename>shares.desktop</Filename>
+			<Filename>time.desktop</Filename>
+			<Filename>users.desktop</Filename>
+			<Filename>xfce-wm-settings.desktop</Filename>
+			<Filename>xfce-workspaces-settings.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>usual-apps</Name>
+		<Directory>usual-apps.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>Accessories</Name>
+			<Directory>xfce-accessories.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>xfce4-about.desktop</Filename>
+				<Filename>xfce4-appfinder.desktop</Filename>
+				<Filename>org.gnome.FileRoller.desktop</Filename>
+				<Filename>bluetooth-sendto.desktop</Filename>
+				<Filename>thunar-bulk-rename.desktop</Filename>
+				<Filename>org.gnome.Calculator.desktop</Filename>
+				<Filename>org.xfce.Catfish.desktop</Filename>
+				<Filename>xfce4-clipman.desktop</Filename>
+				<Filename>org.gnome.DiskUtility.desktop</Filename>
+				<Filename>org.gtkhash.gtkhash.desktop</Filename>
+				<Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+				<Filename>menulibre.desktop</Filename>
+				<Filename>org.xfce.mousepad.desktop</Filename>
+				<Filename>onboard.desktop</Filename>
+				<Filename>kali-pwsh.desktop</Filename>
+				<Filename>xfce4-run.desktop</Filename>
+				<Filename>xfce4-screenshooter.desktop</Filename>
+				<Filename>xfce4-sensors.desktop</Filename>
+				<Filename>xfce4-taskmanager.desktop</Filename>
+				<Filename>xfce-text-editor.desktop</Filename>
+				<Filename>code-url-handler.desktop</Filename>
+				<Filename>WB.desktop</Filename>
+				<Filename>xfburn.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Development</Name>
+			<Directory>xfce-development.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>BS.desktop</Filename>
+				<Filename>yad-icon-browser.desktop</Filename>
+				<Filename>CPT.desktop</Filename>
+				<Filename>PC.desktop</Filename>
+				<Filename>Visual Studio Code.desktop</Filename>
+				<Filename>code-url-handler.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Education</Name>
+			<Directory>xfce-education.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Games</Name>
+			<Directory>xfce-games.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>astromenace.desktop</Filename>
+				<Filename>Minecraft.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Graphics</Name>
+			<Directory>xfce-graphics.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>Paint.desktop</Filename>
+				<Filename>display-im6.q16.desktop</Filename>
+				<Filename>org.gnome.Evince-previewer.desktop</Filename>
+				<Filename>org.xfce.ristretto.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Network</Name>
+			<Directory>xfce-network.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>discord.desktop</Filename>
+				<Filename>firefox-esr.desktop</Filename>
+				<Filename>freedownloadmanager.desktop</Filename>
+				<Filename>google-chrome.desktop</Filename>
+				<Filename>google-incognito.desktop</Filename>
+				<Filename>xfce4-mail-reader.desktop</Filename>
+				<Filename>microsoft-edge.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Multimedia</Name>
+			<Directory>xfce-multimedia.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>OBS.desktop</Filename>
+				<Filename>org.xfce.Parole.desktop</Filename>
+				<Filename>Editing.desktop</Filename>
+				<Filename>pavucontrol.desktop</Filename>
+				<Filename>vlc.desktop</Filename>
+				<Filename>xfburn.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Office</Name>
+			<Directory>xfce-office.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>xfce4-dict.desktop</Filename>
+				<Filename>atril.desktop</Filename>
+				<Filename>org.gnome.Evince-previewer.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>Other</Name>
+			<Directory>xfce-other.directory</Directory>
+				<Filename>Boxy-svg.desktop</Filename>
+				<Filename>panel-desktop-handler.desktop</Filename>
+				<Filename>Download.desktop</Filename>
+				<Filename>snap-handle-link.desktop</Filename>
+				<Filename>Kali Forums.desktop</Filename>
+				<Filename>io.snapcraft.SessionAgent.desktop</Filename>
+				<Filename>Update.desktop</Filename>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>Boxy-svg.desktop</Filename>
+				<Filename>panel-desktop-handler.desktop</Filename>
+				<Filename>Download.desktop</Filename>
+				<Filename>snap-handle-link.desktop</Filename>
+				<Filename>Kali Forums.desktop</Filename>
+				<Filename>io.snapcraft.SessionAgent.desktop</Filename>
+				<Filename>Update.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>System</Name>
+			<Directory>xfce-system.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>org.bleachbit.BleachBit.desktop</Filename>
+				<Filename>checkra1n.desktop</Filename>
+				<Filename>ca.desrt.dconf-editor.desktop</Filename>
+				<Filename>redhat-usermount.desktop</Filename>
+				<Filename>Thunar-as-root.desktop</Filename>
+				<Filename>org.gnome.Terminal.desktop</Filename>
+				<Filename>gparted.desktop</Filename>
+				<Filename>lstopo.desktop</Filename>
+				<Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+				<Filename>org.opensc.notify.desktop</Filename>
+				<Filename>palera1n.desktop</Filename>
+				<Filename>org.freedesktop.MalcontentControl.desktop</Filename>
+				<Filename>kali-pwsh.desktop</Filename>
+				<Filename>org.gnome.Terminal.Preferences.desktop</Filename>
+				<Filename>qterminal.desktop</Filename>
+				<Filename>root-terminal.desktop</Filename>
+				<Filename>remastersys-gui.desktop</Filename>
+				<Filename>xfce4-sensors.desktop</Filename>
+				<Filename>shares.desktop</Filename>
+				<Filename>xfce4-taskmanager.desktop</Filename>
+				<Filename>htop.desktop</Filename>
+				<Filename>time.desktop</Filename>
+				<Filename>users.desktop</Filename>
+				<Filename>VB.desktop</Filename>
+				<Filename>xfce4-terminal.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>Accessories</Menuname>
+			<Menuname>Development</Menuname>
+			<Menuname>Education</Menuname>
+			<Menuname>Games</Menuname>
+			<Menuname>Graphics</Menuname>
+			<Menuname>Network</Menuname>
+			<Menuname>Multimedia</Menuname>
+			<Menuname>Office</Menuname>
+			<Menuname>Other</Menuname>
+			<Menuname>System</Menuname>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>01-info-gathering</Name>
+		<Directory>01-info-gathering.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>01-01-dns-analysis</Name>
+			<Directory>01-01-dns-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-03-ids-ips-identification</Name>
+			<Directory>01-03-ids-ips-identification.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-02-identify-live-hosts</Name>
+			<Directory>01-02-identify-live-hosts.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-04-network-scanners</Name>
+			<Directory>01-04-network-scanners.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-nmap.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-07-osint-analysis</Name>
+			<Directory>01-07-osint-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-maltego.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-08-route-analysis</Name>
+			<Directory>01-08-route-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-10-smb-analysis</Name>
+			<Directory>01-10-smb-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-11-smtp-analysis</Name>
+			<Directory>01-11-smtp-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-12-snmp-analysis</Name>
+			<Directory>01-12-snmp-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>01-13-ssl-analysis</Name>
+			<Directory>01-13-ssl-analysis.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>01-01-dns-analysis</Menuname>
+			<Menuname>01-03-ids-ips-identification</Menuname>
+			<Menuname>01-02-identify-live-hosts</Menuname>
+			<Menuname>01-04-network-scanners</Menuname>
+			<Menuname>01-07-osint-analysis</Menuname>
+			<Menuname>01-08-route-analysis</Menuname>
+			<Menuname>01-10-smb-analysis</Menuname>
+			<Menuname>01-11-smtp-analysis</Menuname>
+			<Menuname>01-12-snmp-analysis</Menuname>
+			<Menuname>01-13-ssl-analysis</Menuname>
+			<Filename>kali-maltego.desktop</Filename>
+			<Filename>kali-nmap.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>02-vulnerability-analysis</Name>
+		<Directory>02-vulnerability-analysis.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>02-01-cisco-tools</Name>
+			<Directory>02-01-cisco-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>02-02-fuzzers</Name>
+			<Directory>02-02-fuzzers.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>02-05-nessus</Name>
+			<Directory>02-05-nessus.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>02-06-openvas</Name>
+			<Directory>02-06-openvas.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>02-07-stress-testing</Name>
+			<Directory>02-07-stress-testing.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>02-03-voip-tools</Name>
+			<Directory>02-03-voip-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>02-01-cisco-tools</Menuname>
+			<Menuname>02-02-fuzzers</Menuname>
+			<Menuname>02-05-nessus</Menuname>
+			<Menuname>02-06-openvas</Menuname>
+			<Menuname>02-07-stress-testing</Menuname>
+			<Menuname>02-03-voip-tools</Menuname>
+			<Filename>kali-nmap.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>03-webapp-analysis</Name>
+		<Directory>03-webapp-analysis.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>03-01-cms-identification</Name>
+			<Directory>03-01-cms-identification.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>03-06-web-application-proxies</Name>
+			<Directory>03-06-web-application-proxies.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>03-04-web-crawlers</Name>
+			<Directory>03-04-web-crawlers.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-ffuf.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>03-05-web-vulnerability-scanners</Name>
+			<Directory>03-05-web-vulnerability-scanners.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>03-01-cms-identification</Menuname>
+			<Menuname>03-06-web-application-proxies</Menuname>
+			<Menuname>03-04-web-crawlers</Menuname>
+			<Menuname>03-05-web-vulnerability-scanners</Menuname>
+			<Filename>kali-sqlmap.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>04-database-assessment</Name>
+		<Directory>04-database-assessment.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>kali-sqlmap.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>05-password-attacks</Name>
+		<Directory>05-password-attacks.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>05-02-offline-attacks</Name>
+			<Directory>05-02-offline-attacks.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-john.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>05-01-online-attacks</Name>
+			<Directory>05-01-online-attacks.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-hydra.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>05-04-pass-hash</Name>
+			<Directory>05-04-pass-hash.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Filename>kali-crackmapexec.desktop</Filename>
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>05-05-profile</Name>
+			<Directory>05-05-profile.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>05-02-offline-attacks</Menuname>
+			<Menuname>05-01-online-attacks</Menuname>
+			<Menuname>05-04-pass-hash</Menuname>
+			<Menuname>05-05-profile</Menuname>
+			<Filename>kali-hydra.desktop</Filename>
+			<Filename>kali-john.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>06-wireless-attacks</Name>
+		<Directory>06-wireless-attacks.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>06-01-wireless-tools</Name>
+			<Directory>06-01-wireless-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>06-02-bluetooth-tools</Name>
+			<Directory>06-02-bluetooth-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>06-04-other-wireless</Name>
+			<Directory>06-04-other-wireless.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>06-03-rfid-nfc-tools</Name>
+			<Directory>06-03-rfid-nfc-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>06-05-radio-tools</Name>
+			<Directory>06-05-radio-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>06-01-wireless-tools</Menuname>
+			<Menuname>06-02-bluetooth-tools</Menuname>
+			<Menuname>06-04-other-wireless</Menuname>
+			<Menuname>06-03-rfid-nfc-tools</Menuname>
+			<Menuname>06-05-radio-tools</Menuname>
+			<Filename>kali-aircrack-ng.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>07-reverseengineer</Name>
+		<Directory>07-reverseengineer.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>kali-nasmshell.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>08-exploitation-tools</Name>
+		<Directory>08-exploitation-tools.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>kali-crackmapexec.desktop</Filename>
+			<Filename>kali-msfconsole.desktop</Filename>
+			<Filename>kali-sqlmap.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>09-sniffing-spoofing</Name>
+		<Directory>09-sniffing-spoofing.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>09-01-network-sniffers</Name>
+			<Directory>09-01-network-sniffers.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>09-02-network-spoofing</Name>
+			<Directory>09-02-network-spoofing.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>09-01-network-sniffers</Menuname>
+			<Menuname>09-02-network-spoofing</Menuname>
+			<Filename>kali-responder.desktop</Filename>
+			<Filename>org.wireshark.Wireshark.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>10-maintaining-access</Name>
+		<Directory>10-maintaining-access.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>10-04-command-control</Name>
+			<Directory>10-04-command-control.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>10-01-os-backdoors</Name>
+			<Directory>10-01-os-backdoors.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>10-02-tunneling</Name>
+			<Directory>10-02-tunneling.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>10-03-web-backdoors</Name>
+			<Directory>10-03-web-backdoors.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>10-04-command-control</Menuname>
+			<Menuname>10-01-os-backdoors</Menuname>
+			<Menuname>10-02-tunneling</Menuname>
+			<Menuname>10-03-web-backdoors</Menuname>
+			<Filename>kali-powershell-empire.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>11-forensics</Name>
+		<Directory>11-forensics.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>11-03-digital-forensics</Name>
+			<Directory>11-03-digital-forensics.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>11-05-forensic-carving-tools</Name>
+			<Directory>11-05-forensic-carving-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>11-07-forensic-imaging-tools</Name>
+			<Directory>11-07-forensic-imaging-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>11-11-pdf-forensics-tools</Name>
+			<Directory>11-11-pdf-forensics-tools.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>11-08-forensic-suites</Name>
+			<Directory>11-08-forensic-suites.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>11-03-digital-forensics</Menuname>
+			<Menuname>11-05-forensic-carving-tools</Menuname>
+			<Menuname>11-07-forensic-imaging-tools</Menuname>
+			<Menuname>11-11-pdf-forensics-tools</Menuname>
+			<Menuname>11-08-forensic-suites</Menuname>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>12-reporting</Name>
+		<Directory>12-reporting.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>kali-maltego.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>13-social-engineering-tools</Name>
+		<Directory>13-social-engineering-tools.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>kali-maltego.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>14-services</Name>
+		<Directory>14-services.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Menu>
+			<Name>14-08-beef-service</Name>
+			<Directory>14-08-beef-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-16-defectdojo-service</Name>
+			<Directory>14-16-defectdojo-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-10-dradis-service</Name>
+			<Directory>14-10-dradis-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-13-gvm-service</Name>
+			<Directory>14-13-gvm-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-09-metasploit-service</Name>
+			<Directory>14-09-metasploit-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-11-openvas-service</Name>
+			<Directory>14-11-openvas-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Menu>
+			<Name>14-12-xplico-service</Name>
+			<Directory>14-12-xplico-service.directory</Directory>
+			<Layout>
+				<Merge type="menus" />
+				<Merge type="files" />
+			</Layout>
+		</Menu>
+		<Layout>
+			<Merge type="menus" />
+			<Menuname>14-08-beef-service</Menuname>
+			<Menuname>14-16-defectdojo-service</Menuname>
+			<Menuname>14-10-dradis-service</Menuname>
+			<Menuname>14-13-gvm-service</Menuname>
+			<Menuname>14-09-metasploit-service</Menuname>
+			<Menuname>14-11-openvas-service</Menuname>
+			<Menuname>14-12-xplico-service</Menuname>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>15-kali-offsec-links</Name>
+		<Directory>15-kali-offsec-links.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>advanced-utilities</Name>
+		<Directory>advanced-utilities.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>chrome-apps</Name>
+		<Directory>chrome-apps.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Include>
+			<Filename>Open-AI.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>google-chrome.desktop</Filename>
+			<Filename>google-incognito.desktop</Filename>
+			<Filename>Open-AI.desktop</Filename>
+			<Filename>chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop</Filename>
+			<Filename>chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Pendidikan</Name>
+		<Directory>Pendidikan.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>VB.desktop</Filename>
+			<Filename>CPT.desktop</Filename>
+			<Filename>WB.desktop</Filename>
+			<Filename>VSC.desktop</Filename>
+			<Filename>OBS.desktop</Filename>
+			<Filename>Paint.desktop</Filename>
+			<Filename>Editing.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>microsoft-office-365</Name>
+    		<Directory>microsoft-office-365.directory</Directory>
+		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<Layout>
+			<Merge type="menus" />
+			<Filename>microsoft-365.desktop</Filename>
+			<Filename>microsoft-word-365.desktop</Filename>
+			<Filename>atril.desktop</Filename>
+			<Filename>microsoft-excel-365.desktop</Filename>
+			<Filename>microsoft-powerpoint-365.desktop</Filename>
+			<Filename>microsoft-outlook-365.desktop</Filename>
+			<Filename>microsoft-onedrive-365.desktop</Filename>
+			<Merge type="files" />
+		</Layout>
+	</Menu>
+	<Layout>
+		<Filename>xfce4-run.desktop</Filename>
+		<Separator />
+		<Filename>xfce4-mail-reader.desktop</Filename>
+		<Separator />
+		<Menuname>Settings</Menuname>
+		<Menuname>usual-apps</Menuname>
+		<Separator />
+		<Menuname>01-info-gathering</Menuname>
+		<Menuname>02-vulnerability-analysis</Menuname>
+		<Menuname>03-webapp-analysis</Menuname>
+		<Menuname>04-database-assessment</Menuname>
+		<Menuname>05-password-attacks</Menuname>
+		<Menuname>06-wireless-attacks</Menuname>
+		<Menuname>07-reverseengineer</Menuname>
+		<Menuname>08-exploitation-tools</Menuname>
+		<Menuname>09-sniffing-spoofing</Menuname>
+		<Menuname>10-maintaining-access</Menuname>
+		<Menuname>11-forensics</Menuname>
+		<Menuname>12-reporting</Menuname>
+		<Menuname>13-social-engineering-tools</Menuname>
+		<Menuname>14-services</Menuname>
+		<Menuname>15-kali-offsec-links</Menuname>
+		<Menuname>advanced-utilities</Menuname>
+		<Menuname>chrome-apps</Menuname>
+		<Menuname>Pendidikan</Menuname>
+		<Menuname>microsoft-office-365</Menuname>
+		<Separator />
+		<Filename>xfce4-about.desktop</Filename>
+	</Layout>
+</Menu>

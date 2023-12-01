@@ -1,0 +1,222 @@
+//* ---- C library ---- *//
+
+{
+"backlight": {
+  "interval": 1,
+  "align": 0,
+  "rotate": 0,
+  "format": "{icon}",
+  "format-icons": ["", "", "", "", "", "", "", "", ""],
+  "tooltip-format": "backlight {percent}%",
+  "icon-size": 10,
+  "on-click": "",
+  "on-click-middle": "",
+  "on-click-right": "",
+  "on-update": "",
+  "on-scroll-up": "~/.config/hypr/scripts/Brightness.sh --inc",
+  "on-scroll-down": "~/.config/hypr/scripts/Brightness.sh --dec",
+  "smooth-scrolling-threshold": 1,
+},
+
+"battery": {
+  "interval": 60,
+  "align": 0,
+  "rotate": 0,
+  "full-at": 100,
+  "design-capacity": false,
+  "states": {
+    "good": 80,
+    "warning": 20,
+    "critical": 10,
+           },
+  "format": "{icon} {capacity}%",
+  "format-charging": " {capacity}%",
+  "format-plugged": "󱘖 {capacity}%",
+  "format-full": "{icon} 100%",
+  "format-alt": "{icon} {time}",
+  "format-icons": ["", "", "", "", ""],
+  "format-time": "{H}h:{M}min",
+  "tooltip": true,
+  "tooltip-format": "{timeTo} {power}w",
+},
+
+"clock": {
+  "interval": 1,
+  "timezone" : "{ID}",
+  "format": "{:%H:%M}",
+  "format-alt": " {:%A %d %B %Y %R}",
+  "tooltip-format": "<tt><small>{calendar}</small></tt>",
+},              
+"actions":  {
+    "on-click-right": "mode",
+},
+
+"cpu": {
+  "format": "{usage}% ",  
+  "interval": 1,
+  "format-alt-click": "click",
+  "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+  "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+  "on-click-right": "xfce4-terminal --title btop -e 'btop'",
+},
+
+"custom/menu": {
+  "format": "",
+  "tooltip": false,
+  "on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser",
+  "on-click-right": "~/.config/hypr/scripts/RofiEmoji.sh",
+},
+  
+"custom/weather": {
+  "format": "{}",
+  "format-alt": "{alt}: {}",
+  "format-alt-click": "click",
+  "interval": 3600,
+  "return-type": "json",
+  "exec": "~/.config/hypr/scripts/Weather.sh",
+  "exec-if": "ping wttr.in -c1",
+  "tooltip" : true,
+},
+
+"custom/waybarstyle": {
+  "format": "  ",
+  "tooltip": false,
+  "tooltip-format": "Change theme/style",
+  "on-click": "~/.config/hypr/scripts/WaybarLayout.sh",
+  "on-click-right": "~/.config/hypr/scripts/WaybarStyles.sh",
+},
+
+"custom/keybinds": {
+  "format":" HINT!",
+  "tooltip": false,
+  "tooltip-format": "DING DONG!",
+  "on-click": "~/.config/hypr/scripts/KeyHints.sh",
+  "on-click-right": "xfce4-terminal -e 'sudo -E ./update.sh'"
+},
+
+"custom/power-wlogout": {
+  "format": " ⏻ ",
+  "tooltip": false,
+  "on-click": "~/.config/hypr/scripts/Wlogout.sh",
+},
+
+"disk": {
+  "interval": 30,
+  "path": "/",
+  "format-alt-click": "click",
+  "format": "{percentage_used}% ",
+  "tooltip": true,
+  "tooltip-format": "{used}/{total}",
+},
+
+"hyprland/workspaces#5": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"format": "{name}: {icon}",
+	"format-icons": {
+	"1": "",
+	"2": "",
+	"3": "",
+	"4": "",
+	"5": "",
+	"urgent": "",
+	"focused": "",
+	"default": ""
+	}
+},
+
+"idle_inhibitor": {
+  "format": "{icon}",
+  "format-icons": {
+    "activated": "",
+    "deactivated": "",
+                  },
+},
+
+"memory": {
+  "interval": 10,
+  "format": "{used:0.1f}Gb ",
+  "format-alt": "{percentage}% ",
+  "format-alt-click": "click",
+  "tooltip": true,
+  "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+  "on-click-right": "xfce4-taskmanager"
+},
+
+"network": {
+  "interval": 1,
+  "format": "{ifname}",
+  "format-wifi": "{icon}",
+  "format-ethernet": "", 
+  "format-disconnected": "",
+  "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+  "format-linked": "󰈁 {ifname} (No IP)",
+  "tooltip-format-wifi": "{essid} {signalStrength}%",
+  "tooltip-format-ethernet": "{ifname} ",
+  "tooltip-format-disconnected": " Disconnected",
+  "max-length": 50,
+  "format-icons": ["","",""]
+},
+
+"network#speed": {
+    "interval": 2,
+  "format": "{ifname}",
+    "format-wifi": " {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-ethernet": " {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "tooltip": false,
+    "format-disconnected": "",
+    "max-length": 50
+  },
+
+"pulseaudio": {
+  "format": "{icon}",
+  "format-bluetooth": "{icon} 󰂰 {volume}%",
+  "format-muted": "",
+  "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+  "default": ["", "", "", ""], 
+  "ignored-sinks": ["Easy Effects Sink"],
+  },
+  "scroll-step": 5.0,
+  "on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
+  "on-click-right": "pavucontrol -t 3",
+  "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
+  "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
+  "smooth-scrolling-threshold": 1,
+  "tooltip": true,
+  "tooltip-format": "{volume}%",
+},
+    
+"pulseaudio#microphone": {
+  "format": "{format_source}",
+  "format-source": "  ",
+  "format-source-muted": "",
+  "on-click": "~/.config/hypr/scripts/Volume.sh --toggle-mic",
+  "on-click-right": "pavucontrol -t 4",
+  "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --mic-inc",
+  "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --mic-dec",
+  "scroll-step": 5,
+  "tooltip": false,
+  "tooltip-format": "{volume}%",
+},
+
+"temperature": {
+  "interval": 10,
+  "tooltip": false,
+  "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+  "critical-threshold": 32,
+  "format-critical": "{temperatureC}°C {icon}",
+  "format": "{temperatureC}°C {icon}",
+  "format-icons": [""],
+  "on-click-right": "xfce4-terminal --title nvtop -e 'radeontop'"
+},
+    
+"tray": {
+  "spacing": 8,
+},
+}

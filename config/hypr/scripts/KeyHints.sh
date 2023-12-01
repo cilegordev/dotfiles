@@ -10,33 +10,22 @@ yad --width=1000 --height=1000 \
 --column=Command: \
 --timeout=60 \
 --timeout-indicator=bottom \
-"ESC" "close this app" "" "=" "SUPER KEY" "(SUPER KEY)" \
-" enter" "Terminal" "(kitty)" \
-" or  D" "App Launcher" "(rofi)" \
-" T" "Open File Manager" "(Thunar)" \
-" Q or  Shift Q  " "close focused app" "(kill)" \
-" Alt V" "Clipboard Manager" "(cliphist)" \
-" W" "Choose wallpaper" "(swww)" \
-"CTRL ALT W" "Random wallpaper" "(swww)" \
-"CTRL W" "Choose waybar styles" "(waybar styles)" \
-"ALT W" "Choose waybar layout" "(waybar layout)" \
-"CTRL SHIFT W" "Reload Waybar and Dunst" "" \
-" Print" "screenshot" "(grim)" \
-" Shift Print" "screenshot region" "(grim + slurp)" \
-" Shift S" "screenshot region" "(swappy)" \
-"CTRL ALT P" "power-menu" "(wlogout)" \
-"CTRL ALT L" "screen lock" "(swaylock)" \
-"CTRL ALT Del" "Hyprland Exit" "(SAVE YOUR WORK!!!)" \
-" F" "Fullscreen" "Toggles to full screen" \
-" Spacebar" "Toggle Dwindle | Master Layout" "Hyprland Layout" \
-" Shift F" "Toggle float" "single window" \
-" ALT F" "Toggle all windows to float" "all windows" \
-" SHIFT G" "Gamemode! All animations off" "" \
-" H" "Launch this app" "" \
-" E" "View or EDIT Keybinds, Settings, Monitor" "" \
+" + ENTER" "Open Terminal" "Command Prompt" \
+" + SPACE" "Chage Wallpaper" "Swww" \
+" + R" "Refresh Configure" "Waybar" \
+" + Q" "Minimize" "Hide waybar" \
+" + W" "Close" "Kill Active Programs" \
+" + E" "Fullscreen" "Full Screen Programs" \
+" + A" "Open File Manager" "Files" \
+" + S" "Open Web Browser" "Browsers" \
+" + D" "Open Menu" "Show Menus" \
+" + Z" "Unfocuse Window" "Toggle Floating" \
+" + X" "Open Task Manager" "Task Manager" \
+" + C" "Action Control" "Wlogout" \
+" + 1-0" "Move Workspace" "Workspace" \
+" + LEFT, RIGHT, UP, DOWN" "Move Window" "Workspace" \
+" + CLICK" "Toggle Floating" "Move Window" \
+"wf-recorder -a -f capture.mp4" "RECORD MY DESKTOP" "TERMINAL" \
+"pipes.sh" "TEST COLOR TERMINAL" "TERMINAL" \
 "" "" "" \
-"" "More tips on Hyprland-Dots github wiki page" ""\
-"" "" "" \
-"" "" "This window will auto-close in 60 secs" ""\
-
-
+"AUTO CLOSE" "AFTER READ" "60 SECOND" \

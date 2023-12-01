@@ -46,6 +46,7 @@ DE
 ```bash
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
+cp -r dotfiles/wallpapers $Home/Pictures/
 ```
 
 # Credits

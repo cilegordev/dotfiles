@@ -12,19 +12,20 @@ get_volume() {
 get_icon() {
 	current=$(get_volume)
 	if [[ "$current" -eq "0" ]]; then
-		echo "$iDIR/volume-mute.png"
-	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		echo "$iDIR/volume-low.png"
-	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
-		echo "$iDIR/volume-mid.png"
-	elif [[ ("$current" -ge "60") && ("$current" -le "100") ]]; then
-		echo "$iDIR/volume-high.png"
+		echo "$iDIR/audio-volume-muted-blocking-symbolic.svg"
+	elif [[ ("$current" -ge "0") && ("$current" -le "33") ]]; then
+		echo "$iDIR/audio-volume-low-symbolic.svg"
+	elif [[ ("$current" -ge "34") && ("$current" -le "66") ]]; then
+		echo "$iDIR/audio-volume-medium-symbolic.svg"
+	elif [[ ("$current" -ge "67") && ("$current" -le "100") ]]; then
+		echo "$iDIR/audio-volume-high-symbolic.svg"
 	fi
 }
 
 # Notify
 notify_user() {
-	dunstify -h int:value:$(get_volume) -h "string:x-dunst-stack-tag:volume_notif" -u low -i "$(get_icon)" "Volume : $(get_volume) %"
+#	notify-send -h string:x-canonical-private-synchronous:sys-notify -u normal -i "$(get_icon)" "Volume : $(get_volume) %"
+	notify-send -h int:value:$(get_volume) -h "string:x-dunst-stack-tag:volume_notif" -u low -i "$(get_icon)" "Volume : $(get_volume) %"
 
 }
 
@@ -50,27 +51,28 @@ toggle_mute() {
 # Toggle Mic
 toggle_mic() {
 	if [ "$(pamixer --default-source --get-mute)" == "false" ]; then
-		pamixer --default-source -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone-mute.png" "Microphone Switched OFF"
+		pamixer --default-source -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone-sensitivity-muted-symbolic.svg" "Microphone Switched OFF"
 	elif [ "$(pamixer --default-source --get-mute)" == "true" ]; then
-		pamixer -u --default-source u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone.png" "Microphone Switched ON"
+		pamixer -u --default-source u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone-sensitivity-unmuted-symbolic.svg" "Microphone Switched ON"
 	fi
 }
 # Get icons
 get_mic_icon() {
 	current=$(pamixer --default-source --get-volume)
 	if [[ "$current" -eq "0" ]]; then
-		echo "$iDIR/microphone.png"
+		echo "$iDIR/microphone-sensitivity-symbolic.svg"
 	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		echo "$iDIR/microphone.png"
+		echo "$iDIR/microphone-sensitivity-symbolic.svg"
 	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
 		echo "$iDIR/microphone.png"
 	elif [[ ("$current" -ge "60") && ("$current" -le "100") ]]; then
-		echo "$iDIR/microphone.png"
+		echo "$iDIR/microphone-sensitivity-symbolic.svg"
 	fi
 }
 # Notify
 notify_mic_user() {
-	dunstify -h int:value:$(pamixer --default-source --get-volume) -h "string:x-dunst-stack-tag:volume_notif" -u low -i "$(get_mic_icon)" "Mic-Level : $(pamixer --default-source --get-volume) %"
+#	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_mic_icon)" "Mic-Level : $(pamixer --default-source --get-volume) %"
+	notify-send -h int:value:$(pamixer --default-source --get-volume) -h "string:x-dunst-stack-tag:volume_notif" -u low -i "$(get_mic_icon)" "Mic-Level : $(pamixer --default-source --get-volume) %"
 }
 
 # Increase MIC Volume

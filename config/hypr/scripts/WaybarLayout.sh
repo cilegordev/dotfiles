@@ -1,42 +1,38 @@
 #!/bin/bash
 
-set -euo pipefail
-IFS=$'\n\t'
+CONFIG="$HOME/.config/waybar/configs"
+WCONFIG="$HOME/.config/waybar/config"
 
-# Define directories
-config_dir="$HOME/.config/waybar/configs"
-waybar_config="$HOME/.config/waybar/config"
-scripts_dir="$HOME/.config/hypr/scripts"
-rofi_config="$HOME/.config/rofi/config-waybar-layout.rasi"
-
-# Function to display menu options
 menu() {
-    options=()
-    while IFS= read -r file; do
-        options+=("$(basename "$file")")
-    done < <(find "$config_dir" -maxdepth 1 -type f -exec basename {} \; | sort)
-
-    printf '%s\n' "${options[@]}"
+    cat <<EOF
+Costume
+Costume-Short
+Default-Waybar
+Default-Hyprland
+Default-Dots
+Default-Bottom
+Top(gnome)
+Bottom(plasma)
+Simple-Short
+Simple-Long
+Left
+Right
+Top-Left
+Top-Right
+Bottom-Left
+Bottom-Right
+Top-&-Bottom
+All-Sides
+No Panel
+EOF
 }
 
-# Apply selected configuration
 apply_config() {
-    ln -sf "$config_dir/$1" "$waybar_config"
-    restart_waybar_if_needed
+    ln -sf "$CONFIG/config-$1" "$WCONFIG"
 }
 
-# Restart Waybar
-restart_waybar_if_needed() {
-    if pgrep -x "waybar" >/dev/null; then
-        pkill waybar
-        sleep 0.1  # Delay for Waybar to completely terminate
-    fi
-    "${scripts_dir}/Refresh.sh" &
-}
-
-# Main function
 main() {
-    choice=$(menu | rofi -dmenu -config "$rofi_config")
+    choice=$(menu | rofi -dmenu -config ~/.config/rofi/config-chage-dock.rasi)
 
     if [[ -z "$choice" ]]; then
         echo "No option selected. Exiting."
@@ -45,7 +41,10 @@ main() {
 
     case $choice in
         "no panel")
-            pgrep -x "waybar" && pkill waybar || true
+            if pgrep -x "waybar" >/dev/null; then
+                pkill waybar
+            fi
+            exit 0
             ;;
         *)
             apply_config "$choice"
@@ -53,10 +52,12 @@ main() {
     esac
 }
 
-# Kill Rofi if already running before execution
+# Check if rofi is already running
 if pgrep -x "rofi" >/dev/null; then
     pkill rofi
     exit 0
 fi
 
 main
+
+~/.config/hypr/scripts/Refresh.sh &

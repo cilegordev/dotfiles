@@ -1,57 +1,57 @@
 #!/bin/bash
 
-set -euo pipefail
-IFS=$'\n\t'
+# ACTUAL THEME
+THEMEIS=$(realpath ~/.config/waybar/style.css | sed 's/.*-\(.*\)\.css/\1/')
 
-# Define directories
-config_dir="$HOME/.config/waybar/style"
-waybar_config="$HOME/.config/waybar/style.css"
-scripts_dir="$HOME/.config/hypr/scripts"
-rofi_config="$HOME/.config/rofi/config-waybar-style.rasi"
+# Array for the styles
+STYLES=(
+"costume"
+"costume-colorful"
+"default-waybar"
+"default-hyprland"
+"pywal" 
+"dark" 
+"light" 
+"black-&-white" 
+"colors" 
+"colors-border" 
+"colors-line" 
+"colorful" 
+"catppuccin-mocha" 
+"catppuccin-latte"
+)
 
-# Function to display menu options
-menu() {
-    options=()
-    while IFS= read -r file; do
-        if [ -f "$config_dir/$file" ]; then
-            options+=("$(basename "$file" .css)")
-        fi
-    done < <(find "$config_dir" -maxdepth 1 -type f -name '*.css' -exec basename {} \; | sort)
-    
-    printf '%s\n' "${options[@]}"
-}
+# Build ROFI
+SELECTED_STYLE=$(printf "%s\n" "${STYLES[@]}" | rofi -dmenu -config ~/.config/rofi/config-chage-style.rasi "${#STYLES[@]}")
 
-# Apply selected style
-apply_style() {
-    ln -sf "$config_dir/$1.css" "$waybar_config"
-    restart_waybar_if_needed
-}
-
-# Restart Waybar if it's running
-restart_waybar_if_needed() {
-    if pgrep -x "waybar" >/dev/null; then
-        pkill waybar
-        sleep 0.1  # Delay for Waybar to completely terminate
-    fi
-    "${scripts_dir}/Refresh.sh" &
-}
-
-# Main function
-main() {
-    choice=$(menu | rofi -dmenu -config "$rofi_config")
-
-    if [[ -z "$choice" ]]; then
-        echo "No option selected. Exiting."
-        exit 0
-    fi
-
-    apply_style "$choice"
-}
-
-# Kill Rofi if already running before execution
-if pgrep -x "rofi" >/dev/null; then
-    pkill rofi
-    exit 0
+# Check if rofi is already running
+if pidof rofi > /dev/null; then
+  pkill rofi
+  exit 0
 fi
 
-main
+# Verify the selected theme
+if [[ " ${STYLES[@]} " =~ " $SELECTED_STYLE " ]]; then
+    SWITCHTO="${SELECTED_STYLE}"
+else
+    echo "Invalid selection"
+    exit 1
+fi
+
+# APPLY THEME
+THEMEFILE="$HOME/.config/waybar/style/style-${SWITCHTO}.css"
+if [ -f "$THEMEFILE" ]; then
+    ln -sf "$THEMEFILE" "$HOME/.config/waybar/style.css"
+else
+    echo "Error: $THEMEFILE not found"
+    exit 1
+fi
+
+# Restart relevant processes
+for process in waybar mako dunst; do
+    if pidof "$process" > /dev/null; then
+        pkill "$process"
+    fi
+done
+
+exec ~/.config/hypr/scripts/Refresh.sh

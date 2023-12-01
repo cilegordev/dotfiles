@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=wlan0
+Comment=bypass "device not ready" linux wifi
+Exec=sudo /etc/init.d/wlan0 start
+Terminal=false
+StartupNotify=false

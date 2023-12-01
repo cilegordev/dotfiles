@@ -1,0 +1,23 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+    "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<!-- Do not edit manually - generated and managed by xdg-desktop-menu -->
+<Menu>
+    <Name>Applications</Name>
+<Menu>
+    <Name>chrome-apps</Name>
+    <Directory>chrome-apps.directory</Directory>
+    <Include>
+        <Filename>google-chrome.desktop</Filename>
+        <Filename>google-incognito.desktop</Filename>
+        <Filename>chrome-bard.desktop</Filename>
+        <Filename>chrome-chatgpt.desktop</Filename>
+        <Filename>chrome-drive.desktop</Filename>
+        <Filename>chrome-facebook.desktop</Filename>
+        <Filename>chrome-instagram.desktop</Filename>
+        <Filename>chrome-pixlr-suite.desktop</Filename>
+        <Filename>chrome-twitter.desktop</Filename>
+        <Filename>chrome-whatsapp.desktop</Filename>
+        <Filename>chrome-youtube.desktop</Filename>
+    </Include>
+</Menu>
+</Menu>

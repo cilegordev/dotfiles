@@ -12,7 +12,7 @@ if [ ! -f ~/.config/hypr/.initial_startup_done ]; then
     	# Check if the ~/Pictures/wallpapers directory exists
     	if [ -d ~/Pictures/wallpapers ]; then
         	# Run wal with random wallpapers from ~/Pictures/wallpapers
-        	wal -i ~/Pictures/wallpapers/mecha-nostalgia.png 
+        	wal -i ~/Pictures/wallpapers/pastel-window.png 
         	echo "Pywal initialized"
 		fi
 	fi

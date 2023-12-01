@@ -1,10 +1,6 @@
 #!/bin/bash
-
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
-
 # WALLPAPERS PATH
-DIR="$HOME/Pictures/wallpapers"
-
+DIR=$HOME/Pictures/wallpapers
 # Transition config
 FPS=30
 TYPE="simple"
@@ -22,19 +18,19 @@ RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
 RANDOM_PIC_NAME="${#PICS[@]}. random"
 
 # Rofi command
-rofi_command="rofi -dmenu -config ~/.config/rofi/config-wallpaper.rasi"
+rofi_command="rofi -dmenu -config ~/.config/rofi/config-short.rasi"
 
 menu() {
   for i in "${!PICS[@]}"; do
     # Displaying .gif to indicate animated images
     if [[ -z $(echo "${PICS[$i]}" | grep .gif$) ]]; then
-      printf "$(echo "${PICS[$i]}" | cut -d. -f1)\n"
+      printf "$i. $(echo "${PICS[$i]}" | cut -d. -f1)\n"
     else
-      printf "${PICS[$i]}\n"
+      printf "$i. ${PICS[$i]}\n"
     fi
   done
 
-  printf "$RANDOM_PIC_NAME\n"
+  printf "$RANDOM_PIC_NAME"
 }
 
 swww query || swww init
@@ -53,22 +49,8 @@ main() {
     exit 0
   fi
 
-  # Find the index of the selected file
-  pic_index=-1
-  for i in "${!PICS[@]}"; do
-    filename=$(basename "${PICS[$i]}")
-    if [[ "$filename" == "$choice"* ]]; then
-      pic_index=$i
-      break
-    fi
-  done
-
-  if [[ $pic_index -ne -1 ]]; then
-    swww img "${DIR}/${PICS[$pic_index]}" $SWWW_PARAMS
-  else
-    echo "Image not found."
-    exit 1
-  fi
+  pic_index=$(echo "$choice" | cut -d. -f1)
+  swww img "${DIR}/${PICS[$pic_index]}" $SWWW_PARAMS
 }
 
 # Check if rofi is already running
@@ -79,6 +61,5 @@ fi
 
 main
 
-${SCRIPTSDIR}/PywalSwww.sh &
-sleep 1
-${SCRIPTSDIR}/Refresh.sh
+$HOME/.config/hypr/scripts/PywalSwww.sh &
+$HOME/.config/hypr/scripts/Refresh.sh
