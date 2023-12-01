@@ -11,10 +11,10 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 ## Screenshot
 
-Lockscreen
+Lockscreen : simple but cool
 ![](src/sddm.png)
 
-DE
+DE : classic but cool
 ![](src/hyprland.png)
 
 # Dependencies
@@ -24,22 +24,30 @@ DE
 - **Text Editor** : mousepad
 - **File Manager** : thunar
 - **Task Manager** : xfce4-taskmanager
-- **Web Browser** : Waterfox
+- **Web Browser** : waterfox
 
-  - **Component**
+  ## Component
   - btop
   - cava
   - dunst
   - hypr
+  - **network-manager**
+  - nwg-look
+  - **pulseaudio**
   - rofi
   - swappy
   - swaylock
   - waybar
+  - **wf-recorder**
   - wlogout
 
-    - **Other**
-    - htop
-    - pipes.sh
+  ## Other
+  - htop
+  - logo-ls
+  - neofetch
+  - nvtop
+  - pipes.sh
+  - radeontop
 
 # To apply
 
@@ -47,6 +55,7 @@ DE
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
+sudo -E cp dotfiles/wlan0 /etc/init.d/
 ```
 
 # Credits
