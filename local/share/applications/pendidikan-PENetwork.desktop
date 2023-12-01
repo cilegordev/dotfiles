@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=PENetwork
+Exec=wine '/home/alectro/PENetwork.exe'
+Comment=For configurate networking
+Terminal=false
+Icon=/usr/share/pixmaps/PENM2.png
+Type=Application
+Categories=Pendidikan;System;
+Path=
+StartupNotify=false

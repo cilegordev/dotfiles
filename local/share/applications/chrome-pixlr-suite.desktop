@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Pixlr Suite
+Exec=/opt/google/chrome/google-chrome --app=https://pixlr.com/id/x/#home --password-store=basic
+Icon=/usr/share/pixmaps/pixlr.png
+StartupWMClass=crx_hmhibceaenffijlbbpacdabnbcbipgee
+Actions=Batch-Editor;Photomash;Pixlr-E;Pixlr-X;Remove-BG
+Comment=
+Path=
+StartupNotify=false

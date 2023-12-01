@@ -1,101 +1,53 @@
-<div align="center">
+# Hyprland 2023
+Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland)
+# About
 
-# 💌 ** JaKooLit Hyprland Dot Files ** 💌
+- **OS** : [Kali-Linux](https://www.kali.org/)
+- **DE** : [Hyprland](https://hyprland.org/)
+- **WM** : [Sway](https://swaywm.org/)
+- **Themes** : [Adwaita-dark-PONIES](https://github.com/cilegordev/Flat-Adwaita)
+- **Icons**: [Flat-ZOMG-dark](https://github.com/cilegordev/Flat-Adwaita)
+- **Lockscreen**: [Kali-SDDM](https://github.com/cilegordev/kali-sddm)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/JaKooLit/Hyprland-Dots?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/JaKooLit/Hyprland-Dots?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/JaKooLit/Hyprland-Dots?style=for-the-badge&color=cba6f7)
+## Screenshot
 
-<br/>
-</div>
+Lockscreen
+![](src/sddm.png)
 
-### Some preview
-https://github.com/JaKooLit/Hyprland-Dots/assets/85185940/4c98fa74-0190-4a1d-96d6-2df304ed1aa2
+DE
+![](src/hyprland.png)
 
-## 👁️‍🗨️ My Hyprland install Scripts 👁️‍🗨️
-- You can install Hyprland using Scripts below:
+# Dependencies
 
-- [Fedora-Linux](https://github.com/JaKooLit/Fedora-Hyprland)
+- **Shell** : zsh
+- **Terminal** : xfce4-terminal
+- **Text Editor** : mousepad
+- **File Manager** : thunar
+- **Task Manager** : xfce4-taskmanager
+- **Web Browser** : Waterfox
 
-- [Debian/Ubuntu-Linux](https://github.com/JaKooLit/Debian-Hyprland)
+  - **Component**
+  - btop
+  - cava
+  - dunst
+  - hypr
+  - rofi
+  - swappy
+  - swaylock
+  - waybar
+  - wlogout
 
-- [Arch-Linux](https://github.com/JaKooLit/Arch-Hyprland)
+    - **Other**
+    - htop
+    - pipes.sh
 
-- [OpenSUSE(Tumbleweed)](https://github.com/JaKooLit/OpenSuse-Hyprland)
+# To apply
 
-- refer to install scripts what packages needed to install... but atleast, Hyprland packages is needed 😏😏😏 duh!!
-
-## 👀 Screenshots 👀
-- All screenshots are collected here [Screenshots](https://github.com/JaKooLit/screenshots/tree/main/Hyprland-ScreenShots)
-
-### 📦 Whats new?
-- To easily track changes, I will be updating the changelogs. [CHANGELOGS](https://github.com/JaKooLit/Hyprland-Dots/wiki/7.-CHANGELOGS)  Screenshots will be included if worth it!
-
-### 📹 A video walkthroughs
-- [Walkthough](https://youtu.be/fO-RBHvVEcc)
-
-- [V1-Changes](https://youtu.be/upDl1ns05eg)
-
-- [v2-Changes](https://youtu.be/yaVurRoXc-s)
-
-
-## ✨ Copying instructions. 
-- Note! The auto copy script will create backups of intended folders to be copied. However, still a good idea to manually backup just incase script failed to backup!
-
-- ~/.config (btop cava dunst hypr kitty rofi swappy swaylock waybar wlogout) - These are folders to be copied.
-- ~/Pictures/wallpapers - Will be backed up
-
-### 🔔 Automatic copy of configurations
-clone this repo by using git. Change directory, make executable and run the script
 ```bash
-git clone https://github.com/JaKooLit/Hyprland-Dots.git
-cd Hyprland-Dots
-```
-to copy from upstream (possible bugs)
-```bash
-chmod +x copy.sh
-./copy.sh
-```
-to copy from releases (more "stable")
-```bash
-chmod +x release.sh
-./release.sh
+cp dotfiles/config/* $Home/.config/
+cp dotfiles/local/* $Home/.local/
 ```
 
-+ More info [HERE](https://github.com/JaKooLit/Hyprland-Dots/wiki/2.-Installations-&-Copying-dots)
+# Credits
 
-
-### ⚠️⚠️⚠️ A MUST! after copying these dots
-
-+ By default I have not set a wallpaper. Press SUPER W and set a wallpaper. This is also to initiate pywal for waybar, kitty (tty) and rofi themes. If you use the copy.sh script, you wont need to do this.
-
-+ Nvidia Owners. Make sure to edit your ~/.config/hypr/configs/ENVariables.conf if you have set a proper environment already. (recommended). WLR_NO_CURSORS will be activated if nvidia gpu is detected.
-
-+ If you have already set your own keybinds, monitors, etc.... Just copy over from backup created before log-out or reboot. (recommended)
-
-### 📖 Known issues and possible solutions
-- check out this page [FAQ](https://github.com/JaKooLit/Hyprland-Dots/wiki/4.-FAQ) and [UNSOLVED ISSUES](https://github.com/JaKooLit/Hyprland-Dots/wiki/6.-Known-Issues)
-
-### 🙋 QUESTIONS ?!?! ⁉️
-- FAQ! Yes you can use these dotfiles to other distro! Just ensure to install proper packages first! If it makes you feel better, I use same config on my Gentoo and NixOS :)
-- QUICK HINT! Click the HINT! Waybar module (note only available in Waybar default and Simple-L [TOP] layout). Can be launched by Keybind SUPER H
-- More question? click here [WIKI](https://github.com/JaKooLit/Hyprland-Dots/wiki/)
-
-### 🙏 Special request
-- If you have improvements on the dotfiles or configuration, feel free to submit a PR for improvement. I always welcome improvements as I am also just learning just like you guys!
-- Waybar styles (all those new panel styles require some tweaking) - I kindly request assistance 🙏
-
-### 🤷‍♂️ TO DO!
-- [ ] Tweak waybar layouts and Themes
-- [ ] Tweak rofi layouts and Themes
-- ~~[ ] Quite possibly switch to starship? Although starship has limited themes compared to oh-my-zsh.~~ no plans for now
-
-### 🔮 Discord Server
-- kindly join my [Discord](https://discord.gg/V2SJ92vbEN)
-
-## 💖 Support
-- a Star on my Github repos would be nice 🌟
-
-- Subscribe to my Youtube Channel [YouTube](https://www.youtube.com/@Ja.KooLit) 
-
-- You can also buy me Coffee Through ko-fi.com 🤩
-
-<a href='https://ko-fi.com/jakoolit' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+- Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)

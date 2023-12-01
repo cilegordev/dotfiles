@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Microsoft 365
+Exec=/opt/microsoft/msedge/microsoft-edge --profile-directory=Default --app-id=ocdlmjhbenodhlknglojajgokahchlkk "--app-url=https://www.office.com/?from=Homescreen"
+Icon=msedge-ocdlmjhbenodhlknglojajgokahchlkk-Default
+StartupWMClass=crx__ocdlmjhbenodhlknglojajgokahchlkk
+Categories=Office;Spreadsheet;Microsoft;

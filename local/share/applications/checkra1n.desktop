@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=checkra1n
+GenericName=checkra1n jailbreak tool
+Comment=checkra1n is a jailbreak for iPhone 5s – iPhone X, various iPads, iPods, and Apple TVs
+TryExec=checkra1n
+Exec=checkra1n --gui
+Terminal=false
+Type=Application
+Keywords=Utility;jaibreak;
+Icon=/usr/share/pixmaps/checkra1n-dark.png
+Categories=System;
+StartupNotify=false
+Path=

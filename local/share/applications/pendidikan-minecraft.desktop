@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Minecraft
+Exec=java -jar TLauncher-2.885.jar
+Comment=Play cubic game
+Terminal=false
+Icon=minecraft
+Type=Application
+Categories=Game
+Path=
+StartupNotify=true

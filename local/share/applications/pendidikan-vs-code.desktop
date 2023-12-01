@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=VSCode
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/usr/share/code/code --password-store=basic
+Icon=vscode
+Type=Application
+StartupNotify=false
+StartupWMClass=Code
+Categories=Pendidikan;TextEditor;Development;IDE;
+MimeType=text/plain;inode/directory;application/x-code-workspace;
+Actions=new-empty-window;
+Keywords=vscode;
+
+Hidden=false
+NoDisplay=false
+
+Path=
+Terminal=false
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/share/code/code --new-window %F
+Icon=vscode

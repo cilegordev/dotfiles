@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Microsoft Onedrive 365
+Comment=
+Exec=/usr/bin/microsoft-edge-stable --app=https://onedrive.live.com/ --password-store=basic
+Icon=onedrive
+Path=
+Terminal=false
+StartupNotify=false
+Categories=Office;Spreadsheet;Microsoft;

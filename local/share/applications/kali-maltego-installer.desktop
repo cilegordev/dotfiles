@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=maltego (installer)
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/install-packages maltego
+Icon=kali-maltego
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-07-osint-analysis;12-reporting;13-social-engineering-tools;001-identify;
+Comment=Visualise, Map and Mine Data
+X-Kali-Package=maltego
+Actions=ShowWebsite;
+Hidden=true
+

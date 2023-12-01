@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=responder
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell "responder -h"; exec bash"
+Icon=kali-responder
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;09-sniffing-spoofing;
+X-Kali-Package=responder
+Comment=
+Path=

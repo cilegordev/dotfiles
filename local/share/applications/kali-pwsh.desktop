@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=PowerShell
+Comment=PowerShell is an automation and configuration management platform
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "pwsh"
+Icon=kali-pwsh
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=System;
+X-Kali-Package=powershell
+Path=

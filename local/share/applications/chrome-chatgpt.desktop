@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ChatGPT
+Exec=/opt/google/chrome/google-chrome --app=https://chat.openai.com --password-store=basic
+Comment=
+Terminal=false
+Icon=/usr/share/pixmaps/chat-gpt.png
+Type=Application
+Path=
+StartupNotify=false
+Hidden=false
+NoDisplay=false

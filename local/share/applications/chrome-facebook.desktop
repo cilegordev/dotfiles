@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Facebook
+Exec=/opt/google/chrome/google-chrome --app=https://facebook.com --password-store=basic
+Icon=/usr/share/pixmaps/facebook.svg
+StartupWMClass=crx_gelmehpcmiomoockkmdlfadoankpigol
+Comment=
+Path=
+StartupNotify=false

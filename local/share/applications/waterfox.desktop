@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Waterfox
+Comment=Fast and Private Web Browser
+Exec=/usr/lib/waterfox/waterfox
+Icon=/usr/lib/waterfox/browser/chrome/icons/default/default64.png
+Categories=Network;WebBrowser;
+Path=
+Terminal=false
+StartupNotify=false

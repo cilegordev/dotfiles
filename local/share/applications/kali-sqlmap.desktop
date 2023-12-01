@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=sqlmap
+Comment=Automatic SQL injection tool
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell "sqlmap --wizard"; exec bash"
+Icon=kali-sqlmap
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;03-webapp-analysis;04-database-assessment;08-exploitation-tools;
+X-Kali-Package=sqlmap
+Path=

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Nano
+Comment=GNU nano is a small editor for on the terminal. 
+Exec=gnome-terminal --geometry 100x24+200+124 -e "nano"
+Icon=accessories-text-editor
+Categories=TextEditor;Development;IDE;
+Path=
+Terminal=false
+StartupNotify=false

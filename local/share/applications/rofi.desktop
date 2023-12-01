@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=rofi -show
+Name=Rofi
+Icon=kali-menu
+Keywords=application-launcher;window-switcher;
+Comment=
+Path=
+StartupNotify=false
+Hidden=true
+

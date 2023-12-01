@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ffuf
+Comment=Fast web fuzzer written in Go
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell 'ffuf -h'; exec bash"
+Icon=kali-ffuf
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;03-04-web-crawlers;
+X-Kali-Package=ffuf
+Path=

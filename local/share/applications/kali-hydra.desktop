@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=hydra
+Comment=A very fast network logon cracker which supports many different services
+Encoding=UTF-8
+# grep is used to highlight the supported services before running the wizard
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell "hydra | grep --color=auto '^\|Supported services:'; hydra-wizard"; exec bash"
+Icon=kali-hydra
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;05-password-attacks;05-01-online-attacks;
+X-Kali-Package=hydra
+Path=

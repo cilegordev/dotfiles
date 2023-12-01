@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=System Monitor CLI
+Comment=Show process system on CLI
+Keywords=shell;prompt;command;commandline;cmd;
+TryExec=gnome-terminal
+Exec=gnome-terminal --tab --title "CPU" --geometry 100x24+200+124 -e "zsh -c 'htop; exec zsh'" --tab --title "GPU" --geometry 100x24+200+124 -e "zsh -c 'radeontop; exec zsh'"
+Icon=baobab
+Type=Application
+Categories=GNOME;GTK;System;TerminalEmulator;
+StartupNotify=false
+StartupWMClass=Gnome-terminal
+X-GNOME-SingleWindow=false
+Actions=new-window;preferences;
+X-ExecArg=--
+Hidden=false
+Path=
+Terminal=false
+X-XFCE-Source=file:///home/alectro/.local/share/applications/org.gnome.Terminal.desktop
+[Desktop Action new-window]
+Name=New Window
+Exec=gnome-terminal --window
+[Desktop Action preferences]
+Name=Preferences
+Exec=gnome-terminal --preferences

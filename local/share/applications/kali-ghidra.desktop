@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ghidra
+Encoding=UTF-8
+Exec=ghidra
+Icon=kali-ghidra
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=advanced-utilities;07-reverseengineer;004-respond;
+X-Kali-Package=ghidra
+StartupWMClass=ghidra-Ghidra

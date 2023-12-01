@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=powershell empire
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell 'sudo powershell-empire -h'; exec bash"
+Icon=kali-powershell-empire
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;10-maintaining-access;
+X-Kali-Package=powershell-empire
+Comment=
+Path=

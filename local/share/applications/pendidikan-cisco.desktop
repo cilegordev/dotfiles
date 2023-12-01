@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/pt/packettracer %f
+Name=Packet Tracer
+Icon=/opt/pt/art/app.png
+Terminal=false
+StartupNotify=false
+NoDisplay=false
+MimeType=x-scheme-handler/pttp;
+Categories=Pendidikan;Development;
+
+Hidden=false
+Comment=Internet building simulationInternet building simulation
+Path=

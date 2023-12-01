@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=palera1n
+Comment=palera1n is a jailbreak for iOS 15.x-16.x semi-tethered checkm8
+Exec=sudo -E gnome-terminal --title "palera1n - v2.0.0-beta.7" --geometry 100x24+200+124 -- bash -c "palera1n"
+Icon=/usr/share/pixmaps/palera1n.png
+Path=
+Terminal=false
+StartupNotify=false
+Categories=System;
+GenericName=You may jailbreak any A8-A11 device on iOS 15.0-16.5 using macOS or Linux. There is no Windows support and we do not know if palera1n will ever have it.

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Microsoft PowerPoint 365
+Comment=
+Exec=/usr/bin/microsoft-edge-stable --app=https://www.office.com/launch/powerpoint?auth=1 --password-store=basic
+Icon=powerpoint
+Path=
+Terminal=false
+StartupNotify=false
+Categories=Office;Spreadsheet;Microsoft;

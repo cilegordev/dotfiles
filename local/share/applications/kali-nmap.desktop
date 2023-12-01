@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=nmap
+Comment=Network exploration tool and security / port scanner
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell "nmap"; exec bash"
+Icon=kali-nmap
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;01-info-gathering;01-04-network-scanners;02-vulnerability-analysis;
+X-Kali-Package=nmap
+Path=

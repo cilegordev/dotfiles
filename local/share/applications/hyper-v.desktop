@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Hyper V
+Comment=Interactively dump and analyze network traffic
+Encoding=UTF-8
+Exec=wireshark
+Icon=/usr/share/pixmaps/hyper-v.png
+Type=Application

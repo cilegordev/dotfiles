@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=rofi-theme-selector
+Name=Rofi Theme Selector
+Icon=application-x-theme
+Keywords=theme-selector;
+Comment=
+Path=
+StartupNotify=false
+Hidden=true
+

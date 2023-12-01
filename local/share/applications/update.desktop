@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Update
+Comment=Update system
+Exec=sudo -E gnome-terminal -e "./update.sh"
+Icon=terminus
+Path=/home/alectro
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bard
+Exec=/opt/google/chrome/google-chrome --app=https://bard.google.com --password-store=basic
+Comment=
+Terminal=false
+Icon=/usr/share/pixmaps/google-bard.png
+Type=Application
+Path=
+StartupNotify=false
+Hidden=false
+NoDisplay=false

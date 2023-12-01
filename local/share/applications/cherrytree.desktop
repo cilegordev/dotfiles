@@ -1,0 +1,34 @@
+[Desktop Entry]
+Name=CherryTree
+Comment=Hierarchical Note Taking
+Comment[cs]=Hierarchical Note Taking
+Comment[de]=Hierarchical Note Taking
+Comment[el]=Hierarchical Note Taking
+Comment[es]=Hierarchical Note Taking
+Comment[fi]=Hierarchical Note Taking
+Comment[fr]=Hierarchical Note Taking
+Comment[hy]=Hierarchical Note Taking
+Comment[it]=Hierarchical Note Taking
+Comment[ja]=Hierarchical Note Taking
+Comment[lt]=Hierarchical Note Taking
+Comment[nl]=Hierarchical Note Taking
+Comment[pl]=Hierarchical Note Taking
+Comment[pt_BR]=Hierarchical Note Taking
+Comment[ru]=Hierarchical Note Taking
+Comment[sl]=Hierarchical Note Taking
+Comment[sv]=Hierarchical Note Taking
+Comment[tr]=Hierarchical Note Taking
+Comment[uk]=Hierarchical Note Taking
+Comment[zh_CN]=Hierarchical Note Taking
+Exec=cherrytree %f
+Icon=cherrytree
+MimeType=application/cherrytree-ctd;application/cherrytree-ctz;application/cherrytree-ctb;application/cherrytree-ctx;
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=12-reporting;Utility;
+Keywords=editor;notes;note-taking;
+X-Purism-FormFactor=Workstation;Mobile;
+X-Kali-Package=cherrytree
+Hidden=true
+

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Drive
+Exec=/opt/google/chrome/google-chrome --app=https://drive.google.com/drive/my-drive --password-store=basic
+Icon=/usr/share/pixmaps/Drive.svg
+StartupWMClass=crx_aghbiahbpaijignceidepookljebhfak
+Comment=
+Path=
+StartupNotify=false

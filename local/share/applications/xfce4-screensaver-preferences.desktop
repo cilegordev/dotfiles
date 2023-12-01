@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Xfce Screensaver
+Comment=Set your screensaver preferences
+GenericName=Screensaver
+Icon=org.xfce.ScreenSaver
+Exec=xfce4-screensaver-preferences
+Terminal=false
+Type=Application
+Categories=GTK;Settings;DesktopSettings;X-XFCE-PersonalSettings;X-XFCE-SettingsDialog;
+OnlyShowIn=XFCE;
+StartupNotify=true
+X-XFCE-Bugzilla-Bugzilla=XFCE
+X-XFCE-Bugzilla-Product=xfce4-screensaver
+X-XFCE-Bugzilla-Component=general
+X-XfcePluggable=true
+X-XfceHelpPage=screensaver
+Hidden=true
+

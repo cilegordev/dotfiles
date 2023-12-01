@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=john
+Encoding=UTF-8
+Exec=gnome-terminal --geometry 100x24+200+124 -- bash -c "/usr/share/kali-menu/exec-in-shell 'john'; exec bash"
+Icon=kali-john
+StartupNotify=false
+Terminal=false
+Type=Pendidikan;Application
+Categories=advanced-utilities;05-02-offline-attacks;05-password-attacks;
+X-Kali-Package=john
+Comment=
+Path=

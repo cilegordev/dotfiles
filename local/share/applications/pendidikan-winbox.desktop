@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Winbox
+Exec=wine '/home/alectro/winbox64.exe'
+Comment=For configurate mikrotik
+Terminal=false
+Icon=/usr/share/pixmaps/winbox.png
+Type=Application
+Categories=Pendidikan;System;
+Path=
+StartupNotify=false
