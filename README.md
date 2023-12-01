@@ -22,7 +22,9 @@ DE : classic but cool
 - **Shell** : zsh
 - **Terminal** : xfce4-terminal
 - **Text Editor** : mousepad
+- **Image Viewer** : ristretto
 - **File Manager** : thunar
+- **Archive Manager** : file-roller
 - **Task Manager** : xfce4-taskmanager
 - **Web Browser** : waterfox
 
@@ -30,6 +32,7 @@ DE : classic but cool
   - btop
   - cava
   - dunst
+  - **grim**
   - hypr
   - **network-manager**
   - nwg-look
@@ -42,6 +45,7 @@ DE : classic but cool
   - wlogout
 
   ## Other
+  - google-chrome-stable
   - htop
   - logo-ls
   - neofetch
