@@ -58,6 +58,16 @@ cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
 sudo -E cp dotfiles/wlan0 /etc/init.d/
 ```
+If you don't need Xfce you can remove. before you cp.
+
+```bash
+rm -rf dotfiles/config/autostart
+rm -rf dotfiles/config/menus
+rm -rf dotfiles/config/neofetch
+rm -rf dotfiles/config/xfce4
+rm -rf dotfiles/local/share/applications
+rm -rf dotfiles/local/share/desktop-directories
+```
 
 # Credits
 

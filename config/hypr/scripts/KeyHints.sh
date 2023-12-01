@@ -21,7 +21,7 @@ yad --width=1000 --height=1000 \
 " + D" "Open Menu" "Show Menus" \
 " + Z" "Unfocuse Window" "Toggle Floating" \
 " + X" "Open Task Manager" "Task Manager" \
-" + C" "Action Control" "Wlogout" \
+" + C" "Open Text Editor" "Edit" \
 " + 1-0" "Move Workspace" "Workspace" \
 " + LEFT, RIGHT, UP, DOWN" "Move Window" "Workspace" \
 " + CLICK" "Toggle Floating" "Move Window" \
