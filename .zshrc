@@ -240,6 +240,7 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias ls='logo-ls'
 alias s='sudo -E'
 alias ex='exit'
 alias cls='clear'
@@ -256,27 +257,6 @@ fi
 if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
-
-alias ls='logo-ls'
-
-#columns=$(tput cols)
-#text="Run this command"
-#padding=$((($columns - ${#text}) / 2))
-#printf "%*s%s\n" $padding "" "$text"
-#echo 'apt update & apt upgrade & apt autoremove -y ( update system )'
-#echo 'apt get install ( to install packet  )'
-#echo 'apt -f install ( fix broken install )'
-#echo 'dpkg -i (install .deb file)'
-#echo 'apt remove --purge ( remove packet )'
-#echo 'ping 8.8.4.4 ( test connection )'
-#echo 'shutdown 00:00 ( shutdown with time )'
-#echo 'tasksel ( chage optional kali )'
-#echo 'update-alternatives --config x-session-manager ( chage desktop envirotmen )'
-#echo 'dpkg-reconfigure kali-grant-root ( chage root permission )'
-#echo 'gsettings set org.gnome.Terminal.Legacy.Settings headerbar true/false ( on/off gnome terminal headerbar )'
-#echo 'dpkg-query -S ( to see which packages are installed in which directory )'
-#echo 'apt-mark hold ( hold packet on apt upgrade )'
-#echo 'dpkg --get-selections| grep hold ( see hold packet )'
 
 source /etc/os-release
 #echo ""
