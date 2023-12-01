@@ -57,6 +57,8 @@ cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
 sudo -E cp dotfiles/wlan0 /etc/init.d/
+chmod +x /etc/init.d/wlan0
+sudo -E update-rc.d wlan0 defaults
 ```
 If you don't need Xfce you can remove. before you cp.
 
