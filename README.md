@@ -22,7 +22,8 @@ DE : classic but cool
 - **Shell** : zsh
 - **Terminal** : xfce4-terminal
 - **Text Editor** : mousepad
-- **Image Viewer** : ristretto
+- **Image Viewer** : shotwell
+- **Media Player** : vlc
 - **File Manager** : thunar
 - **Archive Manager** : file-roller
 - **Task Manager** : xfce4-taskmanager
