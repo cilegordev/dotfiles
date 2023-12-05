@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=default audio
+Comment=set audio to 75 on startup
+Exec=amixer sset Master 75%
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=default mic
+Comment=default mic volume by 0
+Exec=amixer sset Capture 0%
+Terminal=false
+StartupNotify=false

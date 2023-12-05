@@ -56,7 +56,7 @@ DE : classic but cool
 
 # To apply
 
-```bash
+```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
@@ -65,15 +65,20 @@ sudo -E cp dotfiles/wlan0 /etc/init.d/
 chmod +x /etc/init.d/wlan0
 sudo -E update-rc.d wlan0 defaults
 ```
-If you don't need Xfce you can remove. before you cp.
 
-```bash
+## If you don't need Xfce you can remove. before you cp.
+
+```zsh
 rm -rf dotfiles/config/autostart
 rm -rf dotfiles/config/menus
 rm -rf dotfiles/config/neofetch
 rm -rf dotfiles/config/xfce4
 rm -rf dotfiles/local/share/applications
 rm -rf dotfiles/local/share/desktop-directories
+# if you want Xfce sould you install psutils
+sudo apt install psutils
+# or
+pip install psutil
 ```
 
 # Credits

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=disable mic
+Comment=disable mic by default
+Exec=amixer sset Capture nocap
+Terminal=false
+StartupNotify=false

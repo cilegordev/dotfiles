@@ -49,4 +49,3 @@ esac
 
 exec $HOME/.config/hypr/scripts/PywalSwww.sh &
 sleep 1
-exec $HOME/.config/hypr/scripts/Refresh.sh
