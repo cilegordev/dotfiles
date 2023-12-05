@@ -1,4 +1,10 @@
 {
+    "label" : "cancel",
+    "action" : exit,
+    "text" : "cancel",
+    "keybind" : "c"
+}
+{
     "label" : "logout",
     "action" : "hyprctl dispatch exit 0",
     "text" : "Logout",
