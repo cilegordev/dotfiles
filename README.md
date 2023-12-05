@@ -66,7 +66,7 @@ chmod +x /etc/init.d/wlan0
 sudo -E update-rc.d wlan0 defaults
 ```
 
-## If you don't need Xfce you can remove. before you cp.
+## If you don't need Xfce you can remove before you cp
 
 ```zsh
 rm -rf dotfiles/config/autostart
