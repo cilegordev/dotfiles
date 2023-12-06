@@ -46,12 +46,17 @@ DE : classic but cool
   - wlogout
 
   ## Other
+  - code
+  - font-manager
+  - gnome-terminal
   - google-chrome-stable
   - htop
   - logo-ls
+  - microsoft-edge-stable
   - neofetch
   - nvtop
   - pipes.sh
+  - qterminal
   - radeontop
 
 # To apply
@@ -75,7 +80,14 @@ rm -rf dotfiles/config/neofetch
 rm -rf dotfiles/config/xfce4
 rm -rf dotfiles/local/share/applications
 rm -rf dotfiles/local/share/desktop-directories
-# if you want Xfce sould you install psutils
+```
+
+## if you want Xfce you must install
+
+```zsh
+sudo apt install apt-transport-https
+sudo apt install kali-grant-root
+sudo apt install xfce4*
 sudo apt install psutils
 # or
 pip install psutil

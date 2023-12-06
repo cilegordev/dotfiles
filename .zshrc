@@ -2,7 +2,7 @@
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
 setopt autocd              # change directory just by typing its name
-#setopt correct            # auto correct mistakes
+setopt correct             # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
 setopt magicequalsubst     # enable filename expansion for arguments of the form ‘anything=expression’
 setopt nonomatch           # hide error message if there is no match for the pattern
@@ -53,7 +53,7 @@ setopt hist_expire_dups_first # delete duplicates first when HISTFILE size excee
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
-#setopt share_history         # share command history data
+setopt share_history          # share command history data
 
 # force zsh to show the complete history
 alias history="history 0"
@@ -260,7 +260,7 @@ fi
 
 source /etc/os-release
 #echo ""
-#echo "$NAME [ Version $VERSION_ID ]   "
+echo "$NAME [ Version $VERSION_ID ]   " 
 echo © OffSec Services Limited $(date +"%Y"). All rights reserved.
 echo ""
 #echo "$(zsh --version)"
