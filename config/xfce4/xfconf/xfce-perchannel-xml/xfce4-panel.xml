@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-image" type="string" value="file:///usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.13725490196078433"/>
+        <value type="double" value="0.14509803921568629"/>
+        <value type="double" value="0.1803921568627451"/>
+        <value type="double" value="0.80000000000000004"/>
+      </property>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="length" type="double" value="100"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="19"/>
+        <value type="int" value="25"/>
+        <value type="int" value="10"/>
+        <value type="int" value="6"/>
+        <value type="int" value="7"/>
+        <value type="int" value="22"/>
+        <value type="int" value="15"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="28"/>
+        <value type="int" value="2"/>
+        <value type="int" value="16"/>
+        <value type="int" value="1"/>
+        <value type="int" value="18"/>
+        <value type="int" value="20"/>
+        <value type="int" value="3"/>
+        <value type="int" value="21"/>
+        <value type="int" value="17"/>
+        <value type="int" value="4"/>
+      </property>
+      <property name="position" type="string" value="p=8;x=683;y=749"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="35"/>
+      <property name="span-monitors" type="bool" value="false"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="weather">
+      <property name="cache-max-age" type="int" value="172800"/>
+      <property name="forecast" type="empty">
+        <property name="days" type="int" value="5"/>
+        <property name="layout" type="int" value="1"/>
+      </property>
+      <property name="location" type="empty">
+        <property name="latitude" type="string" value="-6.404306"/>
+        <property name="longitude" type="string" value="106.968906"/>
+        <property name="name" type="string" value="Cileungsi, Bogor"/>
+      </property>
+      <property name="msl" type="int" value="70"/>
+      <property name="offset" type="string" value="+07:00"/>
+      <property name="power-saving" type="bool" value="true"/>
+      <property name="round" type="bool" value="true"/>
+      <property name="scrollbox" type="empty">
+        <property name="animate" type="bool" value="true"/>
+        <property name="color" type="string" value="rgba(0,0,0,0)"/>
+        <property name="font" type="string" value="Cantarell Italic 11"/>
+        <property name="lines" type="int" value="1"/>
+        <property name="show" type="bool" value="true"/>
+        <property name="use-color" type="bool" value="false"/>
+      </property>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
+      <property name="tooltip-style" type="int" value="1"/>
+      <property name="units" type="empty">
+        <property name="altitude" type="int" value="0"/>
+        <property name="apparent-temperature" type="int" value="0"/>
+        <property name="precipitation" type="int" value="0"/>
+        <property name="pressure" type="int" value="0"/>
+        <property name="temperature" type="int" value="0"/>
+        <property name="windspeed" type="int" value="0"/>
+      </property>
+      <property name="labels" type="empty">
+        <property name="label0" type="int" value="3"/>
+      </property>
+    </property>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16840612581.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="grouping" type="bool" value="false"/>
+      <property name="include-all-monitors" type="bool" value="true"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="show-handle" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="sort-order" type="uint" value="0"/>
+      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
+      <property name="window-scrolling" type="bool" value="true"/>
+    </property>
+    <property name="plugin-12" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-13" type="string" value="cpugraph">
+      <property name="update-interval" type="int" value="0"/>
+      <property name="time-scale" type="int" value="0"/>
+      <property name="size" type="int" value="100"/>
+      <property name="mode" type="int" value="1"/>
+      <property name="color-mode" type="int" value="3"/>
+      <property name="frame" type="int" value="0"/>
+      <property name="border" type="int" value="0"/>
+      <property name="bars" type="int" value="0"/>
+      <property name="per-core" type="int" value="0"/>
+      <property name="tracked-core" type="int" value="0"/>
+      <property name="in-terminal" type="int" value="1"/>
+      <property name="startup-notification" type="int" value="0"/>
+      <property name="load-threshold" type="int" value="0"/>
+      <property name="smt-stats" type="int" value="0"/>
+      <property name="smt-issues" type="int" value="0"/>
+      <property name="per-core-spacing" type="int" value="1"/>
+      <property name="command" type="string" value=""/>
+      <property name="background" type="array">
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="0"/>
+      </property>
+      <property name="foreground-1" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0.64462809917355379"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-2" type="array">
+        <value type="double" value="1"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-3" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="smt-issues-color" type="array">
+        <value type="double" value="0.90000000000000002"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-system" type="array">
+        <value type="double" value="0.8784313725490196"/>
+        <value type="double" value="0.10588235294117647"/>
+        <value type="double" value="0.14117647058823529"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-user" type="array">
+        <value type="double" value="0.10196078431372549"/>
+        <value type="double" value="0.37254901960784315"/>
+        <value type="double" value="0.70588235294117652"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-nice" type="array">
+        <value type="double" value="0.20000000000000001"/>
+        <value type="double" value="0.81960784313725488"/>
+        <value type="double" value="0.47843137254901963"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="foreground-iowait" type="array">
+        <value type="double" value="0.89803921568627454"/>
+        <value type="double" value="0.6470588235294118"/>
+        <value type="double" value="0.039215686274509803"/>
+        <value type="double" value="1"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="known-players" type="string" value="Chrome;Microsoft Edge;VLC"/>
+      <property name="mpris-players" type="string" value="chromium.instance10656;chromium.instance107267;chromium.instance10887;chromium.instance11223;chromium.instance11332;chromium.instance11826;chromium.instance12403;chromium.instance12643;chromium.instance12856;chromium.instance12947;chromium.instance13089;chromium.instance13531;chromium.instance135764;chromium.instance1419;chromium.instance1431;chromium.instance1438;chromium.instance14401;chromium.instance1441;chromium.instance1444;chromium.instance1447;chromium.instance1449;chromium.instance1450;chromium.instance1451;chromium.instance1455;chromium.instance1458;chromium.instance1461;chromium.instance1464;chromium.instance1466;chromium.instance1469;chromium.instance1475;chromium.instance1476;chromium.instance1478;chromium.instance1481;chromium.instance14898;chromium.instance1493;chromium.instance14935;chromium.instance1498;chromium.instance1502;chromium.instance1537;chromium.instance15413;chromium.instance1555;chromium.instance1567;chromium.instance1570;chromium.instance1582;chromium.instance1583;chromium.instance1597;chromium.instance1610;chromium.instance1649;chromium.instance16697;chromium.instance1736;chromium.instance1767;chromium.instance1807;chromium.instance18072;chromium.instance1812;chromium.instance18218;chromium.instance1858;chromium.instance1860;chromium.instance18651;chromium.instance1867;chromium.instance1880;chromium.instance1905;chromium.instance1906;chromium.instance1911;chromium.instance1916;chromium.instance19317;chromium.instance19650;chromium.instance19691;chromium.instance1990;chromium.instance2031;chromium.instance2052;chromium.instance20953;chromium.instance2100;chromium.instance2136;chromium.instance2151;chromium.instance22370;chromium.instance2303;chromium.instance2310;chromium.instance23147;chromium.instance2316;chromium.instance23646;chromium.instance2370;chromium.instance2373;chromium.instance241439;chromium.instance2449;chromium.instance24736;chromium.instance2516;chromium.instance25642;chromium.instance25986;chromium.instance2641;chromium.instance2656;chromium.instance26793;chromium.instance2692;chromium.instance27504;chromium.instance27672;chromium.instance28293;chromium.instance2901;chromium.instance2902;chromium.instance29322;chromium.instance2940;chromium.instance2952;chromium.instance2958;chromium.instance2983;chromium.instance30064;chromium.instance3009;chromium.instance30153;chromium.instance30340;chromium.instance30393;chromium.instance3040;chromium.instance3098;chromium.instance3240;chromium.instance32644;chromium.instance3305;chromium.instance3360;chromium.instance3380;chromium.instance3406;chromium.instance3410;chromium.instance35272;chromium.instance36312;chromium.instance3677;chromium.instance374650;chromium.instance38460;chromium.instance3884;chromium.instance3889;chromium.instance3972;chromium.instance4138;chromium.instance41586;chromium.instance4257;chromium.instance4444;chromium.instance4471;chromium.instance45863;chromium.instance4618;chromium.instance4683;chromium.instance4702;chromium.instance4733;chromium.instance4854;chromium.instance4862;chromium.instance5030;chromium.instance5062;chromium.instance5110;chromium.instance5200;chromium.instance5246;chromium.instance5263;chromium.instance5271;chromium.instance53342;chromium.instance5351;chromium.instance5392;chromium.instance5532;chromium.instance5588;chromium.instance5602;chromium.instance57129;chromium.instance5906;chromium.instance5943;chromium.instance6069;chromium.instance6091;chromium.instance6113;chromium.instance6190;chromium.instance6351;chromium.instance6403;chromium.instance6432;chromium.instance6446;chromium.instance6491;chromium.instance65608;chromium.instance6740;chromium.instance6880;chromium.instance6930;chromium.instance7275;chromium.instance73179;chromium.instance7405;chromium.instance7468;chromium.instance7586;chromium.instance7627;chromium.instance7658;chromium.instance76823;chromium.instance7688;chromium.instance7692;chromium.instance7702;chromium.instance7859;chromium.instance8041;chromium.instance8057;chromium.instance8184;chromium.instance8409;chromium.instance8467;chromium.instance8507;chromium.instance8645;chromium.instance8662;chromium.instance8707;chromium.instance8717;chromium.instance9444;chromium.instance9644;chromium.instance9801;chromium.instance9848;chromium.instance9885;chromium.instance9892;chromium.instance9988;edge.instance11016;edge.instance16311;edge.instance20275;edge.instance24014;edge.instance2552;edge.instance2874;edge.instance2997;edge.instance3374;edge.instance3922;edge.instance4867;edge.instance6018;edge.instance6919;edge.instance8415;edge.instance9037;firefox.instance38993;totem;vlc"/>
+    </property>
+    <property name="plugin-17" type="string" value="notification-plugin"/>
+    <property name="plugin-18" type="string" value="power-manager-plugin"/>
+    <property name="plugin-2" type="string" value="systray">
+      <property name="icon-size" type="int" value="0"/>
+    </property>
+    <property name="plugin-20" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-21" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-22" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16870810931.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-25" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16874330703.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="false"/>
+    </property>
+    <property name="plugin-28" type="string" value="systemload">
+      <property name="cpu" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="memory" type="empty">
+        <property name="color" type="array">
+          <value type="double" value="1"/>
+          <value type="double" value="0"/>
+          <value type="double" value="0"/>
+          <value type="double" value="1"/>
+        </property>
+        <property name="label" type="string" value=""/>
+      </property>
+      <property name="network" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="swap" type="empty">
+        <property name="color" type="array">
+          <value type="double" value="0"/>
+          <value type="double" value="0.058823529411764497"/>
+          <value type="double" value="1"/>
+          <value type="double" value="1"/>
+        </property>
+        <property name="label" type="string" value=""/>
+      </property>
+      <property name="timeout-seconds" type="uint" value="1"/>
+      <property name="uptime" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-3" type="string" value="datetime"/>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="2"/>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16836153272.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17017648981.desktop"/>
+        <value type="string" value="17017649884.desktop"/>
+        <value type="string" value="17017649925.desktop"/>
+        <value type="string" value="17017649946.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17017650327.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-19" type="string" value="whiskermenu">
+      <property name="button-icon" type="string" value="/usr/share/pixmaps/Xorg.png"/>
+      <property name="favorites" type="array">
+        <value type="string" value="root-terminal.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
+        <value type="string" value="xfce4-appfinder.desktop"/>
+        <value type="string" value="org.xfce.mousepad.desktop"/>
+        <value type="string" value="org.gnome.Terminal.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="xfce-mouse-settings.desktop"/>
+        <value type="string" value="pendidikan-thunar-as-root.desktop"/>
+        <value type="string" value="org.gnome.FontManager.desktop"/>
+        <value type="string" value="pendidikan-vs-code.desktop"/>
+      </property>
+      <property name="launcher-show-name" type="bool" value="true"/>
+      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="position-categories-alternate" type="bool" value="false"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="position-commands-alternate" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="465"/>
+      <property name="menu-height" type="int" value="580"/>
+      <property name="sort-categories" type="bool" value="false"/>
+      <property name="profile-shape" type="int" value="0"/>
+      <property name="default-category" type="int" value="2"/>
+    </property>
+  </property>
+</channel>

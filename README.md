@@ -82,7 +82,7 @@ rm -rf dotfiles/local/share/applications
 rm -rf dotfiles/local/share/desktop-directories
 ```
 
-## if you want Xfce you must install
+## If you want Xfce you must install
 
 ```zsh
 sudo apt install apt-transport-https
