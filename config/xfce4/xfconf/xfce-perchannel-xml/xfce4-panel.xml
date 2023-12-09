@@ -61,7 +61,7 @@
       <property name="location" type="empty">
         <property name="latitude" type="string" value="-6.404306"/>
         <property name="longitude" type="string" value="106.968906"/>
-        <property name="name" type="string" value="Cileungsi, Bogor"/>
+        <property name="name" type="string" value=""/>
       </property>
       <property name="msl" type="int" value="70"/>
       <property name="offset" type="string" value="+07:00"/>

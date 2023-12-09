@@ -29,12 +29,13 @@
 //	], 
 
 "modules-right": [
-	"cava",
+	//"cava",
 	//"idle_inhibitor",
 	//"tray",
+	"playerctl",
 	"network",
 	"pulseaudio",
-	//"backlight",
+	"backlight",
 	"battery", 
 	"pulseaudio#microphone",
 	"custom/waybarstyle",

@@ -15,7 +15,7 @@ X-ExecArg=--
 Hidden=false
 Path=
 Terminal=false
-X-XFCE-Source=file:///home/alectro/.local/share/applications/org.gnome.Terminal.desktop
+X-XFCE-Source=file://$HOME/.local/share/applications/org.gnome.Terminal.desktop
 
 [Desktop Action new-window]
 Name=New Window

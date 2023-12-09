@@ -5,6 +5,6 @@ Name=Update
 Comment=Update system
 Exec=sudo -E gnome-terminal -e "./update.sh"
 Icon=terminus
-Path=/home/alectro
+Path=$HOME
 Terminal=false
 StartupNotify=false

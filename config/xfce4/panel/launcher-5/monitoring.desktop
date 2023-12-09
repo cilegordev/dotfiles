@@ -5,4 +5,4 @@ Encoding=UTF-8
 Exec=wireshark
 Icon=/usr/share/pixmaps/hyper-v.png
 Type=Application
-X-XFCE-Source=file:///home/alectro/.local/share/applications/hyper-v.desktop
+X-XFCE-Source=file://$HOME/.local/share/applications/hyper-v.desktop

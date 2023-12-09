@@ -12,7 +12,7 @@ Categories=System;Core;GTK;FileTools;FileManager;
 MimeType=inode/directory;
 Actions=open-home;open-computer;open-trash;
 Hidden=false
-X-XFCE-Source=file:///home/alectro/.local/share/applications/thunar.desktop
+X-XFCE-Source=file://$HOME/.local/share/applications/thunar.desktop
 Path=
 
 [Desktop Action open-home]

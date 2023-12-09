@@ -21,13 +21,17 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 ![](src/hyprland.png)
 
+- Menu : using rofi, wofi or nwg-drawer evrything is cool
+
+![](src/nwg-drawer.png)
+
 - Installed on : Tuesday, November 14 2023
 
 # Dependencies
 
 - **Shell** : zsh
 - **Terminal** : xfce4-terminal
-- **Text Editor** : mousepad
+- **Text Editor** : geany
 - **Image Viewer** : shotwell
 - **Media Player** : vlc
 - **File Manager** : thunar
@@ -60,13 +64,14 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
   - font-manager
   - gnome-terminal
   - google-chrome-stable
+  - **gtk-layer-shell**
   - htop
   - logo-ls
   - microsoft-edge-stable
   - neofetch
   - nvtop
-  - nwg-dock-hyprland ## I'm still testing
-  - nwg-drawer ## I'm still testing
+  - **nwg-dock-hyprland**
+  - **nwg-drawer**
   - pipes.sh
   - qterminal
   - radeontop

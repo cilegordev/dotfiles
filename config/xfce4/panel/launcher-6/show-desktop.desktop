@@ -14,4 +14,4 @@ X-XfceHelpComponent=xfdesktop
 X-XfceHelpPage=start
 X-XfceHelpVersion=4.18
 Path=
-X-XFCE-Source=file:///home/alectro/.local/share/applications/xfce-backdrop-settings.desktop
+X-XFCE-Source=file://$HOME/.local/share/applications/xfce-backdrop-settings.desktop

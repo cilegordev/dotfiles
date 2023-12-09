@@ -42,9 +42,9 @@
 
 "clock": {
   "interval": 1,
-  "timezone" : "{ID}",
+  "timezone" : "",
   "format": "{:%H:%M}",
-  "format-alt": " {:%A %d %B %Y %R}",
+  "format-alt": " {:%A, %d %B %Y,  %R}",
   "tooltip-format": "<tt><small>{calendar}</small></tt>",
 },              
 "actions":  {

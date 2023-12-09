@@ -14,7 +14,7 @@
 	<Menu>
 		<Name>Settings</Name>
 		<Directory>xfce-settings.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>Screensavers</Name>
 			<Directory>xfce-screensavers.directory</Directory>
@@ -63,7 +63,7 @@
 	<Menu>
 		<Name>usual-apps</Name>
 		<Directory>usual-apps.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>Accessories</Name>
 			<Directory>xfce-accessories.directory</Directory>
@@ -252,7 +252,7 @@
 	<Menu>
 		<Name>01-info-gathering</Name>
 		<Directory>01-info-gathering.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>01-01-dns-analysis</Name>
 			<Directory>01-01-dns-analysis.directory</Directory>
@@ -355,7 +355,7 @@
 	<Menu>
 		<Name>02-vulnerability-analysis</Name>
 		<Directory>02-vulnerability-analysis.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>02-01-cisco-tools</Name>
 			<Directory>02-01-cisco-tools.directory</Directory>
@@ -419,7 +419,7 @@
 	<Menu>
 		<Name>03-webapp-analysis</Name>
 		<Directory>03-webapp-analysis.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>03-01-cms-identification</Name>
 			<Directory>03-01-cms-identification.directory</Directory>
@@ -466,7 +466,7 @@
 	<Menu>
 		<Name>04-database-assessment</Name>
 		<Directory>04-database-assessment.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>kali-sqlmap.desktop</Filename>
@@ -476,7 +476,7 @@
 	<Menu>
 		<Name>05-password-attacks</Name>
 		<Directory>05-password-attacks.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>05-02-offline-attacks</Name>
 			<Directory>05-02-offline-attacks.directory</Directory>
@@ -526,7 +526,7 @@
 	<Menu>
 		<Name>06-wireless-attacks</Name>
 		<Directory>06-wireless-attacks.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>06-01-wireless-tools</Name>
 			<Directory>06-01-wireless-tools.directory</Directory>
@@ -581,7 +581,7 @@
 	<Menu>
 		<Name>07-reverseengineer</Name>
 		<Directory>07-reverseengineer.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>kali-nasmshell.desktop</Filename>
@@ -591,7 +591,7 @@
 	<Menu>
 		<Name>08-exploitation-tools</Name>
 		<Directory>08-exploitation-tools.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>kali-crackmapexec.desktop</Filename>
@@ -603,7 +603,7 @@
 	<Menu>
 		<Name>09-sniffing-spoofing</Name>
 		<Directory>09-sniffing-spoofing.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>09-01-network-sniffers</Name>
 			<Directory>09-01-network-sniffers.directory</Directory>
@@ -632,7 +632,7 @@
 	<Menu>
 		<Name>10-maintaining-access</Name>
 		<Directory>10-maintaining-access.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>10-04-command-control</Name>
 			<Directory>10-04-command-control.directory</Directory>
@@ -678,7 +678,7 @@
 	<Menu>
 		<Name>11-forensics</Name>
 		<Directory>11-forensics.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>11-03-digital-forensics</Name>
 			<Directory>11-03-digital-forensics.directory</Directory>
@@ -732,7 +732,7 @@
 	<Menu>
 		<Name>12-reporting</Name>
 		<Directory>12-reporting.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>kali-maltego.desktop</Filename>
@@ -742,7 +742,7 @@
 	<Menu>
 		<Name>13-social-engineering-tools</Name>
 		<Directory>13-social-engineering-tools.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>kali-maltego.desktop</Filename>
@@ -752,7 +752,7 @@
 	<Menu>
 		<Name>14-services</Name>
 		<Directory>14-services.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>14-08-beef-service</Name>
 			<Directory>14-08-beef-service.directory</Directory>
@@ -824,7 +824,7 @@
 	<Menu>
 		<Name>15-kali-offsec-links</Name>
 		<Directory>15-kali-offsec-links.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Merge type="files" />
@@ -833,7 +833,7 @@
 	<Menu>
 		<Name>advanced-utilities</Name>
 		<Directory>advanced-utilities.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Merge type="files" />
@@ -842,7 +842,7 @@
 	<Menu>
 		<Name>chrome-apps</Name>
 		<Directory>chrome-apps.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Include>
 			<Filename>Open-AI.desktop</Filename>
 		</Include>
@@ -865,7 +865,7 @@
 	<Menu>
 		<Name>Pendidikan</Name>
 		<Directory>Pendidikan.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>VB.desktop</Filename>
@@ -881,7 +881,7 @@
 	<Menu>
 		<Name>microsoft-office-365</Name>
     		<Directory>microsoft-office-365.directory</Directory>
-		<DirectoryDir>/home/alectro/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>$HOME/.local/share/desktop-directories</DirectoryDir>
 		<Layout>
 			<Merge type="menus" />
 			<Filename>microsoft-365.desktop</Filename>

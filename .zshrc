@@ -245,6 +245,8 @@ alias s='sudo -E'
 alias ex='exit'
 alias cls='clear'
 alias chown="chown -R"
+alias poweroff="init 0"
+alias reboot="init 6"
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
