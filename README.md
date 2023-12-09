@@ -21,7 +21,7 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 ![](src/hyprland.png)
 
-- Menu : using rofi, wofi or nwg-drawer evrything is cool
+- Menu : using rofi, wofi or nwg-drawer everything is cool
 
 ![](src/nwg-drawer.png)
 
@@ -64,7 +64,6 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
   - font-manager
   - gnome-terminal
   - google-chrome-stable
-  - **gtk-layer-shell**
   - htop
   - logo-ls
   - microsoft-edge-stable
