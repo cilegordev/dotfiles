@@ -1,11 +1,5 @@
 #!/bin/sh
 
-# sudo ifdown wlan0 &&
-# sleep 1 
-nmcli radio wifi off &&
-sleep 1 
-nmcli radio wifi on && 
-sleep 1
 amixer sset Capture 0% && 
 sleep 1
 amixer sset Capture nocap && 
