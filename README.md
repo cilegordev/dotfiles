@@ -1,5 +1,7 @@
-# Hyprland 2023
+# Hyprland package currently is not available in any Debian distro repository
+
 Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland)
+
 # About
 
 - **OS** : [Kali-Linux](https://www.kali.org/)
@@ -11,11 +13,15 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 ## Screenshot
 
-Lockscreen : simple but cool
+- Lockscreen : simple but cool
+
 ![](src/sddm.png)
 
-DE : classic but cool
+- DE : classic but cool
+
 ![](src/hyprland.png)
+
+- Installed on : Tuesday, November 14 2023
 
 # Dependencies
 
@@ -30,22 +36,26 @@ DE : classic but cool
 - **Web Browser** : waterfox
 
   ## Component
+
   - btop
   - cava
   - dunst
   - **grim**
   - hypr
+  - **hyprland-plugins**
   - **network-manager**
   - nwg-look
   - **pulseaudio**
   - rofi
   - swappy
-  - swaylock
+  - swaylock-effects
+  - swww
   - waybar
   - **wf-recorder**
   - wlogout
 
   ## Other
+
   - code
   - font-manager
   - gnome-terminal
@@ -55,6 +65,8 @@ DE : classic but cool
   - microsoft-edge-stable
   - neofetch
   - nvtop
+  - nwg-dock-hyprland ## I'm still testing
+  - nwg-drawer ## I'm still testing
   - pipes.sh
   - qterminal
   - radeontop
