@@ -1,3 +1,5 @@
+/* ---- C library ---- */
+
 #version 330
 
 in vec2 fragCoord;

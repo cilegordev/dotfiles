@@ -82,9 +82,9 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
-sudo -E cp dotfiles/disable-mic /etc/init.d/
-chmod +x /etc/init.d/disable-mic
-sudo -E update-rc.d disable-mic defaults
+sudo -E cp dotfiles/webcam.conf /etc/modprobe.d/
+chmod +x /etc/modprobe.d/webcam.conf
+sudo -E rmmod -f uvcvideo
 ```
 
 ## If you don't need Xfce you can remove before you cp

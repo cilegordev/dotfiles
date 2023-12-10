@@ -7,7 +7,7 @@ dir="$(xdg-user-dir)/Pictures/Screenshots"
 file="Screenshot_${time}_${RANDOM}.png"
 
 # notify and view screenshot
-notify_cmd_shot="notify-send -h string:x-canonical-private-synchronous:shot-notify -u low -i ${iDIR}/picture.png"
+notify_cmd_shot="notify-send -h string:x-canonical-private-synchronous:shot-notify -u low -i ${iDIR}/multimedia-photo-viewer.svg"
 notify_view() {
 	${notify_cmd_shot} "Copied to clipboard."
 ##	viewnior ${dir}/"$file"

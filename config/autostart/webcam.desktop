@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=webcam
+Comment=disable webcam by default
+Exec=sudo rmmod -f uvcvideo
+Terminal=false
+StartupNotify=false

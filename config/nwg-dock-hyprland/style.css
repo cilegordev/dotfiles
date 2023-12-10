@@ -1,11 +1,10 @@
 window {
 	background-color: rgba (0, 0, 0, 0.6);
-	border-radius: 10px;
+	border-radius: 15px;
 	border: 1px solid white;
 }
 
 #box {
-	border-radius: 8px;
 	padding: 8px;
 }
 
@@ -22,4 +21,3 @@ button:hover {
 	padding: 12px;
 	border-radius: 8px;
 }
-
