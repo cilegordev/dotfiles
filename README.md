@@ -109,6 +109,18 @@ sudo apt install psutils
 pip install psutil
 ```
 
+# Keybinds
+
+| Keys | Output |
+| :--  | :-- |
+| <kbd>Super</kbd> + <kbd>Q</kbd> | Hide Waybar
+| <kbd>Super</kbd> + <kbd>W</kbd> | Killactive
+| <kbd>Super</kbd> + <kbd>E</kbd> | Fullscreen
+| <kbd>Super</kbd> + <kbd>R</kbd> | Refresh Waybar
+| <kbd>Super</kbd> + <kbd>T</kbd> | Cava
+| <kbd>Super</kbd> + <kbd>Y</kbd> | Pipes.sh
+| and use [HINT!](https://raw.githubusercontent.com/cilegordev/dotfiles/main/config/hypr/configs/Keybinds.conf) | for the rest |
+
 # Credits
 
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
