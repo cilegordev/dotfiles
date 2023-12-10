@@ -19,18 +19,14 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 - DE : classic but cool
 
-![](src/hyprland.png)
-
-- Menu : using rofi, wofi or nwg-drawer everything is cool
-
-![](src/nwg-drawer.png)
+![](src/sample.png)
 
 - Installed on : Tuesday, November 14 2023
 
 # Dependencies
 
 - **Shell** : zsh
-- **Terminal** : xfce4-terminal
+- **Terminal** : kitty
 - **Text Editor** : geany
 - **Image Viewer** : shotwell
 - **Media Player** : vlc

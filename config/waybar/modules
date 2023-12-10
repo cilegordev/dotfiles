@@ -200,7 +200,7 @@
   "format-alt-click": "click",
   "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
   "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-  "on-click-right": "xfce4-terminal --title btop -e 'btop'",
+  "on-click-right": "kitty --title btop -e 'btop'",
 },
   
 "disk": {
@@ -344,7 +344,7 @@
   "format-critical": "{temperatureC}°C {icon}",
   "format": "{temperatureC}°C {icon}",
   "format-icons": ["󰈸"],
-  "on-click-right": "xfce4-terminal --title nvtop -e 'radeontop'"
+  "on-click-right": "kitty --title nvtop -e 'radeontop'"
 },
     
 "tray": {
@@ -388,7 +388,7 @@
   "tooltip": true,
   "tooltip-format": "DING DONG!",
   "on-click": "~/.config/hypr/scripts/KeyHints.sh",
-  "on-click-right": "xfce4-terminal -e 'sudo -E ./update.sh'"
+  "on-click-right": "kitty -e 'sudo -E ./update.sh'"
 },
   
 "custom/waybarstyle": {
