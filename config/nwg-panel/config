@@ -27,9 +27,7 @@
     ],
     "modules-right": [
       "executor-weather",
-      "tray",
-      "volume",
-      "battery"
+      "tray"
     ],
     "controls-settings": {
       "components": [
@@ -37,9 +35,6 @@
         "volume",
         "battery"
       ],
-      "commands": {
-        "battery": ""
-      },
       "show-values": false,
       "interval": 1,
       "icon-size": 16,
@@ -50,25 +45,35 @@
       "menu": {
         "name": "Poweroff",
         "icon": "system-shutdown-symbolic",
-        "items": [
-          {
-            "name": "Lock",
-            "cmd": "swaylock -f -c 000000"
-          },
-          {
-            "name": "Logout",
-            "cmd": "swaymsg exit"
-          },
-          {
-            "name": "Reboot",
-            "cmd": "systemctl reboot"
-          },
-          {
-            "name": "Shutdown",
-            "cmd": "systemctl -i poweroff"
-          }
-        ]
-      }
+        "items": []
+      },
+      "custom-items": [
+        {
+          "name": "interface",
+          "icon": "nwg-shell",
+          "cmd": "nwg-dwl-interface"
+        },
+        {
+          "name": "look",
+          "icon": "nwg-look",
+          "cmd": "nwg-look"
+        },
+        {
+          "name": "panel config",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "processes",
+          "icon": "nwg-processes",
+          "cmd": "nwg-processes"
+        },
+        {
+          "name": "poweroff",
+          "icon": "gnome-logout",
+          "cmd": "wlogout"
+        }
+      ]
     },
     "tray": {
       "root-css-name": "tray",
@@ -121,7 +126,7 @@
       "on-scroll-down": "",
       "css-name": "clock",
       "interval": 1,
-      "tooltip-date-format": true,
+      "tooltip-date-format": false,
       "root-css-name": "root-clock",
       "angle": 0.0,
       "calendar-path": "",

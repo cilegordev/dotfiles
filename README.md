@@ -37,6 +37,7 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
   ## Component
 
+  - **brightnessctl**
   - btop
   - cava
   - dunst

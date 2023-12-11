@@ -52,11 +52,11 @@ button {
 
 #clock {
     font-family: monospace;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #weather {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 #dwl-tag-box {
