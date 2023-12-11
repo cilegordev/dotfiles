@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ssh checkin
+Comment=disable ssh on login startup
+Exec=sudo systemctl stop ssh.service
+Terminal=false
+StartupNotify=false

@@ -104,6 +104,16 @@ sudo apt install xfce4*
 sudo apt install psutils
 # or
 pip install psutil
+# Access as Administrator
+sudo visudo
+# ----
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+user    ALL=(ALL:ALL) ALL
+# ----
+dpkg-reconfigure kali-grant-root
+# User privilege specification
+Enable password-less privilege escalation  
 ```
 
 # Keybinds

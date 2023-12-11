@@ -71,7 +71,7 @@
         {
           "name": "poweroff",
           "icon": "gnome-logout",
-          "cmd": "wlogout"
+          "cmd": "~/.config/hypr/scripts/Wlogout.sh"
         }
       ]
     },
@@ -178,7 +178,12 @@
       "on-left-click": "",
       "on-middle-click": "",
       "on-scroll-up": "",
-      "on-scroll-down": ""
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "icon-placement": "left",
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
     },
     "menu-start": "off",
     "exclusive-zone": true,
