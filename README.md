@@ -79,9 +79,8 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
-sudo -E cp dotfiles/webcam.conf /etc/modprobe.d/
-chmod +x /etc/modprobe.d/webcam.conf
-sudo -E rmmod -f uvcvideo
+sudo -E cp dotfiles/privacy.conf /etc/modprobe.d/
+chmod 755 /etc/modprobe.d/privacy.conf
 ```
 
 ## If you don't need Xfce you can remove before you cp
@@ -91,6 +90,7 @@ rm -rf dotfiles/config/autostart
 rm -rf dotfiles/config/menus
 rm -rf dotfiles/config/neofetch
 rm -rf dotfiles/config/xfce4
+rm -rf dotfiles/config/xsettingsd
 rm -rf dotfiles/local/share/applications
 rm -rf dotfiles/local/share/desktop-directories
 ```
@@ -120,7 +120,7 @@ Enable password-less privilege escalation
 
 | Keys | Output |
 | :--  | :-- |
-| <kbd>Super</kbd> + <kbd>Q</kbd> | Hide Waybar
+| <kbd>Super</kbd> + <kbd>Q</kbd> | togglefloating
 | <kbd>Super</kbd> + <kbd>W</kbd> | Killactive
 | <kbd>Super</kbd> + <kbd>E</kbd> | Fullscreen
 | <kbd>Super</kbd> + <kbd>R</kbd> | Refresh Waybar

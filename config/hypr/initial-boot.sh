@@ -24,7 +24,7 @@ if [ ! -f ~/.config/hypr/.initial_startup_done ]; then
 	exec $HOME/.config/hypr/scripts/Wallpaper.sh &
 	
     # Create a marker file to indicate that the script has been executed.
-    touch ~/.config/hypr/.initial_startup_done
+    touch ~/.config/hypr/.GLHF!
 fi
 
 

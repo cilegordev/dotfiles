@@ -11,7 +11,7 @@ yad --width=1000 --height=1000 \
 --timeout=60 \
 --timeout-indicator=bottom \
 " + ~" "Open Terminal" "Command Prompt" \
-" + Q" "Minimize" "Hide waybar" \
+" + Q" "Unfocuse Window" "Toggle Floating" \
 " + W" "Close" "Kill Active Programs" \
 " + E" "Fullscreen" "Full Screen Programs" \
 " + R" "Refresh Configure" "Waybar" \
@@ -20,9 +20,9 @@ yad --width=1000 --height=1000 \
 " + A" "Open File Manager" "Files" \
 " + S" "Open Web Browser" "Browsers" \
 " + D" "Open Menu" "Show Menus" \
-" + Z" "Unfocuse Window" "Toggle Floating" \
-" + X" "Open Task Manager" "Task Manager" \
-" + C" "Open Text Editor" "Edit" \
+" + Z" "Open Task Manager" "Task Manager" \
+" + X" "Open Text Editor" "Edit" \
+" + C" "Minimize" "Hide waybar" \
 " + M" "Record My Desktop" "Recorder" \
 " + ENTER" "Open Terminal" "Command Prompt" \
 " + SPACE" "Chage Wallpaper" "Swww" \

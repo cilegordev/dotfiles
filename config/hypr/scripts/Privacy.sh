@@ -7,3 +7,5 @@ sleep 1
 amixer sset Master 75%
 sleep 1
 sudo rmmod -f uvcvideo
+sleep 1 
+sudo rmmod -f bluetooth

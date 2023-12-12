@@ -2,4 +2,4 @@
 
 CONFIG="$HOME/.config/swaylock/config"
 
-sleep 0.5s; swaylock --config ${CONFIG} & disown
+brightnessctl set 1%; swaylock --config ${CONFIG} -f; disown
