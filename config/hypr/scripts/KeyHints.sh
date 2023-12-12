@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yad --width=1000 --height=1000 \
+yad --width=1000 --height=768 \
 --center \
 --title="Keybindings" \
 --no-buttons \

@@ -49,7 +49,7 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
   - **pulseaudio**
   - rofi
   - swappy
-  - swaylock-effects
+  - swaylock
   - swww
   - waybar
   - **wf-recorder**
@@ -81,6 +81,7 @@ cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
 sudo -E cp dotfiles/privacy.conf /etc/modprobe.d/
 chmod 755 /etc/modprobe.d/privacy.conf
+# There maybe some differences in symlinks so adjust it to yourself
 ```
 
 ## If you don't need Xfce you can remove before you cp

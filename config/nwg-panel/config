@@ -4,7 +4,7 @@
   {
     "name": "panel-top",
     "output": "All",
-    "layer": "bottom",
+    "layer": "top",
     "position": "top",
     "controls": "right",
     "width": 1366,
