@@ -1,1 +1,353 @@
-for symlink
+* {
+font-family: "FiraCode Nerd Font, Font Awesome 6 Pro, JetBrainsMono Nerd Font";
+font-weight: bold;
+min-height: 0;
+font-size: 98%;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+padding: 1px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+	/* background: black; */
+	/* border: 1px; */
+	/* border-style: solid; */
+	border-color: white;
+	border-radius: 5px;
+}
+
+window#waybar.empty {
+	background-color: transparent;
+}
+
+window#waybar.empty #window {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	/*  background-color: rgba(66,66,66,0.5); */ /* transparent */
+	background-color: transparent;
+}
+
+window > box {
+	/*margin: 1px 2px 2px;*/
+	background: rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	color: white;
+}
+
+window {
+	/*font-weight: bold;*/
+}
+
+tooltip {
+	color: white;
+	background: #1e1e2e;
+	opacity: 0.8;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+
+tooltip label{
+	color: #cdd6f4;
+}
+/*-----module groups----*/
+
+/*-----modules indv----*/
+#workspaces button {
+	/* padding: 0px 0px; */
+	border-radius : 5px;
+	background-color: #90b1b1;
+}
+
+#custom-menu {
+    background-color: #2777FF;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+	box-shadow: inherit;
+	background-color: rgba(0,153,153,0);
+}
+
+#workspaces button.focused {
+	background-color: rgba(0,85,102,0);
+}
+#workspaces button.active {
+	color: white;
+	/* background-color: rgba(191, 191, 191,0.1); */
+	/*box-shadow:inherit;*/
+	background-color: #f1c40f;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#cava,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state label,
+#keyboard-state label.locked,
+#keyboard-state,
+#memory,
+#mode,
+#mpd,
+#network,
+#network\#speed,
+#pulseaudio,
+#taskbar button,
+#taskbar,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-cycle_wall,
+#custom-keybinds,
+#custom-light_dark,
+#custom-lock,
+#custom-menu,
+#custom-power_vertical,
+#custom-power,
+#custom-spotify,
+#custom-updater,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default 
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+	padding: 0px 6px;
+}
+#mode {
+	color: #cc3436;
+	font-weight: bold;
+}
+#custom-power {
+	/*background-color: rgba(0,119,179,0.6);*/
+	/*border-radius: 50px;*/
+	margin: 5px 5px;
+	padding: 1px 3px;
+}
+/*-----Indicators----*/
+#clock {
+    background-color: #64727D;
+    border-radius: 5px;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: red;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#memory {
+    background-color: #9b59b6;
+    border-radius: 5px;
+}
+
+#disk {
+    background-color: #964B00;
+    border-radius: 5px;
+}
+
+#backlight {
+    font-family: "Font Awesome 6 Pro";
+    background-color: #90b1b1;
+    border-radius: 5px;
+}
+
+#network {
+    font-family: "Font Awesome 6 Pro";
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+#network\#speed {
+    font-family: "FiraCode Nerd Font";
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: bold;
+    background-color: #f1c40f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #f0932b;
+    border-radius: 5px;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    background-color: #2980b9;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    font-family: "Font Awesome 6 Pro";
+    background-color: #2d3436;
+    border-radius: 5px;
+}
+
+#idle_inhibitor.activated {
+    font-family: "Font Awesome 6 Pro";
+    background-color: #ecf0f1;
+    color: #2d3436;
+    border-radius: 5px;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#custom-waybarstyle {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+#custom-keybinds {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#custom-power-wlogout {
+    font-family: "Font Awesome 6 Pro";
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+#custom-weather {
+    background-color: #f1c40f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#taskbar {
+    background-color: #f53c3c;
+    color: #000000;
+    border-radius: 5px;
+}

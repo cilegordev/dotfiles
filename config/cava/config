@@ -1,6 +1,5 @@
 ## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
 
-
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
@@ -29,7 +28,6 @@
 ; bar_width = 20
 ; bar_spacing = 5
 
-
 # Lower and higher cutoff frequencies for lowest and highest bars
 # the bandwidth of the visualizer.
 # Note: there is a minimum total bandwidth of 43Mhz x number of bars.
@@ -41,7 +39,6 @@
 # Seconds with no input before cava goes to sleep mode. Cava will not perform FFT or drawing and
 # only check for input once per second. Cava will wake up once input is detected. 0 = disable.
 ; sleep_timer = 0
-
 
 [input]
 
@@ -73,7 +70,6 @@ source = auto
 
 ; method = portaudio
 ; source = auto
-
 
 [output]
 
@@ -132,7 +128,6 @@ source = auto
 ; background = '#111111'
 ; foreground = '#33cccc'
 
-
 # Gradient mode, only hex defined colors (and thereby ncurses mode) are supported,
 # background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
@@ -151,8 +146,6 @@ gradient_color_6 = '#00CED1'
 gradient_color_7 = '#CCCCFF'
 gradient_color_8 = '#70A0AF'
 
-
-
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
@@ -167,10 +160,8 @@ gradient_color_8 = '#70A0AF'
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
 ; gravity = 100
 
-
 # In bar height, bars that would have been lower that this will not be drawn.
 ; ignore = 0
-
 
 [eq]
 

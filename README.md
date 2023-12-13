@@ -1,7 +1,3 @@
-# Hyprland package currently is not available in any Debian distro repository
-
-Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland)
-
 # About
 
 - **OS** : [Kali-Linux](https://www.kali.org/)
@@ -21,7 +17,7 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 ![](src/sample.png)
 
-- Installed on : Tuesday, November 14 2023
+- Installed on : Tuesday, 14 November 2023, 03:14
 
 # Dependencies
 
@@ -112,7 +108,7 @@ sudo visudo
 root    ALL=(ALL:ALL) ALL
 user    ALL=(ALL:ALL) ALL
 # ----
-dpkg-reconfigure kali-grant-root
+sudo dpkg-reconfigure kali-grant-root
 # User privilege specification
 Enable password-less privilege escalation  
 ```
@@ -130,5 +126,12 @@ Enable password-less privilege escalation
 | and use [HINT!](https://raw.githubusercontent.com/cilegordev/dotfiles/main/config/hypr/configs/Keybinds.conf) | for the rest |
 
 # Credits
+**Hyprland package currently is not available in any Debian distro repository**
 
-- Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
+Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles
+
+Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
+
+[![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)
+
+And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/)

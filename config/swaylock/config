@@ -1,5 +1,3 @@
-/* ---- C library ---- */
-
 daemonize
 show-failed-attempts
 clock
