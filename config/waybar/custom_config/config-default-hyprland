@@ -1,4 +1,4 @@
-/* ---- C library ---- */
+/* ---- Write in C++ ---- */
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar at the bottom of your screen

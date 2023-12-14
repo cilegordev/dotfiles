@@ -11,5 +11,5 @@ else
     notify-send "Disconnected" "The network connection has been disconnected." -i "$icon_path/network-wired-offline.svg"
 fi
   break
-  sleep 4
+  sleep 1
 done

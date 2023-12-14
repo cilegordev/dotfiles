@@ -17,7 +17,11 @@
 
 ![](src/sample.png)
 
-- Installed on : Tuesday, 14 November 2023, 03:14
+- Swayidle : gray but cool
+
+![](src/swaylock.png)
+
+- Installed on : Tuesday, 14 November 2023, 03:00
 
 # Dependencies
 
@@ -75,8 +79,6 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 cp dotfiles/config/* $Home/.config/
 cp dotfiles/local/* $Home/.local/
 cp -r dotfiles/wallpapers $Home/Pictures/
-sudo -E cp dotfiles/privacy.conf /etc/modprobe.d/
-chmod 755 /etc/modprobe.d/privacy.conf
 # There maybe some differences in symlinks so adjust it to yourself
 ```
 

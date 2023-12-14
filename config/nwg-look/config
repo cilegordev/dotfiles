@@ -1,5 +1,3 @@
-/* ---- C library ---- */
-
 {
  "export-settings-ini": true,
  "export-gtkrc-20": true,

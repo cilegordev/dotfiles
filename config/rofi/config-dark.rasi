@@ -1,5 +1,4 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config (main) - mine */
+/* ---- Write in Hyprland - Main Config (default) ---- */
 
 /* ---- Configuration ---- */
 configuration {
@@ -46,7 +45,7 @@ mainbox {
     enabled:                    true;
     orientation:                horizontal;
 	padding:					14px;
-    background-image:           url("~/.config/rofi/.current_wallpaper", height);
+    background-image:           url("~/.config/rofi/.wallpaper", height);
     children:                   [ "imagebox", "listbox" ];
     border-radius:              10px;
 }

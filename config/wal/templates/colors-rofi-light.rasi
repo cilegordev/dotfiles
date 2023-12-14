@@ -1,5 +1,3 @@
-/* ---- C library ---- */
-
 * {{
     active-background: {color2};
     active-foreground: @foreground;
