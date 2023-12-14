@@ -37,7 +37,6 @@ ring-clear-color=0ffff0
 key-hl-color=ff0000
 bs-hl-color=ffffff
 
-#24 HRS clock format and standard Europe Date Format
 datestr=%A
 timestr=%H:%M:%S
 datestr=%d %B %Y
