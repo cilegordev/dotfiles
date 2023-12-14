@@ -1856,4 +1856,6 @@ exit
 🫧 bubbles soap fun carbonation sparkling
 🪪 identification card document
 🟰 heavy equals sign math
+ AppleLogo iOS macOS
+ TwitterLogo
 ( ͡° ͜ʖ ͡°) lenny face that face
