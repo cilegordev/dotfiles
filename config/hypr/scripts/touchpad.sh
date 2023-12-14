@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # NOTE: find the right device using hyprctl devices
- 
-touchpadid="asue1209:00-04f3:319f-touchpad"
+
+icon_path="$HOME/.config/dunst/icons" 
+touchpadid="elan-touchpad"
 
 if [ -z "$XDG_RUNTIME_DIRECTORY" ]; then
   export XDG_RUNTIME_DIRECTORY=/run/user/$(id -u)
@@ -13,7 +14,7 @@ export statusdevice="$XDG_RUNTIME_DIRECTORY/touchpad.status"
 enable_touchpad() {
   printf "true" > "$statusdevice"
 
-  notify-send -u normal "Enabling Touchpad"
+  notify-send -u normal "Enabling Touchpad" -i "$icon_path/touchpad-enabled-symbolic.svg"
 
   hyprctl keyword "device:$touchpadid:enabled" true
 }
@@ -21,7 +22,7 @@ enable_touchpad() {
 disable_touchpad() {
   printf "false" > "$statusdevice"
 
-  notify-send -u normal "Disabling Touchpad"
+  notify-send -u normal "Disabling Touchpad" -i "$icon_path/touchpad-disabled-symbolic.svg"
 
   hyprctl keyword "device:$touchpadid:enabled" false
 }

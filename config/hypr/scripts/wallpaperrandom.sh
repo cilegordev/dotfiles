@@ -23,12 +23,12 @@ time=600
 
 while true; do
 	find "$1" \
-		| while read -r img; do
-			echo "$((random % 1000)):$img"
+		| while read -r image; do
+			echo "$((random % 1000)):$image"
 		done \
 		| sort -n | cut -d':' -f2- \
-		| while read -r img; do
-			swww img "$img" && $directoriy 
+		| while read -r image; do
+			swww image "$image" && $directoriy 
 			sleep $time
 			
 		done

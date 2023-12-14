@@ -119,7 +119,7 @@ Enable password-less privilege escalation
 
 | Keys | Output |
 | :--  | :-- |
-| <kbd>Super</kbd> + <kbd>Q</kbd> | togglefloating
+| <kbd>Super</kbd> + <kbd>Q</kbd> | Togglefloating
 | <kbd>Super</kbd> + <kbd>W</kbd> | Killactive
 | <kbd>Super</kbd> + <kbd>E</kbd> | Fullscreen
 | <kbd>Super</kbd> + <kbd>R</kbd> | Refresh Waybar

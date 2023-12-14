@@ -6,25 +6,25 @@ after="/.config/hypr/scripts"
 
 menu() {
     cat <<EOF
-Costume
-Costume-Short
-Default-Waybar
-Default-Hyprland
-Default-Dots
-Default-Bottom
-Top(gnome)
-Bottom(plasma)
-Simple-Short
-Simple-Long
-Left
-Right
-Top-Left
-Top-Right
-Bottom-Left
-Bottom-Right
-Top-&-Bottom
-All-Sides
-No Panel
+costume
+costume-short
+default-waybar
+default-hyprland
+default-dots
+default-bottom
+top(gnome)
+bottom(plasma)
+simple-short
+simple-long
+left
+right
+top-left
+top-right
+bottom-left
+bottom-right
+top-&-bottom
+all-sides
+no panel
 EOF
 }
 

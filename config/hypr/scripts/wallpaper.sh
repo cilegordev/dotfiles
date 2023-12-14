@@ -47,5 +47,4 @@ case "$1" in
 		;;
 esac
 
-exec $HOME/.config/hypr/scripts/ywalswww.sh &
-sleep 1
+exec $HOME/.config/hypr/scripts/pywalswww.sh &

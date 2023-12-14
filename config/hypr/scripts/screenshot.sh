@@ -4,13 +4,13 @@ directory="$HOME/.config/dunst/icons"
 
 time=$(date +%Y-%m-%d-%H-%M-%S)
 location="$(xdg-user-dir)/Pictures/Screenshots"
-file="Screenshot_${time}_${random}.png"
+file="Screenshot_${time}_${RANDOM}.png"
 
 # notify and view screenshot
 notifytakescreenshot="notify-send -h string:x-canonical-private-synchronous:shot-notify -u low -i ${directory}/multimedia-photo-viewer.svg"
 notify_view() {
 	${notifytakescreenshot} "Copied to clipboard."
-##	viewnior ${location}/"$file"
+##	viewnior ${dir}/"$file"
 	if [[ -e "$location/$file" ]]; then
 		${notifytakescreenshot} "Screenshot Saved."
 	else
@@ -20,8 +20,8 @@ notify_view() {
 
 # countdown
 countdown() {
-	for sec in $(seq $take -1 1); do
-		notify-send -h string:x-canonical-private-synchronous:shot-notify -t 1000 -i "$directory"/timer.png "Taking shot in : $sec"
+	for sec in $(seq $1 -1 1); do
+		notify-send -h string:x-canonical-private-synchronous:shot-notify -t 1000 -i "$directory"/timer.png "Screenshot Countdown : $sec"
 		sleep 1
 	done
 }

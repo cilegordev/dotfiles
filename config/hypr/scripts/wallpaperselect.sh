@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 # WALLPAPERS PATH
 directoriy=$HOME/Pictures/wallpapers
 # Transition config
@@ -15,7 +15,7 @@ fi
 # Retrieve image files
 picture=($(ls "${directoriy}" | grep -E ".jpg$|.jpeg$|.png$|.gif$"))
 randompicture="${picture[$((random % ${#picture[@]}))]}"
-randompicturename="${#picture[@]}. random"
+name="${#picture[@]}. random"
 
 # Rofi command
 rofi_command="rofi -dmenu -config ~/.config/rofi/config-short.rasi"
@@ -30,7 +30,7 @@ menu() {
     fi
   done
 
-  printf "$randompicturename"
+  printf "$name"
 }
 
 swww query || swww init
@@ -44,7 +44,7 @@ main() {
   fi
 
   # random choice case
-  if [ "$choice" = "$randompicturename" ]; then
+  if [ "$choice" = "$name" ]; then
     swww img "${directoriy}/${randompicture}" $swww_parameter
     exit 0
   fi
@@ -62,4 +62,3 @@ fi
 main
 
 $HOME/.config/hypr/scripts/pywalswww.sh &
-$HOME/.config/hypr/scripts/refresh.sh

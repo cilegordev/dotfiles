@@ -91,7 +91,7 @@
   "tooltip": false,
   "tooltip-format": "DING DONG!",
   "on-click": "~/.config/hypr/scripts/keyhints.sh",
-  "on-click-right": "kitty -e 'sudo -E ./update.sh'"
+  "on-click-right": "~/.config/hypr/scripts/wallpaperselect.sh"
 },
 
 "custom/power-wlogout": {
