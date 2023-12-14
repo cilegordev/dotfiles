@@ -1856,4 +1856,5 @@ exit
 🫧 bubbles soap fun carbonation sparkling
 🪪 identification card document
 🟰 heavy equals sign math
+ kalilinux kali linux
 ( ͡° ͜ʖ ͡°) lenny face that face
