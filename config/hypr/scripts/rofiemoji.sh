@@ -1857,4 +1857,6 @@ exit
 🪪 identification card document
 🟰 heavy equals sign math
  kalilinux kali linux
+ applelogo ios macos
+ twitterlogo twitter x
 ( ͡° ͜ʖ ͡°) lenny face that face
