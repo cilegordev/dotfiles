@@ -7,7 +7,7 @@
 
 directoriy=$HOME/.config/hypr/scripts/pywalswww.sh
 
-if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
+if [[ $# -lt 1 ]] || [[ ! -d $1 ]]; then
 	echo "Usage:
 	$0 <dir containing images>"
 	exit 1

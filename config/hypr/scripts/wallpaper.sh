@@ -2,7 +2,7 @@
 
 directory=$HOME/Pictures/wallpapers/
 piture=($(find ${directory} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" \)))
-randomselect=${piture[ $random % ${#piture[@]} ]}
+randomselect=${piture[ $RANDOM % ${#piture[@]} ]}
 
 change_swaybg(){
   pkill swww
@@ -47,5 +47,5 @@ case "$1" in
 		;;
 esac
 
-exec $HOME/.config/hypr/scripts/pywalswww.sh &
+exec $HOME/.config/hypr/scripts/ywalswww.sh &
 sleep 1
