@@ -9,19 +9,17 @@
 
 ## Screenshot
 
-- Lockscreen : simple but cool
+|  Lockscreen  |
+|---------|
+|  ![](src/sddm.png)  |
 
-![](src/sddm.png)
+|  Desktop environment  |
+|---------|
+|  ![](src/sample.png)  |
 
-- DE : classic but cool
-
-![](src/sample.png)
-
-- Swayidle : gray but cool
-
-![](src/swaylock.png)
-
-- Installed on : Tuesday, 14 November 2023, 03:00
+|  Swayidle  |
+|---------|
+|  ![](src/swaylock.png)  |
 
 # Dependencies
 
@@ -128,6 +126,9 @@ Enable password-less privilege escalation
 | and use [HINT!](https://raw.githubusercontent.com/cilegordev/dotfiles/main/config/hypr/configs/Keybinds.conf) | for the rest |
 
 # Credits
+
+Installed on : Tuesday, 14 November 2023, 03:00
+
 **Hyprland package currently is not available in any Debian distro repository**
 
 Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles
@@ -136,4 +137,4 @@ Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake
 
 [![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)
 
-And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/)
+And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)

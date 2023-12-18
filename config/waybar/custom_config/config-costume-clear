@@ -1,0 +1,22 @@
+/* ---- C library ---- */
+
+[{
+"include": "~/.config/waybar/custom_modules/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"fixed-center": true,
+"ipc": true,
+
+"modules-left": [
+	"clock#2",
+	"hyprland/workspaces#2",
+	],
+  
+"modules-center": [
+	], 
+
+"modules-right": [
+	],
+}]

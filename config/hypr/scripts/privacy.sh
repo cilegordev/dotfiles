@@ -2,9 +2,11 @@
 # Still Remember Should I Use Kali Linux?
 ## DOC https://www.kali.org/docs/introduction/should-i-use-kali-linux/
 
-amixer sset Capture 0% && 
+#amixer sset Capture 2500
+#sleep 1
+amixer sset Capture 0%
 sleep 1
-amixer sset Capture nocap && 
+amixer sset Capture nocap
 sleep 1
 amixer sset Master 75%
 sleep 1

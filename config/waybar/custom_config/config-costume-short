@@ -16,7 +16,7 @@
 
 "modules-left": [
 	"custom/menu",
-	"hyprland/workspaces#5",
+	"hyprland/workspaces",
 	"cpu", 
 	"memory", 
 	"temperature",
@@ -32,7 +32,7 @@
 	//"cava",
 	//"idle_inhibitor",
 	//"tray",
-	"playerctl",
+	//"playerctl",
 	"network",
 	"pulseaudio",
 	"backlight",

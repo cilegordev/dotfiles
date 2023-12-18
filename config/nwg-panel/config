@@ -249,7 +249,7 @@
     },
     "hyprland-workspaces": {
       "num-ws": 5,
-      "show-icon": true,
+      "show-icon": false,
       "image-size": 16,
       "show-name": false,
       "name-length": 40,

@@ -7,6 +7,7 @@ after="/.config/hypr/scripts"
 menu() {
     cat <<EOF
 costume
+costume-clear
 costume-short
 default-waybar
 default-hyprland

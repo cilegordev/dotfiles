@@ -8,6 +8,7 @@ theme=$(realpath ~/.config/waybar/style.css | sed 's/.*-\(.*\)\.css/\1/')
 # Array for the style
 style=(
 "costume"
+"costume-clear"
 "costume-colorful"
 "default-waybar"
 "default-hyprland"

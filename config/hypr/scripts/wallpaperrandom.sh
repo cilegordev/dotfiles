@@ -3,7 +3,7 @@
 # This script will randomly go through the files of a directory, setting it
 # up as the wallpaper at regular intervals
 #
-# NOTE: this script uses bash (not POSIX shell) for the random variable
+# NOTE: this script uses bash (not POSIX shell) for the RANDOM variable
 
 directoriy=$HOME/.config/hypr/scripts/pywalswww.sh
 
@@ -23,12 +23,12 @@ time=600
 
 while true; do
 	find "$1" \
-		| while read -r image; do
-			echo "$((random % 1000)):$image"
+		| while read -r img; do
+			echo "$((RANDOM % 1000)):$img"
 		done \
 		| sort -n | cut -d':' -f2- \
-		| while read -r image; do
-			swww image "$image" && $directoriy 
+		| while read -r img; do
+			swww img "$img" && $directoriy 
 			sleep $time
 			
 		done
