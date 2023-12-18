@@ -237,18 +237,20 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
-alias ls='logo-ls'
-alias s='sudo -E'
-alias ex='exit'
-alias cls='clear'
+alias ll="ls -l"
+alias la="ls -A"
+alias l="ls -CF"
+alias ls="logo-ls"
+alias s="sudo -E"
+alias ex="exit"
+alias cls="clear"
 alias chown="chown -R"
 alias poweroff="init 0"
 alias reboot="init 6"
 alias aptns="sudo apt install --no-install-recommends"
 alias remove="sudo apt remove --purge"
+alias pipes="pipes.sh"
+alias record="wf-recorder -f capture.mp4"
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
