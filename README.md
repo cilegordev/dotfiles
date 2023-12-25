@@ -12,14 +12,17 @@
 |  Lockscreen  |
 |---------|
 |  ![](src/sddm.png)  |
+| <p align="center"> **Simple but cool** </p> |
 
-|  Desktop environment  |
+|  Desktop Environment  |
 |---------|
 |  ![](src/sample.png)  |
+| <p align="center"> **Classic but cool** </p> |
 
-|  Swayidle  |
+|  Workspace  |
 |---------|
-|  ![](src/swaylock.png)  |
+|  ![](src/workspace.png)  |
+| <p align="center"> **Multitasking but cool** </p> |
 
 # Dependencies
 
@@ -72,45 +75,26 @@
 
 # To apply
 
+**Note** : There maybe some differences in symlinks so adjust it to yourself
 ```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles
-cp dotfiles/config/* $Home/.config/
-cp dotfiles/local/* $Home/.local/
-cp -r dotfiles/wallpapers $Home/Pictures/
-# There maybe some differences in symlinks so adjust it to yourself
 ```
 
-## If you don't need Xfce you can remove before you cp
-
+Copy dotfiles
 ```zsh
-rm -rf dotfiles/config/autostart
-rm -rf dotfiles/config/menus
-rm -rf dotfiles/config/neofetch
-rm -rf dotfiles/config/xfce4
-rm -rf dotfiles/config/xsettingsd
-rm -rf dotfiles/local/share/applications
-rm -rf dotfiles/local/share/desktop-directories
+cp ~/dotfiles/config/* $Home/.config/ && cp ~/dotfiles/local/* $Home/.local/ && cp -r ~/dotfiles/wallpapers $Home/Pictures/
 ```
 
-## If you want Xfce you must install
+***If you don't need Xfce you can remove before you copy***
 
 ```zsh
-sudo apt install apt-transport-https
-sudo apt install kali-grant-root
-sudo apt install xfce4*
-sudo apt install psutils
-# or
-pip install psutil
-# Access as Administrator
-sudo visudo
-# ----
-# User privilege specification
-root    ALL=(ALL:ALL) ALL
-user    ALL=(ALL:ALL) ALL
-# ----
-sudo dpkg-reconfigure kali-grant-root
-# User privilege specification
-Enable password-less privilege escalation  
+rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
+```
+
+If you want Xfce you must install
+
+```zsh
+sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
 ```
 
 # Keybinds
