@@ -1,107 +1,128 @@
 * {
-/* font-family: "FiraCode Nerd Font, Font Awesome 6 Pro, JetBrainsMono Nerd Font"; */
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-font-weight: bold;
-font-size: 100%;
-min-height: 0;
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
-}
-
-window#waybar {
-	color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.0);
-	border-radius: 0;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
-
-window#waybar.hidden {
-    opacity: 0.1;
-}
-
-window#waybar.empty {
-    background-color: transparent;
-}
-
-window#waybar.empty #window {
-    background-color: transparent;
-	border: 0px;
-    padding: 0px;
-    margin: 0px;
-}
-
-#backlight,
-#battery,
-#bluetooth,
-#cava,
-#clock,
-#cpu,
-#disk,
-#idle_inhibitor,
-#keyboard-state label,
-#keyboard-state label.locked,
-#keyboard-state,
-#memory,
-#mode,
-#mpd,
-#network,
-#pulseaudio,
-#taskbar button,
-#taskbar,
-#temperature,
-#tray,
-#window,
-#wireplumber,
-#workspaces,
-#custom-cycle_wall,
-#custom-keybinds,
-#custom-light_dark,
-#custom-lock,
-#custom-menu,
-#custom-power_vertical,
-#custom-power,
-#custom-spotify,
-#custom-updater,
-#custom-weather,
-#custom-weather.clearNight,
-#custom-weather.cloudyFoggyDay,
-#custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
-#custom-weather.rainyNight,
-#custom-weather.severe,
-#custom-weather.showyIcyDay,
-#custom-weather.snowyIcyNight,
-#custom-weather.sunnyDay 
-{
-	background-color:transparent;
-    padding: 0px 10px;
-}
-
-#window, #workspaces {
-    margin: 0 -10px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-#clock {
-    color: #2777ff;
-}
-
-#workspaces button.persistent {
-	color: azure;
-	border-radius: 0px;
-}
-  
-#workspaces button.active {
-	color: tomato;
-	border-radius: 0px;
-}
+    /* font-family: "FiraCode Nerd Font, Font Awesome 6 Pro, JetBrains Mono Nerd Font"; */
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-weight: bold;
+    min-height: 0;
+    padding: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    }
+    
+    window#waybar {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 0;
+        transition-property: background-color;
+        transition-duration: .5s;
+    }
+    
+    window#waybar.hidden {
+        opacity: 0.1;
+    }
+    
+    window#waybar.empty {
+        background-color: transparent;
+    }
+    
+    window#waybar.empty #window {
+        background-color: transparent;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #backlight,
+    #battery,
+    #bluetooth,
+    #cava,
+    #clock,
+    #cpu,
+    #disk,
+    #idle_inhibitor,
+    #keyboard-state label,
+    #keyboard-state label.locked,
+    #keyboard-state,
+    #memory,
+    #mode,
+    #mpd,
+    #network,
+    #pulseaudio,
+    #taskbar button,
+    #taskbar,
+    #temperature,
+    #tray,
+    #window,
+    #wireplumber,
+    #workspaces,
+    #custom-cycle_wall,
+    #custom-keybinds,
+    #custom-light_dark,
+    #custom-lock,
+    #custom-menu,
+    #custom-power_vertical,
+    #custom-power,
+    #custom-spotify,
+    #custom-updater,
+    #custom-weather,
+    #custom-weather.clearNight,
+    #custom-weather.cloudyFoggyDay,
+    #custom-weather.cloudyFoggyNight,
+    #custom-weather.default 
+    #custom-weather.rainyDay,
+    #custom-weather.rainyNight,
+    #custom-weather.severe,
+    #custom-weather.showyIcyDay,
+    #custom-weather.snowyIcyNight,
+    #custom-weather.sunnyDay 
+    {
+        background-color:transparent;
+        padding: 0px 10px;
+    }
+    
+    #window, #workspaces {
+        margin: 0 -10px;
+    }
+    
+    .modules-left > widget:first-child > #workspaces {
+        margin-left: 0;
+    }
+    
+    .modules-right > widget:last-child > #workspaces {
+        margin-right: 0;
+    }
+    
+    #clock {
+        color: khaki;
+    }
+    
+    #workspaces button.persistent {
+        color: azure;
+        border-radius: 0px;
+    }
+      
+    #workspaces button.active {
+        color: tomato;
+        border-radius: 0px;
+    }
+    
+    #custom-menu {
+            background-image: url('~/.config/waybar/custom_modules/hyprland.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+            border-radius: 5px;
+    }
+    
+    #custom-color1 {
+        color: #2777ff;
+    }
+    
+    #custom-color2 {
+        color: #00a4ef;
+    }
+    
+    #custom-color3 {
+        color: #6ad0ff;
+        margin-right: 10px;
+    }
+    

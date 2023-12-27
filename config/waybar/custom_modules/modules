@@ -73,7 +73,14 @@
   "on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser",
   "on-click-right": "~/.config/hypr/scripts/rofiemoji.sh",
 },
-  
+ 
+"custom/menu#2": {
+  "format": " ",
+  "tooltip": false,
+  "on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser",
+  "on-click-right": "~/.config/hypr/scripts/RofiEmoji.sh",
+},
+
 "custom/weather": {
   "format": "{}",
   "format-alt": "{alt}: {}",
@@ -247,4 +254,20 @@
 "tray": {
   "spacing": 8,
 },
+
+"custom/color1": {
+  "format": "█",
+  "on-click": "wl-copy #2777ff"
+},
+
+"custom/color2": {
+  "format": "█",
+  "on-click": "wl-copy #00a4ef"
+},
+
+"custom/color3": {
+  "format": "█",
+  "on-click": "wl-copy #6ad0ff"
+},
+
 }
