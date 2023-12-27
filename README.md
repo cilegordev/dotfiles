@@ -28,7 +28,7 @@
 
 - **Shell** : zsh
 - **Terminal** : kitty
-- **Text Editor** : geany
+- **Text Editor** : code
 - **Image Viewer** : shotwell
 - **Media Player** : vlc
 - **File Manager** : thunar
@@ -58,7 +58,6 @@
 
   ## Other
 
-  - code
   - font-manager
   - gnome-terminal
   - google-chrome-stable
@@ -107,7 +106,7 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 | <kbd>Super</kbd> + <kbd>R</kbd> | Refresh Waybar
 | <kbd>Super</kbd> + <kbd>T</kbd> | Cava
 | <kbd>Super</kbd> + <kbd>Y</kbd> | Pipes.sh
-| and use [HINT!](https://raw.githubusercontent.com/cilegordev/dotfiles/main/config/hypr/configs/Keybinds.conf) | for the rest |
+| and use [HINT!](https://raw.githubusercontent.com/cilegordev/dotfiles/main/config/hypr/scripts/keyhints.sh) | for the rest |
 
 # Credits
 

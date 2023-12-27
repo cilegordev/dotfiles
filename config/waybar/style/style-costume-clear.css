@@ -105,12 +105,12 @@
     }
     
     #custom-menu {
-            background-image: url('~/.config/waybar/custom_modules/hyprland.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-left: 10px;
-            border-radius: 5px;
+        background-image: url('~/.config/waybar/custom_modules/hyprland.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+        border-radius: 5px;
     }
     
     #custom-color1 {
