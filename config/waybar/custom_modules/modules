@@ -257,17 +257,19 @@
 
 "custom/color1": {
   "format": "█",
-  "on-click": "wl-copy #2777ff"
+  "on-click": "wl-copy '#2777ff'",
+  "tooltip": false,
 },
 
 "custom/color2": {
   "format": "█",
-  "on-click": "wl-copy #00a4ef"
+  "on-click": "wl-copy '#00a4ef'",
+  "tooltip": false,
 },
 
 "custom/color3": {
   "format": "█",
-  "on-click": "wl-copy #6ad0ff"
+  "on-click": "wl-copy '#6ad0ff'",
+  "tooltip": false,
 },
-
 }

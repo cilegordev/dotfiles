@@ -91,16 +91,16 @@
     }
     
     #clock {
-        color: khaki;
+        color: azure;
     }
     
     #workspaces button.persistent {
-        color: azure;
+        color: khaki;
         border-radius: 0px;
     }
       
     #workspaces button.active {
-        color: tomato;
+        color: violet;
         border-radius: 0px;
     }
     
@@ -125,4 +125,3 @@
         color: #6ad0ff;
         margin-right: 10px;
     }
-    
