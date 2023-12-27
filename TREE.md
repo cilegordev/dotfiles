@@ -1,3 +1,4 @@
+```zsh
 .
 ├── cache
 │   ├── kitty
@@ -481,5 +482,6 @@
     └── Yr0p4jm.jpg
 
 68 directories, 413 files
+```
 
 ![](src/cat-on-line.png)
