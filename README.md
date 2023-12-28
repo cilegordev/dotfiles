@@ -82,7 +82,7 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 
 Copy dotfiles
 ```zsh
-cp ~/dotfiles/config/* $Home/.config/ && cp ~/dotfiles/local/* $Home/.local/ && cp -r ~/dotfiles/wallpapers $Home/Pictures/
+cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
 ```
 
 ***If you don't need Xfce you can remove before you copy***
@@ -118,6 +118,8 @@ Installed on : Tuesday, 14 November 2023, 03:00
 Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles
 
 Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
+
+I can't promise whether these dotfiles work on other machines.and I configured it for 1366x768 and not for below or above and maybe it needs a little change in some aspects.
 
 [![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)
 

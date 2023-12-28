@@ -1,42 +1,40 @@
 /* ---- Write in Code ---- */
-
-[{
-"include": "~/.config/waybar/modules",
-"layer": "top",
-//"mode": "dock",
-"exclusive": true,
-"passthrough": false,
-"position": "top",
-"spacing": 3,
-"fixed-center": true,
-"ipc": true,
-"margin-top": 6,
-"margin-left": 8,
-"margin-right": 8,
-
-"modules-left": [
-	"custom/menu",
-	"hyprland/workspaces#3",
-	"cpu", 
-	"memory", 
-	"temperature",
-	"custom/weather",
-	],
-  
-"modules-center": [
-	"wlr/taskbar",
-	], 
-
-"modules-right": [
-	"network#speed",
-	//"tray",
-	"network",
-	"pulseaudio",
-	"battery", 
-	"pulseaudio#microphone",
-	"clock",
-	"custom/waybarstyle",
-	"custom/keybinds",
-	"custom/power-wlogout",
-	],
-}]
+[
+	{
+		"include": "~/.config/waybar/modules",
+		"layer": "top",
+		//"mode": "dock",
+		"exclusive": true,
+		"passthrough": false,
+		"position": "top",
+		"spacing": 3,
+		"fixed-center": true,
+		"ipc": true,
+		"margin-top": 6,
+		"margin-left": 8,
+		"margin-right": 8,
+		"modules-left": [
+			"custom/menu",
+			"hyprland/workspaces#3",
+			"cpu",
+			"memory",
+			"temperature",
+			"custom/weather",
+		],
+		"modules-center": [
+			"wlr/taskbar",
+		],
+		"modules-right": [
+			"network#speed",
+			//"tray",
+			"network",
+			"pulseaudio",
+			"battery",
+			"pulseaudio#microphone",
+			"clock",
+			"custom/waybarstyle",
+			"custom/keybinds",
+			"custom/power-wlogout",
+		],
+	}
+]

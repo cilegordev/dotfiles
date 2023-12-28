@@ -1,23 +1,23 @@
 /* ---- Write in Hyprland ---- */
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 98%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	padding: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+	color: #ffffff;
+	transition-property: background-color;
+	transition-duration: .5s;
 	/* background: black; */
 	/* border: 1px; */
 	/* border-style: solid; */
@@ -33,11 +33,12 @@ window#waybar.empty #window {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
-	/*  background-color: rgba(66,66,66,0.5); */ /* transparent */
+	/*  background-color: rgba(66,66,66,0.5); */
+	/* transparent */
 	background-color: transparent;
 }
 
-window > box {
+window>box {
 	/*margin: 1px 2px 2px;*/
 	background: rgba(0, 0, 0, 0);
 	border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -58,7 +59,7 @@ tooltip {
 	border-color: white;
 }
 
-tooltip label{
+tooltip label {
 	color: #cdd6f4;
 }
 
@@ -66,17 +67,19 @@ tooltip label{
 	padding: 0px 0px;
 	background-color: transparent;
 }
+
 #workspaces button:hover {
 	box-shadow: inherit;
-	background-color: rgba(0,153,153,0);
+	background-color: rgba(0, 153, 153, 0);
 }
 
 #workspaces button.focused {
-	background-color: rgba(0,85,102,0);
+	background-color: rgba(0, 85, 102, 0);
 }
+
 #workspaces button.active {
 	color: white;
-	background-color: rgba(191, 191, 191,0.1);
+	background-color: rgba(191, 191, 191, 0.1);
 	/*box-shadow:inherit;*/
 }
 
@@ -116,8 +119,7 @@ tooltip label{
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
@@ -125,10 +127,12 @@ tooltip label{
 #custom-weather.sunnyDay {
 	padding: 0px 6px;
 }
+
 #mode {
 	color: #cc3436;
 	font-weight: bold;
 }
+
 #custom-power {
 	/*background-color: rgba(0,119,179,0.6);*/
 	/*border-radius: 50px;*/

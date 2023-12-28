@@ -1,15 +1,15 @@
 /* ---- Write in Hyprland ---- */
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    font-size: 98%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    padding: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 window#waybar {
@@ -28,7 +28,8 @@ window#waybar.empty #window {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    /*  background-color: rgba(66,66,66,0.5); */ /* transparent */
+    /*  background-color: rgba(66,66,66,0.5); */
+    /* transparent */
     background-color: transparent;
 }
 
@@ -60,7 +61,7 @@ tooltip label {
     background-color: rgba(0, 0, 0, 0.8);
     border: 0px solid #b4befe;
     border-radius: 10px;
-    
+
 }
 
 #workspaces button {
@@ -122,8 +123,7 @@ tooltip label {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,

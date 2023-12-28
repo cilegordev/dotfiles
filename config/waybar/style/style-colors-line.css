@@ -1,20 +1,20 @@
 /* ---- Write in Hyprland ---- */
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    font-size: 98%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    padding: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 window#waybar {
-    background:rgba (0, 0, 0, 0.5);
-    border-radius: 20px 20px 20px 20px; 
+    background: rgba (0, 0, 0, 0.5);
+    border-radius: 20px 20px 20px 20px;
 }
 
 #workspaces button {
@@ -23,7 +23,7 @@ window#waybar {
     color: #eceff4;
     border-color: #d8dee9;
     border-style: solid;
-    margin-top:2px;
+    margin-top: 2px;
 }
 
 #workspaces button.active {
@@ -66,8 +66,7 @@ window#waybar {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
@@ -77,14 +76,14 @@ window#waybar {
     border-bottom: 1px;
     border-style: solid;
 }
- 
+
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
 
- 
+
 #clock {
- color:#a3be8c;
+    color: #a3be8c;
 }
 
 #backlight {
@@ -117,7 +116,7 @@ window#waybar {
 }
 
 #cpu {
-    color:#a3be8c ;
+    color: #a3be8c;
 }
 
 #memory {
@@ -125,11 +124,11 @@ window#waybar {
 }
 
 #network.disabled {
-    color:#bf616a;
+    color: #bf616a;
 }
 
-#network{
-    color:#a3be8c;
+#network {
+    color: #a3be8c;
 }
 
 #network.disconnected {
@@ -153,27 +152,26 @@ window#waybar {
 }
 
 #idle_inhibitor {
-   color: #ebcb8b;
+    color: #ebcb8b;
 }
 
-#tray {
-}
+#tray {}
 
 #custom-menu,
-#custom-power{
+#custom-power {
     color: #cba6f7;
-    margin-top:2px;    
+    margin-top: 2px;
 }
 
-#window{
+#window {
     border-style: hidden;
-    margin-top:1px;  
-}    
-#bluetooth{
-   color:#d08770;
-}   
-#custom-weather{
-   color:#d08770;
+    margin-top: 1px;
 }
 
+#bluetooth {
+    color: #d08770;
+}
 
+#custom-weather {
+    color: #d08770;
+}

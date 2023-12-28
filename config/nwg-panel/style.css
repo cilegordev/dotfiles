@@ -35,6 +35,7 @@ button {
     background: #36364f;
     color: #eeeeee;
 }
+
 #controls-window scale value {
     color: #eeeeee;
 }
@@ -44,6 +45,7 @@ button {
     background: #36364f;
     color: #eeeeee;
 }
+
 #brightness-popup box {
     padding: 15px;
 }
@@ -62,35 +64,35 @@ button {
 }
 
 #dwl-tag-box {
-	padding-top: 4px;
-	padding-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 #dwl-tag-occupied {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: #006699;
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #dwl-tag-free {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: rgba (32, 50, 90, 1.0);
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #dwl-tag-urgent {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: #ee6600;
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #dwl-tag-selected {
-	border: solid 2px;
-	border-color: #81a1c1;
+    border: solid 2px;
+    border-color: #81a1c1;
 }

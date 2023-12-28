@@ -1,15 +1,15 @@
 /* ---- Write in Hyprland ---- */
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  min-height: 0;
+  /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+  font-size: 98%;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 @import "../waybar/style/catppuccin-themes/mocha.css";
@@ -32,17 +32,20 @@ window#waybar.hidden {
 }
 
 /* This section can be use if you want to separate waybar modules */
-.modules-left, .modules-center, .modules-right {
-  background: @theme_base_color; 
+.modules-left,
+.modules-center,
+.modules-right {
+  background: @theme_base_color;
   border: 0.5px solid @overlay0;
   padding: 0px 5px;
   border-radius: 10px;
-} 
+}
 
- .modules-left, .modules-right {
-   border: 1px solid @blue;
-   /*margin: 0px 5px;*/
-} 
+.modules-left,
+.modules-right {
+  border: 1px solid @blue;
+  /*margin: 0px 5px;*/
+}
 
 #backlight,
 #battery,
@@ -80,8 +83,7 @@ window#waybar.hidden {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
@@ -143,10 +145,11 @@ window#waybar.hidden {
   background-color: @red;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
-#tray > .needs-attention {
+
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
 }
 
@@ -161,9 +164,9 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
- border-radius: 5px;
- color: @overlay0;
- background-color: @surface0;
+  border-radius: 5px;
+  color: @overlay0;
+  background-color: @surface0;
 }
 
 #workspaces button.persistent {
@@ -213,6 +216,7 @@ window#waybar.hidden {
 #pulseaudio.bluetooth {
   color: @pink;
 }
+
 #pulseaudio.muted {
   color: @red;
 }
@@ -222,12 +226,13 @@ window#waybar.hidden {
 }
 
 #custom-waybar-mpris {
-  color:@lavender;
+  color: @lavender;
 }
 
 #network {
   color: @teal;
 }
+
 #network.disconnected,
 #network.disabled {
   background-color: @surface0;

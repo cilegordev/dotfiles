@@ -5,9 +5,21 @@
     // "height": 30, // Waybar height
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "custom/spotify"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "clock"],
+    "modules-left": [
+        "sway/workspaces",
+        "custom/spotify"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "battery",
+        "clock"
+    ],
     // Modules configuration
     "sway/workspaces": {
         // "disable-scroll": true,
@@ -31,7 +43,13 @@
     },
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
@@ -42,7 +60,10 @@
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-muted": "",
-        "format-icons": ["", ""]
+        "format-icons": [
+            "",
+            ""
+        ]
     },
     "custom/spotify": {
         "format": " {}",

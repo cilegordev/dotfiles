@@ -1,11 +1,16 @@
 /* ---- Write in Hyprland ---- */
 
-@define-color critical #ff0000; /* critical color */
-@define-color warning #f3f809;  /* warning color */
-@define-color fgcolor #ffffff;  /* foreground color */
-@define-color bgcolor #303030;  /* background color */
-@define-color bgcolor #222436;  /* background color */
-@define-color alert   #df3320;
+@define-color critical #ff0000;
+/* critical color */
+@define-color warning #f3f809;
+/* warning color */
+@define-color fgcolor #ffffff;
+/* foreground color */
+@define-color bgcolor #303030;
+/* background color */
+@define-color bgcolor #222436;
+/* background color */
+@define-color alert #df3320;
 
 @define-color accent1 #ff7a93;
 @define-color accent2 #b9f27c;
@@ -15,15 +20,15 @@
 @define-color accent6 #0db9d7;
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    font-size: 98%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    padding: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 window#waybar {
@@ -48,7 +53,8 @@ window#waybar.empty #window {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    /*  background-color: rgba(66,66,66,0.5); */ /* transparent */
+    /*  background-color: rgba(66,66,66,0.5); */
+    /* transparent */
     background-color: transparent;
 }
 
@@ -61,7 +67,7 @@ tooltip {
     border-color: #11111b;
 }
 
-tooltip label{
+tooltip label {
     color: #cdd6f4;
 }
 
@@ -144,8 +150,7 @@ tooltip label{
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
@@ -155,7 +160,7 @@ tooltip label{
     /*margin: 4px 3px 5px 3px;*/
     /*color: @fgcolor;*/
     /* background-color: #bbccdd; */
-    background-color:transparent;
+    background-color: transparent;
 }
 
 #window,
@@ -164,12 +169,12 @@ tooltip label{
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -210,7 +215,7 @@ label:focus {
     background-color: #000000;
 }
 
-#custom-menu{
+#custom-menu {
     color: #FFFFFF;
     /*padding: 3px;*/
 }
@@ -246,6 +251,7 @@ label:focus {
 #pulseaudio-muted {
     color: @accent2;
 }
+
 #wireplumber {
     color: @accent4;
 }
@@ -254,7 +260,7 @@ label:focus {
     color: @accent2;
 }
 
-#pluseaudio-source-muted{
+#pluseaudio-source-muted {
     color: #a0a0a0;
 }
 
@@ -265,9 +271,11 @@ label:focus {
 #disk {
     color: @accent5;
 }
+
 #custom-power_profile {
     color: @accent3;
 }
+
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;
@@ -296,7 +304,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-	color: #f9e2af;
+    color: #f9e2af;
     /*background-color: #2d3436;*/
 }
 

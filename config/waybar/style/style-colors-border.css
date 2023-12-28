@@ -1,15 +1,15 @@
 /* ---- Write in Hyprland ---- */
 
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-min-height: 0;
-/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-font-size: 98%;
-font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-padding: 1px;
-margin-top: 1px;
-margin-bottom: 1px;
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 98%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	padding: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 window#waybar {
@@ -23,14 +23,17 @@ window#waybar {
 	transition-duration: 0.5s;
 	margin: 0px 0px;
 }
+
 window#waybar.empty {
 	background-color: transparent;
 }
+
 window#waybar.empty #window {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
-	/*  background-color: rgba(66,66,66,0.5); */ /* transparent */
+	/*  background-color: rgba(66,66,66,0.5); */
+	/* transparent */
 	background-color: transparent;
 }
 
@@ -47,9 +50,10 @@ tooltip {
 	border-color: #11111b;
 }
 
-tooltip label{
+tooltip label {
 	color: #cdd6f4;
 }
+
 #workspaces button {
 	padding: 0 0px;
 	color: #7984a4;
@@ -64,9 +68,11 @@ tooltip label{
 #workspaces button.focused {
 	background-color: transparent;
 }
+
 #workspace button.hover {
 	background-color: transparent;
 }
+
 #workspaces button.active {
 	color: white;
 }
@@ -111,8 +117,7 @@ tooltip label{
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
@@ -147,7 +152,7 @@ tooltip label{
 	border-radius: 8px;
 	background-color: rgba(50, 50, 50, 0.1);
 	border: 1px solid #b4befe;
-	
+
 }
 
 #custom-menu {
@@ -206,12 +211,12 @@ tooltip label{
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
 	margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
 	margin-right: 0;
 }
 
@@ -222,6 +227,7 @@ tooltip label{
 #wireplumber {
 	color: #FFD580;
 }
+
 #backlight {
 	/* color: #EBCB8B; */
 	color: #8fbcbb;
@@ -302,11 +308,11 @@ label:focus {
 	background-color: #eb4d4b;
 }
 
-#tray > .passive {
+#tray>.passive {
 	-gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
 	-gtk-icon-effect: highlight;
 	background-color: #eb4d4b;
 }

@@ -27,7 +27,13 @@ window {
     border-bottom: 3px solid white;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify {
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-spotify {
     padding: 0 10px;
     margin: 0 5px;
 }

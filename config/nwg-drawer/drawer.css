@@ -10,7 +10,7 @@ entry {
 }
 
 button {
-	border-style: none;
+    border-style: none;
     background: rgba (0, 0, 0, 0.6);
     border-radius: 15px;
 }

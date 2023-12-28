@@ -26,5 +26,3 @@ if [ ! -f ~/.config/hypr/.GLHF! ]; then
     # Create a marker file to indicate that the script has been executed.
     touch ~/.config/hypr/.GLHF!
 fi
-
-

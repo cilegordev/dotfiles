@@ -69,27 +69,26 @@ window#waybar.empty #window {
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
-#custom-weather.default 
-#custom-weather.rainyDay,
+#custom-weather.default #custom-weather.rainyDay,
 #custom-weather.rainyNight,
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
-#custom-weather.sunnyDay 
-{
+#custom-weather.sunnyDay {
     background-color: transparent;
     padding: 0px 10px;
 }
 
-#window, #workspaces {
+#window,
+#workspaces {
     margin: 0 -10px;
 }
 
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -108,7 +107,8 @@ window#waybar.empty #window {
 }
 
 #custom-menu {
-    background-image: url('~/.config/waybar/custom_modules/hyprland.png'); /* link to your home user */
+    background-image: url('~/.config/waybar/custom_modules/hyprland.png');
+    /* link to your home user */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

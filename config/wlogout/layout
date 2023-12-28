@@ -1,37 +1,36 @@
 {
-    "label" : "cancel",
-    "action" : exit,
-    "text" : "cancel",
-    "keybind" : "c"
+    "label": "cancel",
+    "action": exit,
+    "text": "cancel",
+    "keybind": "c"
 }
 {
-    "label" : "logout",
-    "action" : "hyprctl dispatch exit 0",
-    "text" : "Logout",
-    "keybind" : "e"
+    "label": "logout",
+    "action": "hyprctl dispatch exit 0",
+    "text": "Logout",
+    "keybind": "e"
 }
 {
-    "label" : "lock",
-    "action" : "$HOME/.config/hypr/scripts/lockscreen.sh",
-    "text" : "Lock",
-    "keybind" : "l"
+    "label": "lock",
+    "action": "$HOME/.config/hypr/scripts/lockscreen.sh",
+    "text": "Lock",
+    "keybind": "l"
 }
 {
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
+    "label": "suspend",
+    "action": "systemctl suspend",
+    "text": "Suspend",
+    "keybind": "u"
 }
 {
-    "label" : "reboot",
-    "action" : "systemctl reboot",
-    "text" : "Reboot",
-    "keybind" : "r"
+    "label": "reboot",
+    "action": "systemctl reboot",
+    "text": "Reboot",
+    "keybind": "r"
 }
 {
-    "label" : "shutdown",
-    "action" : "systemctl poweroff",
-    "text" : "Shutdown",
-    "keybind" : "s"
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+    "text": "Shutdown",
+    "keybind": "s"
 }
-
