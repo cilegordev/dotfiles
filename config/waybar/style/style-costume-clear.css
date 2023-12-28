@@ -8,122 +8,128 @@
     padding: 1px;
     margin-top: 1px;
     margin-bottom: 1px;
-    }
-    
-    window#waybar {
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 0;
-        transition-property: background-color;
-        transition-duration: .5s;
-    }
-    
-    window#waybar.hidden {
-        opacity: 0.1;
-    }
-    
-    window#waybar.empty {
-        background-color: transparent;
-    }
-    
-    window#waybar.empty #window {
-        background-color: transparent;
-        border: 0px;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    #backlight,
-    #battery,
-    #bluetooth,
-    #cava,
-    #clock,
-    #cpu,
-    #disk,
-    #idle_inhibitor,
-    #keyboard-state label,
-    #keyboard-state label.locked,
-    #keyboard-state,
-    #memory,
-    #mode,
-    #mpd,
-    #network,
-    #pulseaudio,
-    #taskbar button,
-    #taskbar,
-    #temperature,
-    #tray,
-    #window,
-    #wireplumber,
-    #workspaces,
-    #custom-cycle_wall,
-    #custom-keybinds,
-    #custom-light_dark,
-    #custom-lock,
-    #custom-menu,
-    #custom-power_vertical,
-    #custom-power,
-    #custom-spotify,
-    #custom-updater,
-    #custom-weather,
-    #custom-weather.clearNight,
-    #custom-weather.cloudyFoggyDay,
-    #custom-weather.cloudyFoggyNight,
-    #custom-weather.default 
-    #custom-weather.rainyDay,
-    #custom-weather.rainyNight,
-    #custom-weather.severe,
-    #custom-weather.showyIcyDay,
-    #custom-weather.snowyIcyNight,
-    #custom-weather.sunnyDay 
-    {
-        background-color:transparent;
-        padding: 0px 10px;
-    }
-    
-    #window, #workspaces {
-        margin: 0 -10px;
-    }
-    
-    .modules-left > widget:first-child > #workspaces {
-        margin-left: 0;
-    }
-    
-    .modules-right > widget:last-child > #workspaces {
-        margin-right: 0;
-    }
-    
-    #clock {
-        color: azure;
-    }
-    
-    #workspaces button.persistent {
-        color: khaki;
-        border-radius: 0px;
-    }
-      
-    #workspaces button.active {
-        color: violet;
-        border-radius: 0px;
-    }
-    
-    #custom-menu {
-        background-image: url('~/.config/waybar/custom_modules/hyprland.png'); /* link to your home user */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-    
-    #custom-color1 {
-        color: #2777ff;
-    }
-    
-    #custom-color2 {
-        color: #00a4ef;
-    }
-    
-    #custom-color3 {
-        color: #6ad0ff;
-        margin-right: 10px;
-    }
+}
+
+window#waybar {
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: rgba(100, 100, 100, 0.500);
+    border-radius: 6px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.1;
+}
+
+window#waybar.empty {
+    background-color: transparent;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#cava,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state label,
+#keyboard-state label.locked,
+#keyboard-state,
+#memory,
+#mode,
+#mpd,
+#network,
+#pulseaudio,
+#taskbar button,
+#taskbar,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-cycle_wall,
+#custom-keybinds,
+#custom-light_dark,
+#custom-lock,
+#custom-menu,
+#custom-power_vertical,
+#custom-power,
+#custom-spotify,
+#custom-updater,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default 
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay 
+{
+    background-color: transparent;
+    padding: 0px 10px;
+}
+
+#window, #workspaces {
+    margin: 0 -10px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    color: azure;
+}
+
+#workspaces button.persistent {
+    color: khaki;
+    border-radius: 0px;
+}
+
+#workspaces button.active {
+    color: violet;
+    border-radius: 0px;
+}
+
+#custom-menu {
+    background-image: url('~/.config/waybar/custom_modules/hyprland.png'); /* link to your home user */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+#custom-color1 {
+    color: #2777ff;
+}
+
+#custom-color2 {
+    color: #00a4ef;
+}
+
+#custom-color3 {
+    color: #6ad0ff;
+}
+
+#custom-color4 {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 50%;
+}

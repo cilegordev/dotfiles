@@ -27,7 +27,7 @@
 # Dependencies
 
 - **Shell** : zsh
-- **Terminal** : kitty
+- **Terminal** : xfce4-terminal
 - **Text Editor** : code
 - **Image Viewer** : shotwell
 - **Media Player** : vlc
@@ -62,6 +62,7 @@
   - gnome-terminal
   - google-chrome-stable
   - htop
+  - kitty
   - logo-ls
   - microsoft-edge-stable
   - neofetch

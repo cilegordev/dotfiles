@@ -456,6 +456,8 @@
 │           └── winkex.tar.bz2
 ├── README.md
 ├── src
+│   ├── cat-on-line.png
+│   ├── compact-desktop.png
 │   ├── menu.png
 │   ├── sample.png
 │   ├── sddm.png
@@ -481,7 +483,7 @@
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 413 files
+68 directories, 415 files
 ```
 
-![](src/cat-on-line.png)
+<p align="center"> <img src="src/cat-on-line.png"> </p>

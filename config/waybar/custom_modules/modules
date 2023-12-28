@@ -40,6 +40,23 @@
   "tooltip-format": "{timeTo} {power}w",
 },
 
+"battery#2": {
+  "interval": 60,
+  "align": 0,
+  "rotate": 0,
+  "full-at": 100,
+  "design-capacity": false,
+  "states": {
+    "good": 80,
+    "warning": 20,
+    "critical": 10,
+  },
+  "format": "{capacity}%",
+  "format-charging": "+{capacity}",
+  "format-full": "󱘖 ",
+  "tooltip": false,
+},
+
 "clock": {
   "interval": 1,
   "timezone" : "",
@@ -201,7 +218,17 @@
   "tooltip": false,
   "format-disconnected": "",
   "max-length": 50,
-  },
+},
+
+"network#speed#2": {
+  "interval": 2,
+"format": "{ifname}",
+  "format-wifi": "{bandwidthDownBits}!",
+  "format-ethernet": "{bandwidthDownBytes}",
+  "tooltip": false,
+  "format-disconnected": "🌐",
+  "max-length": 50
+},
 
 "pulseaudio": {
   "format": "{icon}",
@@ -270,6 +297,12 @@
 "custom/color3": {
   "format": "█",
   "on-click": "wl-copy '#6ad0ff'",
+  "tooltip": false,
+},
+
+"custom/color4": {
+  "format": "█",
+  "on-click": "wl-copy '#ffffff'",
   "tooltip": false,
 },
 }

@@ -1,27 +1,32 @@
 /* ---- C library ---- */
 
 [{
-	"include": "~/.config/waybar/custom_modules/modules",
-	"layer": "top",
-	"exclusive": true,
-	"passthrough": false,
-	"position": "top",
-	"fixed-center": true,
-	"ipc": true,
-	
-	"modules-left": [
-		"custom/menu#2",
-		"clock#2",
-		"hyprland/workspaces#2",
-		],
-	  
-	"modules-center": [
-		], 
-	
-	"modules-right": [
-		"custom/color1",
-		"custom/color2",
-		"custom/color3",
-		],
-	}]
-	
+"include": "~/.config/waybar/custom_modules/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "bottom",
+"fixed-center": true,
+"ipc": true,
+"margin-bottom": 6,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"custom/menu#2",
+	"clock#2",
+	"hyprland/workspaces#2",
+	"network#speed#2",
+	],
+
+"modules-center": [
+	], 
+
+"modules-right": [
+	"battery#2",
+	"custom/color1",
+	"custom/color2",
+	"custom/color3",
+	"custom/color4",
+	],
+}]
