@@ -1,2 +1,2 @@
 for symlink
-to /custom_config/...
+use ln -s to /custom_config/...(name modules) ajust it your selft

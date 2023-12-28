@@ -1,4 +1,5 @@
 /* ---- Write in Hyprland ---- */
+
 {
   "hyprland/workspaces": {
     "active-only": false,

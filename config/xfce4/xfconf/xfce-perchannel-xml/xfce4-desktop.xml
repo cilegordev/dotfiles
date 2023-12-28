@@ -44,7 +44,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="1"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/kali-anime-16x9.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/kali-16x9/default"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="1"/>

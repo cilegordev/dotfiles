@@ -1,4 +1,5 @@
 /* ---- Write in Code ---- */
+
 [
 	{
 		"include": "~/.config/waybar/custom_modules/modules",

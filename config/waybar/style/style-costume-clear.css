@@ -107,8 +107,8 @@ window#waybar.empty #window {
 }
 
 #custom-menu {
-    background-image: url('~/.config/waybar/custom_modules/hyprland.png');
     /* link to your home user */
+    background-image: url('~/.config/waybar/custom_modules/hyprland.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

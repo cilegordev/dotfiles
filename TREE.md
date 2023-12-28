@@ -129,10 +129,11 @@
 │   │   ├── config-rofi-beats.rasi
 │   │   ├── config-short.rasi
 │   │   ├── config-waybar.rasi
+│   │   ├── config-windoes.rasi
 │   │   ├── pywal-color
 │   │   │   ├── pywal-theme.rasi
 │   │   │   ├── pywal-theme-symbolic-link.rasi
-│   │   │   └── Readme.md
+│   │   │   └── Readme
 │   │   └── resolution
 │   │       ├── 1080p
 │   │       │   ├── config-compact.rasi
@@ -181,8 +182,7 @@
 │   │   │   ├── config-top-&-bottom
 │   │   │   ├── config-top(gnome)
 │   │   │   ├── config-top-left
-│   │   │   ├── config-top-right
-│   │   │   └── style.css
+│   │   │   └── config-top-right
 │   │   ├── custom_modules
 │   │   │   ├── hyprland.png
 │   │   │   ├── mediaplayer-hyprland.py
@@ -449,7 +449,6 @@
 │       │   └── xfce-settings.directory
 │       ├── fonts
 │       │   ├── Fira-Code-Regular-Nerd-Font-Complete.ttf
-│       │   ├── Font-Awesome-5-Pro-Regular.ttf
 │       │   ├── Font-Awesome-6-Pro-Regular.ttf
 │       │   └── Jet-Brains-Mono-Nerd-Font-Regular.ttf
 │       └── xfce4-panel-profiles
@@ -457,8 +456,8 @@
 ├── README.md
 ├── src
 │   ├── cat-on-line.png
-│   ├── compact-desktop.png
 │   ├── menu.png
+│   ├── minimal-waybar.png
 │   ├── sample.png
 │   ├── sddm.png
 │   ├── swaylock.png
@@ -483,7 +482,7 @@
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 415 files
+68 directories, 414 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

@@ -1,6 +1,6 @@
 {
     "label": "cancel",
-    "action": exit,
+    "action": "exit",
     "text": "cancel",
     "keybind": "c"
 }

@@ -82,7 +82,7 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 
 Copy dotfiles
 ```zsh
-cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
+cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
 ```
 
 ***If you don't need Xfce you can remove before you copy***
