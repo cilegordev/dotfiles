@@ -24,6 +24,7 @@
 │   │   ├── icons
 │   │   │   ├── airplane-mode-disabled-symbolic.svg
 │   │   │   ├── airplane-mode.svg
+│   │   │   ├── applications-games-symbolic.svg
 │   │   │   ├── audio-volume-high-symbolic.svg
 │   │   │   ├── audio-volume-low-symbolic.svg
 │   │   │   ├── audio-volume-medium-symbolic.svg
@@ -482,7 +483,7 @@
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 414 files
+68 directories, 415 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

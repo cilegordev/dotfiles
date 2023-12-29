@@ -72,6 +72,7 @@
   - pipes.sh
   - qterminal
   - radeontop
+  - **wireless-tools**
 
 # To apply
 
@@ -119,7 +120,7 @@ Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland
 
 Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 
-I can't promise whether these dotfiles work on other machines. and I configured it for 1366x768 not for below or above and maybe it needs a little change in some aspects.
+**I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 
 [![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)
 
