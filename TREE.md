@@ -211,6 +211,7 @@
 │   │   │   └── style-pywal.css
 │   │   ├── style.css
 │   │   └── style-symbolic-link.css
+│   ├── weston.ini
 │   ├── wlogout
 │   │   ├── layout
 │   │   └── style.css
@@ -401,6 +402,7 @@
 │       │   ├── vulnhub.desktop
 │       │   ├── waterfox.desktop
 │       │   ├── webstorm.desktop
+│       │   ├── weston-terminal.desktop
 │       │   ├── xarchiver.desktop
 │       │   ├── xfce4-about.desktop
 │       │   ├── xfce4-clipman-settings.desktop
@@ -483,7 +485,7 @@
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 415 files
+68 directories, 417 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

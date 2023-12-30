@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Weston Terminal
+Comment=Xwayland Terminal Emulator
+Exec=weston-terminal
+Icon=/usr/share/weston/terminal.png
+Terminal=false
+StartupNotify=false
