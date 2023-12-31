@@ -40,6 +40,8 @@
 │   │   │   ├── multimedia-photo-viewer.svg
 │   │   │   ├── network-wired-offline.svg
 │   │   │   ├── network-wired-online.svg
+│   │   │   ├── snap-bounding-box-edges.svg
+│   │   │   ├── swap-panels.svg
 │   │   │   ├── timer.png
 │   │   │   ├── touchpad-disabled-symbolic.svg
 │   │   │   └── touchpad-enabled-symbolic.svg
@@ -485,7 +487,7 @@
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 417 files
+68 directories, 419 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
