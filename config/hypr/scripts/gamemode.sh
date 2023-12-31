@@ -10,7 +10,7 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword general:gaps_out 0;\
         keyword general:border_size 1;\
         keyword decoration:rounding 0;\
-        keyword plugin:hyprbars 0"
+        keyword plugin:hyprbars 0" #for this part I still haven't found a way to disable hyprbars using hyprctl
     swww kill 
     pkill waybar
     notify-send "animations off" -i "$icon_path/applications-games-symbolic.svg"
