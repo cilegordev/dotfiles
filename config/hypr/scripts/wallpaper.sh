@@ -1,6 +1,7 @@
 #!/bin/bash
 
 directory=$HOME/Pictures/wallpapers/
+
 piture=($(find ${directory} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" \)))
 randomselect=${piture[ $RANDOM % ${#piture[@]} ]}
 

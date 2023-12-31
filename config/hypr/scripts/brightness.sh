@@ -1,6 +1,7 @@
 #!/bin/bash
 
 directory="$HOME/.config/dunst/icons"
+
 notification_timeout=1000
 
 # Get brightness

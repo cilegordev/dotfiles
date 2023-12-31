@@ -3,6 +3,7 @@
 # NOTE: find the right device using hyprctl devices
 
 icon_path="$HOME/.config/dunst/icons" 
+
 touchpadid="elan-touchpad"
 
 if [ -z "$XDG_RUNTIME_DIRECTORY" ]; then

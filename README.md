@@ -76,6 +76,8 @@
 
 # To apply
 
+![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
+
 **Note** : There maybe some differences in symlinks so adjust it to yourself
 ```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles

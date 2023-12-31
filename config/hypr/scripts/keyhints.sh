@@ -23,6 +23,8 @@ yad --width=1000 --height=768 \
 " + Z" "Open Task Manager" "Task Manager" \
 " + X" "Open Text Editor" "Text Editor" \
 " + C" "Minimize" "Hide Waybar" \
+" + G" "Enable Gamemode" "Hyprgamemode" \
+" + P" "Change Layout" "Master Dwindle" \
 " + M" "Record My Desktop" "Recorder" \
 " + ENTER" "Open Terminal" "Command Prompt" \
 " + SPACE" "Chage Wallpaper" "Swww" \
