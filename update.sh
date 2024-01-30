@@ -1,26 +1,30 @@
 #!/usr/bin/bash
+sleep 1
+hyprctl dispatch togglefloating
+clear
+echo ""
 time=$(date +"%H:%M %d/%m/%Y")
 columns=$(tput cols)
 text="-= $time =-"
 padding=$((($columns - ${#text}) / 2))
 printf "%*s%s\n" $padding "" "$text"
-#printf "\e]2;Updateing ...\a"
+printf "\e]2;Updateing ...\a"
 columns=$(tput cols)
 text="----------------------------------------------=UPDATE=----------------------------------------------"
 padding=$((($columns - ${#text}) / 2))
 printf "%*s%s\n" $padding "" "$text"
-apt update -y
+sudo apt update -y
 columns=$(tput cols)
 text="----------------------------------------------=UPGRADE=---------------------------------------------"
 padding=$((($columns - ${#text}) / 2))
 printf "%*s%s\n" $padding "" "$text"
-apt upgrade -y
+sudo apt upgrade -y
 columns=$(tput cols)
 text="-----------------------------------------------=CLEAN=----------------------------------------------"
 padding=$((($columns - ${#text}) / 2))
 printf "%*s%s\n" $padding "" "$text"
-apt autoremove -y
-apt autoclean -y
+sudo apt autoremove -y
+sudo apt autoclean -y
 columns=$(tput cols)
 text="-----------------------------------------------=DONE=-----------------------------------------------"
 padding=$((($columns - ${#text}) / 2))
@@ -36,10 +40,10 @@ read -n 1 -r -s -p $'[Y] Continue Terminal
 [2] List Upgradable\n'
 echo
 if [[ $REPLY == "1" ]]; then
-    apt full-upgrade
+    sudo apt full-upgrade
     read -n 1 -r -s -p $''
 elif [[ $REPLY == "2" ]]; then
-    apt list --upgradable
+    sudo apt list --upgradable
     read -n 1 -r -s -p $''
 fi
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then

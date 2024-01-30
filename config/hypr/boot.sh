@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # THIS SCRIPT CAN BE DELETED ONCE BOOTED!!
+hyprctl version
 
 # A bash script designed to ran it only once dotfiles installed
 # Check if a marker file exists.
@@ -24,5 +25,5 @@ if [ ! -f ~/.config/hypr/.GLHF! ]; then
 	exec $HOME/.config/hypr/scripts/wallpaper.sh &
 	
     # Create a marker file to indicate that the script has been executed.
-    touch ~/.config/hypr/.GLHF!
+    hyprctl version > ~/.config/hypr/.GLHF!
 fi

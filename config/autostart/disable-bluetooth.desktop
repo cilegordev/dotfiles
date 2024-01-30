@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=disable bluetooth
+Comment=block bluetooth by default
+Exec=sudo rfkill block bluetooth
+Terminal=false
+StartupNotify=false

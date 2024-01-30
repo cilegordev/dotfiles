@@ -2,7 +2,7 @@
 
 directory="$HOME/.config/dunst/icons"
 
-time=$(date +%Y-%m-%d-%H-%M-%S)
+time=$(date +%Y_%m_%d_%H_%M_%S)
 location="$(xdg-user-dir)/Pictures/Screenshots"
 file="Screenshot_${time}_${RANDOM}.png"
 

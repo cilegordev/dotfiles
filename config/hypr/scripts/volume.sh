@@ -2,6 +2,8 @@
 
 directory="$HOME/.config/dunst/icons"
 
+notification_timeout=1000
+
 # Get Volume
 get_volume() {
 	volume=$(pamixer --get-volume)

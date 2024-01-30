@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=bluetooth
+Comment=disable bluetooth by default
+Exec=sudo rmmod -f bluetooth
+Terminal=false
+StartupNotify=false

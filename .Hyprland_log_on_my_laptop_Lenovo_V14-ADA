@@ -1,0 +1,123 @@
+Welcome to Hyprland!
+[LOG] Instance Signature: 2e26542e3bba3533e71e13f2257823d96da2318a_1706536136
+[LOG] Hyprland PID: 977
+[LOG] ===== SYSTEM INFO: =====
+[LOG] System name: Linux
+[LOG] Node name: localhost
+[LOG] Release: 6.5.0-kali3-amd64
+[LOG] Version: #1 SMP PREEMPT_DYNAMIC Debian 6.5.6-1kali1 (2023-10-09)
+
+
+[LOG] GPU information:
+03:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series] [1002:15d8] (rev ce) (prog-if 00 [VGA controller])
+
+
+[LOG] os-release:
+PRETTY_NAME="Kali GNU/Linux Rolling"
+NAME="Kali GNU/Linux"
+VERSION_ID="2023.4"
+VERSION="2023.4"
+VERSION_CODENAME=kali-rolling
+ID=kali
+ID_LIKE=debian
+HOME_URL="https://www.kali.org/"
+SUPPORT_URL="https://forums.kali.org/"
+BUG_REPORT_URL="https://bugs.kali.org/"
+ANSI_COLOR="1;31"
+
+[LOG] ========================
+
+
+
+[INFO] If you are crashing, or encounter any bugs, please consult https://wiki.hyprland.org/Crashes-and-Bugs/
+
+
+[LOG] 
+Current splash: It's not awesome, it's Hyprland!
+
+
+[LOG] Creating the HookSystem!
+[LOG] Creating the KeybindManager!
+[LOG] [hookSystem] New hook event registered: configReloaded
+[LOG] Creating the AnimationManager!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 62.22µs. Estimated average calc time: 0.20µs.
+[LOG] Creating the ConfigManager!
+[LOG] Creating the CHyprError!
+[LOG] [hookSystem] New hook event registered: focusedMon
+[LOG] [hookSystem] New hook event registered: preRender
+[LOG] Creating the LayoutManager!
+[LOG] [hookSystem] New hook event registered: preConfigReload
+[LOG] Reloading the config!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 37.36µs. Estimated average calc time: 0.19µs.
+[LOG] Using config: /home/user/.config/hypr/hyprland.conf
+[LOG] Registered dynamic var "$directory" -> /home/user/.config/hypr/scripts
+[LOG] Registered dynamic var "$airplanemode" -> /home/user/.config/hypr/scripts/airplanemode.sh
+[LOG] Registered dynamic var "$brightness" -> /home/user/.config/hypr/scripts/brightness.sh
+[LOG] Registered dynamic var "$changelayout" -> /home/user/.config/hypr/scripts/changelayout.sh
+[LOG] Registered dynamic var "$gamemode" -> /home/user/.config/hypr/scripts/gamemode.sh
+[LOG] Registered dynamic var "$lidswitch" -> /home/user/.config/hypr/scripts/lidswitch.sh
+[LOG] Registered dynamic var "$lockscreen" -> /home/user/.config/hypr/scripts/lockscreen.sh
+[LOG] Registered dynamic var "$mediactrl" -> /home/user/.config/hypr/scripts/mediactrl.sh
+[LOG] Registered dynamic var "$screenshot" -> /home/user/.config/hypr/scripts/screenshot.sh
+[LOG] Registered dynamic var "$touchpad" -> /home/user/.config/hypr/scripts/touchpad.sh
+[LOG] Registered dynamic var "$volume" -> /home/user/.config/hypr/scripts/volume.sh
+[LOG] Registered dynamic var "$wlogout" -> /home/user/.config/hypr/scripts/wlogout.sh
+[LOG] Registered dynamic var "$fileManager" -> thunar
+[LOG] Registered dynamic var "$textEditor" -> code
+[LOG] Registered dynamic var "$webBrowser" -> google-chrome-stable
+[LOG] Registered dynamic var "$taskManager" -> xfce4-taskmanager
+[LOG] Registered dynamic var "$terminal1" -> xfce4-terminal
+[LOG] Registered dynamic var "$terminal2" -> kitty
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 37.57µs. Estimated average calc time: 0.14µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 36.80µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 27.23µs. Estimated average calc time: 0.14µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 27.93µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 37.08µs. Estimated average calc time: 0.14µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 37.29µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mok
+File /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 found, executing command...
+PRIVACY LOCKED 
+Simple mixer control 'Capture',0
+  Capabilities: cvolume cswitch cswitch-joined
+  Capture channels: Front Left - Front Right
+  Limits: Capture 0 - 65536
+  Front Left: Capture 0 [0%] [off]
+  Front Right: Capture 0 [0%] [off]
+ok
+[2024-01-29 20:48:58.147] [info] Using configuration file /home/user/.config/waybar/config
+[2024-01-29 20:48:58.147] [info] Including resource file: ~/.config/waybar/custom_modules/modules
+Simple mixer control 'Capture',0
+  Capabilities: cvolume cswitch cswitch-joined
+  Capture channels: Front Left - Front Right
+  Limits: Capture 0 - 65536
+  Front Left: Capture 0 [0%] [off]
+  Front Right: Capture 0 [0%] [off]
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch pswitch-joined
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 65536
+  Mono:
+  Front Left: Playback 49152 [75%] [on]
+  Front Right: Playback 49152 [75%] [on]
+[LOG] Initializing xdph...
+[CRITICAL] Couldn't create the dbus connection ([org.freedesktop.DBus.Error.FileExists] Failed to request bus name (File exists))
+[2024-01-29 20:49:00.783] [info] Using CSS file /home/user/.config/waybar/style.css
+[2024-01-29 20:49:00.800] [warning] Failed to open bar ipc connection: Socket path is empty
+[2024-01-29 20:49:00.803] [warning] Mapping is not an object
+[2024-01-29 20:49:00.803] [info] Hyprland IPC starting
+[2024-01-29 20:49:00.808] [warning] module : Unknown module: 
+[2024-01-29 20:49:00.830] [warning] module : Unknown module: 
+[2024-01-29 20:49:01.161] [info] Bar configured (width: 1350, height: 42) for output: eDP-1
+localuser:root being added to access control list
+\e[1;31mWarning: you are using the root account. You may harm your system 💀\e[0m
+ok
+ok
+localuser:root being added to access control list
+[1;31mWarning: you are using the root account. You may harm your system 💀[0m
+DONE! 
+ok
+em usage: 4.08kB, time to bake: 37.22µs. Estimated average calc time: 0.14µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 38.54µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 38.06µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 38.96µs. Estimated average calc time: 0.15µs.
+[LOG] Registered dynamic var "$mainMod" -> SUPER

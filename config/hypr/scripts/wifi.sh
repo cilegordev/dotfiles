@@ -18,5 +18,5 @@ while true; do
             notify-send "Disconnected" "The network connection has been disconnected." -i "$icon_path/network-wired-offline.svg"
         fi
     fi
-    sleep 1
+    sleep 3
 done

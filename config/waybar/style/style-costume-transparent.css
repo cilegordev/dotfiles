@@ -1,0 +1,335 @@
+/* ---- Write in Code ---- */
+
+/* see https://developer.mozilla.org/en-US/docs/Web/CSS/named-color to get color */
+
+* {
+    font-family: "Windows 10 Panel Font, FiraCode Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    padding: 1px;
+    font-size: 96%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    margin-top: 1px;
+    margin-bottom: 1px;
+    }
+    
+    window#waybar {
+    	background-color: rgba(0, 0, 0, 0.5);
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        transition-property: background-color;
+        transition-duration: .5s;
+        border-radius: 5px;
+    }
+    
+    window#waybar.empty {
+        background-color: transparent;
+    }
+    
+    window#waybar.solo {
+    
+    }
+    
+    window#waybar.termite {
+    }
+
+    window#waybar.chromium {
+    	border: none;
+    }
+    
+    window#waybar.empty #window {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        background-color: transparent;
+    }
+    
+    window > box {
+    }
+    
+    window {
+        font-weight: bold;
+    }
+    
+    tooltip {
+        opacity: 0.8;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+    }
+    
+    tooltip label {
+    }
+    
+    #custom-menu {
+        border-radius: 5px;
+        margin-left: 3px;
+    }
+
+    #workspaces {
+    	font-size: 10px;
+        background-color: transparent;
+        border: solid 5px transparent;
+        border-radius: 5px;
+    }
+
+    #workspaces button {
+        padding: 0px 5px;
+        margin: 0px 3px;
+        border-radius: 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+    }
+
+    #workspaces button.focused {
+    }
+    
+    #workspaces button:hover {
+        box-shadow: inherit;
+        border-radius: 16px;
+    }
+
+    #workspaces button.active {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow:inherit;
+        border-radius: 16px;
+        min-width: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #workspaces button.urgent {
+    }
+    
+    #backlight,
+    #battery,
+    #bluetooth,
+    #cava,
+    #clock,
+    #cpu,
+    #disk,
+    #idle_inhibitor,
+    #keyboard-state label,
+    #keyboard-state label.locked,
+    #keyboard-state,
+    #memory,
+    #mode,
+    #mpd,
+    #network,
+    #network\#speed,
+    #pulseaudio,
+    #taskbar button,
+    #taskbar,
+    #temperature,
+    #tray,
+    #window,
+    #wireplumber,
+    #workspaces,
+    #custom-cycle_wall,
+    #custom-keybinds,
+    #custom-light_dark,
+    #custom-lock,
+    #custom-menu,
+    #custom-power_vertical,
+    #custom-power,
+    #custom-spotify,
+    #custom-updater,
+    #custom-weather,
+    #custom-weather.clearNight,
+    #custom-weather.cloudyFoggyDay,
+    #custom-weather.cloudyFoggyNight,
+    #custom-weather.default 
+    #custom-weather.rainyDay,
+    #custom-weather.rainyNight,
+    #custom-weather.severe,
+    #custom-weather.showyIcyDay,
+    #custom-weather.snowyIcyNight,
+    #custom-weather.sunnyDay {
+        padding: 0px 6px;
+        margin-bottom: -1px;
+    }
+    #mode {
+        font-weight: bold;
+    }
+    #custom-power {
+        margin: 5px 5px;
+        padding: 1px 3px;
+    }
+    #clock {
+        border-radius: 5px;
+    }
+    
+    #battery {
+        border-radius: 5px;
+    }
+    
+    #battery.charging, 
+    #battery.plugged {
+    }
+    
+    @keyframes blink {
+        to {
+        }
+    }
+    
+    #battery.critical:not(.charging) {
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    label:focus {
+    }
+    
+    #bluetooth {
+        border-radius: 5px;
+    }
+
+    #bluetooth.disabled {
+        border-radius: 5px;
+    }
+
+    #cpu {
+        border-radius: 5px;
+    }
+    
+    #memory {
+        border-radius: 5px;
+    }
+    
+    #disk {
+        border-radius: 5px;
+    }
+    
+    #backlight {
+    	font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    #network {
+        border-radius: 5px;
+    }
+    
+    #network.disconnected {
+        border-radius: 5px;
+    }
+    
+    #pulseaudio {
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    #pulseaudio.muted {
+    }
+    
+    #custom-media {
+        min-width: 100px;
+    }
+    
+    #custom-media.custom-spotify {
+    }
+    
+    #custom-media.custom-vlc {
+    }
+    
+    #temperature {
+        border-radius: 5px;
+    }
+    
+    #temperature.critical {
+    }
+    
+    #tray {
+        border-radius: 5px;
+    }
+    
+    #tray > .passive {
+        -gtk-icon-effect: dim;
+    }
+    
+    #tray > .needs-attention {
+        -gtk-icon-effect: highlight;
+    }
+    
+    #idle_inhibitor {
+        border-radius: 5px;
+    }
+    
+    #idle_inhibitor.activated {
+        border-radius: 5px;
+    }
+    
+    #mpd {
+    }
+    
+    #mpd.disconnected {
+    }
+    
+    #mpd.stopped {
+    }
+    
+    #mpd.paused {
+    }
+    
+    #language {
+        padding: 0 5px;
+        margin: 0 5px;
+        min-width: 16px;
+    }
+    
+    #keyboard-state {
+        padding: 0 0px;
+        margin: 0 5px;
+        min-width: 16px;
+    }
+    
+    #keyboard-state > label {
+        padding: 0 5px;
+    }
+    
+    #keyboard-state > label.locked {
+    }
+    
+    #scratchpad {
+    }
+
+    #scratchpad.empty {
+	background-color: transparent;
+    }
+    
+    #custom-waybarstyle {
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: -1px;
+    }
+    
+    #custom-keybinds {
+        border-radius: 5px;
+    }
+    
+    #custom-power-wlogout {
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 3px;
+        margin-bottom: -1px;
+    }
+    
+    #custom-weather {
+        border-radius: 5px;
+    }
+    
+    #taskbar {
+        border-radius: 5px;
+    }    
+
+    #custom-notification {
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: -1px;
+    }
+
+    #custom-reload {
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: -1px;
+    }

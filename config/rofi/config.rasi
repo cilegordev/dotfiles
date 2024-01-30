@@ -5,10 +5,10 @@ configuration {
     modi:                       "drun,run";
     font:                       "Fira Code SemiBold 12";
     show-icons:                 true;
-    display-drun:               "";
-    display-run:                "";
-    display-filebrowser:        "";
-    display-window:             "";
+    display-drun:               "󱎂";
+    display-run:                "󰞷";
+    display-filebrowser:        "";
+    display-window:             "";
     drun-display-format:        "{name}";
     hover-select:               true;
     me-select-entry:            "MouseSecondary";
@@ -24,8 +24,8 @@ configuration {
 window {
     width:						40%;
     height:						40%;
-    x-offset:                   -401px;
-    y-offset:                   -175px;
+    x-offset:                   -399px;
+    y-offset:                   -170px;
     spacing:                    0px;
     padding:                    0px;
     margin:                     0px; 
@@ -77,16 +77,17 @@ inputbar {
     enabled:                    true;
     text-color:                 @foreground;
     spacing:                    10px;
-    padding:                    15px;
+    padding:                    10px;
+    border: 			        0px 0px 2px 0px;
     border-radius:              10px;
-    border-color:               @foreground;
+    border-color:               @active-background;
     children:                   [ "textbox-prompt-colon", "entry" ];
 }
 
 textbox-prompt-colon {
     enabled:                    true;
     expand:                     false;
-    str:                        "🔎 ";
+    str:                        "";
     text-color:                 inherit;
 }
 
@@ -95,7 +96,7 @@ entry {
     background-color:           transparent;
     text-color:                 inherit;
     cursor:                     text;
-    placeholder:                " Type and Search...";
+    placeholder:                "Type and Executed ";
     placeholder-color:          inherit;
 }
 

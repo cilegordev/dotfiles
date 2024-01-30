@@ -24,6 +24,7 @@ yad --width=1000 --height=768 \
 " + X" "Open Text Editor" "Text Editor" \
 " + C" "Minimize" "Hide Waybar" \
 " + G" "Enable Gamemode" "Hyprgamemode" \
+" + L" "Lockscreen" "Swaylock" \
 " + P" "Change Layout" "Master Dwindle" \
 " + M" "Record My Desktop" "Recorder" \
 " + ENTER" "Open Terminal" "Command Prompt" \

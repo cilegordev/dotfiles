@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=disable printer
+Comment=disable printer on login startup
+Exec=sudo systemctl disable cups
+Terminal=false
+StartupNotify=false

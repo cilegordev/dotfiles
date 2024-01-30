@@ -7,11 +7,15 @@
 ├── capture-sddm.sh
 ├── config
 │   ├── autostart
+│   │   ├── bluetooth.desktop
+│   │   ├── disable-bluetooth.desktop
 │   │   ├── disable-mic.desktop
+│   │   ├── printer-undaemon.desktop
 │   │   ├── spaker-sound.desktop
 │   │   ├── ssh-undaemon.desktop
 │   │   ├── volume-mic.desktop
-│   │   └── webcam.desktop
+│   │   ├── webcam.desktop
+│   │   └── xfce4-clipman-plugin-autostart.desktop
 │   ├── cava
 │   │   ├── config
 │   │   └── shaders
@@ -47,8 +51,10 @@
 │   │   │   └── touchpad-enabled-symbolic.svg
 │   │   ├── reload
 │   │   └── styles
+│   │       ├── dunstrc
 │   │       ├── dunstrc-dark
-│   │       └── dunstrc-light
+│   │       ├── dunstrc-light
+│   │       └── dunstrc-symbolic-link
 │   ├── eww
 │   │   ├── eww.scss
 │   │   ├── eww.yuck
@@ -74,13 +80,15 @@
 │   │       ├── keyhints.sh
 │   │       ├── lidswitch.sh
 │   │       ├── lockscreen.sh
-│   │       ├── mediactrl.sh
+│   │       ├── nm.sh
+│   │       ├── playlist.sh
 │   │       ├── polkit.sh
 │   │       ├── portalhyprland.sh
+│   │       ├── pray.sh
 │   │       ├── privacy.sh
 │   │       ├── pywalswww.sh
 │   │       ├── rainbowborders.sh
-│   │       ├── refresh.sh
+│   │       ├── reload.sh
 │   │       ├── rofiemoji.sh
 │   │       ├── screenshot.sh
 │   │       ├── touchpad.sh
@@ -88,9 +96,9 @@
 │   │       ├── wallpaperrandom.sh
 │   │       ├── wallpaperselect.sh
 │   │       ├── wallpaper.sh
-│   │       ├── waybarlayout.sh
+│   │       ├── WaybarLayout.sh
 │   │       ├── waybar.sh
-│   │       ├── waybarstyles.sh
+│   │       ├── WaybarStyles.sh
 │   │       ├── weather.sh
 │   │       ├── wifi.sh
 │   │       └── wlogout.sh
@@ -102,6 +110,8 @@
 │   │   │   ├── user-chrome-apps.menu
 │   │   │   └── xfce-applications.menu
 │   │   └── xfce-applications.menu
+│   ├── Mousepad
+│   │   └── accels.scm
 │   ├── neofetch
 │   │   ├── config.conf
 │   │   └── kali.png
@@ -122,12 +132,12 @@
 │   ├── polybar
 │   │   └── config.ini
 │   ├── rofi
-│   │   ├── config-chage-dock.rasi
-│   │   ├── config-chage-style.rasi
 │   │   ├── config-chage-wallpaper.rasi
+│   │   ├── config-chage-waybar.rasi
 │   │   ├── config-compact.rasi
 │   │   ├── config-dark.rasi
 │   │   ├── config-long.rasi
+│   │   ├── config-playlist.rasi
 │   │   ├── config.rasi
 │   │   ├── config-rofi-beats.rasi
 │   │   ├── config-short.rasi
@@ -194,7 +204,9 @@
 │   │   ├── modules
 │   │   ├── style
 │   │   │   ├── catppuccin-themes
+│   │   │   │   ├── frappe.css
 │   │   │   │   ├── latte.css
+│   │   │   │   ├── macchiato.css
 │   │   │   │   └── mocha.css
 │   │   │   ├── style-black-&-white.css
 │   │   │   ├── style-catppuccin-latte.css
@@ -206,6 +218,7 @@
 │   │   │   ├── style-costume-clear.css
 │   │   │   ├── style-costume-colorful.css
 │   │   │   ├── style-costume.css
+│   │   │   ├── style-costume-transparent.css
 │   │   │   ├── style-dark.css
 │   │   │   ├── style-default-hyprland.css
 │   │   │   ├── style-default-waybar.css
@@ -277,6 +290,7 @@
 │   └── xsettingsd
 │       └── xsettingsd.conf
 ├── LICENSE
+├── LICENSE-2
 ├── local
 │   └── share
 │       ├── applications
@@ -284,6 +298,7 @@
 │       │   ├── bleachbit-root.desktop
 │       │   ├── blueman-adapters.desktop
 │       │   ├── blueman-manager.desktop
+│       │   ├── boxysvg.desktop
 │       │   ├── btop.desktop
 │       │   ├── byobu.desktop
 │       │   ├── ca.desrt.dconf-editor.desktop
@@ -305,7 +320,6 @@
 │       │   ├── debian-uxterm.desktop
 │       │   ├── debian-xterm.desktop
 │       │   ├── discord.desktop
-│       │   ├── display-im6.q16.desktop
 │       │   ├── engrampa.desktop
 │       │   ├── exploit-database.desktop
 │       │   ├── firefox-esr.desktop
@@ -388,8 +402,10 @@
 │       │   ├── pendidikan-virtualbox.desktop
 │       │   ├── pendidikan-vs-code.desktop
 │       │   ├── pendidikan-winbox.desktop
+│       │   ├── pinta.desktop
 │       │   ├── python3.11.desktop
 │       │   ├── qt5ct.desktop
+│       │   ├── qt6ct.desktop
 │       │   ├── qterminal.desktop
 │       │   ├── qterminal-drop.desktop
 │       │   ├── rofi.desktop
@@ -455,14 +471,17 @@
 │       ├── fonts
 │       │   ├── Fira-Code-Regular-Nerd-Font-Complete.ttf
 │       │   ├── Font-Awesome-6-Pro-Regular.ttf
-│       │   └── Jet-Brains-Mono-Nerd-Font-Regular.ttf
+│       │   ├── Jet-Brains-Mono-Nerd-Font-Regular.ttf
+│       │   └── Windows-10-Panel-Font.ttf
 │       └── xfce4-panel-profiles
 │           └── winkex.tar.bz2
 ├── README.md
 ├── src
 │   ├── cat-on-line.png
+│   ├── home-banner.png
+│   ├── hyprland-tracker.jpeg
 │   ├── menu.png
-│   ├── minimal-waybar.png
+│   ├── minecraft.png
 │   ├── sample.png
 │   ├── sddm.png
 │   ├── swaylock.png
@@ -474,20 +493,24 @@
     ├── BN07BKi.jpg
     ├── ELYBuCo.jpg
     ├── exclsv
-    │   └── echo_hello_world.png
+    │   ├── echo_hello_world.png
+    │   ├── evening-sky.png
+    │   ├── just-the-two-of-us.png
+    │   └── kali-cubism-16x9.jpg
     ├── ipBKbEm.jpg
     ├── mJYziFf.jpg
     ├── PNiXQHT.jpg
     ├── UMfUTDm.jpg
     ├── Venq3wq.jpg
     ├── wall
+    │   ├── wall_2_4K.png
     │   ├── wall_4K.png
     │   ├── wall_anime2_4K.png
     │   └── wall_anime_4K.png
     ├── Y6alADq.jpg
     └── Yr0p4jm.jpg
 
-68 directories, 419 files
+69 directories, 441 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

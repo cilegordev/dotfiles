@@ -93,17 +93,21 @@ window#waybar.empty #window {
 }
 
 #clock {
-    color: azure;
+    color: khaki;
 }
 
 #workspaces button.persistent {
-    color: khaki;
+    color: tomato;
     border-radius: 0px;
 }
 
 #workspaces button.active {
     color: violet;
     border-radius: 0px;
+}
+
+#network {
+    color: azure;
 }
 
 #custom-menu {

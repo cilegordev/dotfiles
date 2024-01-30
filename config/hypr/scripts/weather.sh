@@ -1,34 +1,34 @@
 #!/bin/bash
 
+city=
 directoriy=~/.cache/rbn
-file=${0##*/}-$1
+cachefile=${0##*/}-$1
 
 if [ ! -d $directoriy ]; then
     mkdir -p $directoriy
 fi
 
-if [ ! -f $directoriy/$file ]; then
-    touch $directoriy/$file
+if [ ! -f $directoriy/$cachefile ]; then
+    touch $directoriy/$cachefile
 fi
-
-# Change IFS to new line.
-separator=$'\n'
 
 # Save current IFS
-new=$separator
+SAVEIFS=$IFS
+# Change IFS to new line.
+IFS=$'\n'
 
-cacheage=$(($(date +%s) - $(stat -c '%Y' "$directoriy/$file")))
-if [ $cacheage -gt 1740 ] || [ ! -s $directoriy/$file ]; then
+cacheage=$(($(date +%s) - $(stat -c '%Y' "$directoriy/$cachefile")))
+if [ $cacheage -gt 1740 ] || [ ! -s $directoriy/$cachefile ]; then
     data=($(curl -s https://en.wttr.in/"$city"$1\?0qnT 2>&1))
-    echo ${data[0]} | cut -f1 -d, > $directoriy/$file
-    echo ${data[1]} | sed -E 's/^.{15}//' >> $directoriy/$file
-    echo ${data[2]} | sed -E 's/^.{15}//' >> $directoriy/$file
+    echo ${data[0]} | cut -f1 -d, > $directoriy/$cachefile
+    echo ${data[1]} | sed -E 's/^.{15}//' >> $directoriy/$cachefile
+    echo ${data[2]} | sed -E 's/^.{15}//' >> $directoriy/$cachefile
 fi
 
-weather=($(cat $directoriy/$file))
+weather=($(cat $directoriy/$cachefile))
 
 # Restore IFSClear
-separator=$new
+IFS=$SAVEIFS
 
 temperature=$(echo ${weather[2]} | sed -E 's/([[:digit:]]+)\.\./\1 to /g')
 
@@ -70,7 +70,7 @@ case $(echo ${weather[1]##*,} | tr '[:upper:]' '[:lower:]') in
     condition=""
     ;;
 *)
-    condition=""
+    condition=" "
     echo -e "{\"text\":\""$condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature ${weather[1]}"\"}"
     ;;
 esac

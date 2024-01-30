@@ -5,11 +5,11 @@ configuration {
     modi:                       "drun,run";
     font:                       "Fira Code SemiBold 12";
     show-icons:                 true;
-    display-drun:               "";
-    display-run:                "";
-    display-filebrowser:        "";
-    display-window:             "";
-	drun-display-format:        "{name}";
+    display-drun:               "󱎂";
+    display-run:                "󰞷";
+    display-filebrowser:        "";
+    display-window:             "";
+    drun-display-format:        "{name}";
     hover-select:               true;
     me-select-entry:            "MouseSecondary";
     me-accept-entry:            "MousePrimary";
@@ -24,8 +24,8 @@ configuration {
 window {
     width:						30%;
     height:						34%;
-    x-offset:                   470px;
-    y-offset:                   -200px;
+    x-offset:                   466px;
+    y-offset:                   -192px;
     spacing:                    0px;
     padding:                    0px;
     margin:                     0px; 

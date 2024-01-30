@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Grub Customizer
 Comment=Customize the bootloader (GRUB2 or BURG)
-Exec=sudo -E grub-customizer
+Exec=sudo grub-customizer
 Terminal=false
 X-MultipleArgs=false
 Type=Application
