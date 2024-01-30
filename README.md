@@ -30,7 +30,7 @@
 - **Terminal** : xfce4-terminal
 - **Text Editor** : code
 - **Image Viewer** : shotwell
-- **Media Player** : vlc
+- **Media Player** : mpv
 - **File Manager** : thunar
 - **Archive Manager** : file-roller
 - **Task Manager** : xfce4-taskmanager
@@ -45,7 +45,6 @@
   - **grim**
   - hypr
   - **hyprland-plugins**
-  - **mpv**
   - **network-manager**
   - nwg-look
   - **polkit-kde-agent-1**
@@ -124,7 +123,6 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 - Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles.
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
-- Currently Hyprland version installed is 0.32.3 and can't update to latest cause libdrm.
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
 - There is news that the Debian [Hyprland](src/hyprland-tracker.jpeg) package is being packaged, hopefully it will be released soon.
 
