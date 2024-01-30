@@ -126,8 +126,6 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 - Currently Hyprland version installed is 0.32.3 and can't update to latest cause libdrm.
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
-- There is news that the Debian Hyprland package is being packaged, hopefully it will be released soon.
-
-![](src/hyprland-tracker.jpeg)
+- There is news that the Debian [Hyprland](src/hyprland-tracker.jpeg) package is being packaged, hopefully it will be released soon.
 
 [![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)

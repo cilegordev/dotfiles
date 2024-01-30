@@ -488,29 +488,48 @@
 │   └── workspace.png
 ├── TREE.md
 ├── update.sh
-└── wallpapers
-    ├── ai7QjzH.jpg
-    ├── BN07BKi.jpg
-    ├── ELYBuCo.jpg
-    ├── exclsv
-    │   ├── echo_hello_world.png
-    │   ├── evening-sky.png
-    │   ├── just-the-two-of-us.png
-    │   └── kali-cubism-16x9.jpg
-    ├── ipBKbEm.jpg
-    ├── mJYziFf.jpg
-    ├── PNiXQHT.jpg
-    ├── UMfUTDm.jpg
-    ├── Venq3wq.jpg
-    ├── wall
-    │   ├── wall_2_4K.png
-    │   ├── wall_4K.png
-    │   ├── wall_anime2_4K.png
-    │   └── wall_anime_4K.png
-    ├── Y6alADq.jpg
-    └── Yr0p4jm.jpg
+├── wallpapers
+│   ├── ai7QjzH.jpg
+│   ├── BN07BKi.jpg
+│   ├── ELYBuCo.jpg
+│   ├── exclsv
+│   │   ├── echo_hello_world.png
+│   │   ├── evening-sky.png
+│   │   ├── just-the-two-of-us.png
+│   │   └── kali-cubism-16x9.jpg
+│   ├── ipBKbEm.jpg
+│   ├── mJYziFf.jpg
+│   ├── PNiXQHT.jpg
+│   ├── UMfUTDm.jpg
+│   ├── Venq3wq.jpg
+│   ├── wall
+│   │   ├── wall_2_4K.png
+│   │   ├── wall_4K.png
+│   │   ├── wall_anime2_4K.png
+│   │   └── wall_anime_4K.png
+│   ├── Y6alADq.jpg
+│   └── Yr0p4jm.jpg
+├── zsh-autosuggestions
+│   └── zsh-autosuggestions.zsh
+└── zsh-syntax-highlighting
+    ├── highlighters
+    │   ├── brackets
+    │   │   └── brackets-highlighter.zsh
+    │   ├── cursor
+    │   │   └── cursor-highlighter.zsh
+    │   ├── line
+    │   │   └── line-highlighter.zsh
+    │   ├── main
+    │   │   └── main-highlighter.zsh
+    │   ├── pattern
+    │   │   └── pattern-highlighter.zsh
+    │   ├── regexp
+    │   │   └── regexp-highlighter.zsh
+    │   └── root
+    │       └── root-highlighter.zsh
+    └── zsh-syntax-highlighting.zsh
 
-69 directories, 441 files
+79 directories, 450 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
