@@ -24,13 +24,6 @@
     window#waybar.empty {
         background-color: transparent;
     }
-    
-    window#waybar.solo {
-    
-    }
-    
-    window#waybar.termite {
-    }
 
     window#waybar.chromium {
     	border: none;
@@ -43,9 +36,6 @@
         background-color: transparent;
     }
     
-    window > box {
-    }
-    
     window {
         font-weight: bold;
     }
@@ -55,9 +45,6 @@
         border-radius: 10px;
         border-width: 2px;
         border-style: solid;
-    }
-    
-    tooltip label {
     }
     
     #custom-menu {
@@ -79,9 +66,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         transition: all 0.3s ease-in-out;
     }
-
-    #workspaces button.focused {
-    }
     
     #workspaces button:hover {
         box-shadow: inherit;
@@ -94,9 +78,6 @@
         border-radius: 16px;
         min-width: 50px;
         transition: all 0.3s ease-in-out;
-    }
-    
-    #workspaces button.urgent {
     }
     
     #backlight,
@@ -153,65 +134,9 @@
         margin: 5px 5px;
         padding: 1px 3px;
     }
-    #clock {
-        border-radius: 5px;
-    }
-    
-    #battery {
-        border-radius: 5px;
-    }
-    
-    #battery.charging, 
-    #battery.plugged {
-    }
-    
-    @keyframes blink {
-        to {
-        }
-    }
-    
-    #battery.critical:not(.charging) {
-        animation-name: blink;
-        animation-duration: 0.5s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-    
-    label:focus {
-    }
-    
-    #bluetooth {
-        border-radius: 5px;
-    }
-
-    #bluetooth.disabled {
-        border-radius: 5px;
-    }
-
-    #cpu {
-        border-radius: 5px;
-    }
-    
-    #memory {
-        border-radius: 5px;
-    }
-    
-    #disk {
-        border-radius: 5px;
-    }
     
     #backlight {
     	font-size: 16px;
-        border-radius: 5px;
-    }
-    
-    #network {
-        border-radius: 5px;
-    }
-    
-    #network.disconnected {
-        border-radius: 5px;
     }
     
     #pulseaudio {
@@ -219,29 +144,12 @@
         border-radius: 5px;
     }
     
-    #pulseaudio.muted {
-    }
-    
     #custom-media {
         min-width: 100px;
     }
     
-    #custom-media.custom-spotify {
-    }
-    
-    #custom-media.custom-vlc {
-    }
-    
-    #temperature {
-        border-radius: 5px;
-    }
-    
-    #temperature.critical {
-    }
-    
     #tray {
     	margin-top: -1px;
-        border-radius: 5px;
     }
     
     #tray > .passive {
@@ -250,26 +158,6 @@
     
     #tray > .needs-attention {
         -gtk-icon-effect: highlight;
-    }
-    
-    #idle_inhibitor {
-        border-radius: 5px;
-    }
-    
-    #idle_inhibitor.activated {
-        border-radius: 5px;
-    }
-    
-    #mpd {
-    }
-    
-    #mpd.disconnected {
-    }
-    
-    #mpd.stopped {
-    }
-    
-    #mpd.paused {
     }
     
     #language {
@@ -288,49 +176,23 @@
         padding: 0 5px;
     }
     
-    #keyboard-state > label.locked {
-    }
-    
-    #scratchpad {
-    }
-
-    #scratchpad.empty {
-	background-color: transparent;
-    }
-    
     #custom-waybarstyle {
         font-size: 16px;
-        border-radius: 5px;
         margin-bottom: -1px;
-    }
-    
-    #custom-keybinds {
-        border-radius: 5px;
-    }
-    
-    #custom-power-wlogout {
-        font-size: 16px;
-        border-radius: 5px;
-        margin-right: 3px;
-        margin-bottom: -1px;
-    }
-    
-    #custom-weather {
-        border-radius: 5px;
-    }
-    
-    #taskbar {
-        border-radius: 5px;
     }    
 
     #custom-notification {
         font-size: 16px;
-        border-radius: 5px;
         margin-bottom: -1px;
     }
-
+    
     #custom-reload {
         font-size: 16px;
-        border-radius: 5px;
+        margin-bottom: -1px;
+    }
+    
+    #custom-power-wlogout {
+        font-size: 16px;
+        margin-right: 3px;
         margin-bottom: -1px;
     }

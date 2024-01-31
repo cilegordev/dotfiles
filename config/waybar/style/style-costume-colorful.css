@@ -164,10 +164,12 @@
         padding: 0px 6px;
         margin-bottom: -1px;
     }
+
     #mode {
         color: #cc3436;
         font-weight: bold;
     }
+
     #custom-power {
         margin: 5px 5px;
         padding: 1px 3px;
@@ -362,6 +364,12 @@
 	background-color: transparent;
     }
     
+    #custom-weather {
+        color: #e6e6e6;
+        background-color: #483d8b;
+        border-radius: 5px;
+    }
+    
     #custom-waybarstyle {
         font-size: 16px;
         color: #d2b48c;
@@ -383,18 +391,6 @@
         border-radius: 5px;
         margin-right: 3px;
         margin-bottom: -1px;
-    }
-    
-    #custom-weather {
-        color: #e6e6e6;
-        background-color: #483d8b;
-        border-radius: 5px;
-    }
-    
-    #taskbar {
-        background-color: #f53c3c;
-        color: #000000;
-        border-radius: 5px;
     }    
 
     #custom-notification {
@@ -410,4 +406,10 @@
         background-color: #32c832;
         border-radius: 5px;
         margin-bottom: -1px;
+    }
+    
+    #taskbar {
+        background-color: #f53c3c;
+        color: #000000;
+        border-radius: 5px;
     }
