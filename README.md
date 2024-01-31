@@ -1,3 +1,5 @@
+<p align="center"> <img src="src/cat-on-line.png"> </p>
+
 # About
 
 - **OS** : [Kali-Linux](https://www.kali.org/)
@@ -10,17 +12,17 @@
 ## Screenshot
 
 |  Simple  |
-|---------|
+|          |
 |  ![](src/sddm.png)  |
 | <p align="center"> **Lockscreen** </p> |
 
 |  Classic  |
-|---------|
+|           |
 |  ![](src/sample.png)  |
 | <p align="center"> **Desktop Environment** </p> |
 
 |  Multitasking  |
-|---------|
+|                |
 |  ![](src/workspace.png)  |
 | <p align="center"> **Workspace** </p> |
 
@@ -29,7 +31,7 @@
 - **Shell** : zsh
 - **Terminal** : xfce4-terminal
 - **Text Editor** : code
-- **Image Viewer** : shotwell
+- **Image Viewer** : ristretto
 - **Media Player** : mpv
 - **File Manager** : thunar
 - **Archive Manager** : file-roller
@@ -106,8 +108,8 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 
 # Keybinds
 
-| Keys | Output |
-| :--  | :-- |
+|  Keys  |  Output  |
+|  -  |  -  |
 | <kbd>Super</kbd> + <kbd>Q</kbd> | Togglefloating
 | <kbd>Super</kbd> + <kbd>W</kbd> | Killactive
 | <kbd>Super</kbd> + <kbd>E</kbd> | Fullscreen
@@ -118,6 +120,8 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 
 # Credits
 
+<img src="https://repology.org/badge/vertical-allrepos/hyprland.svg" alt="Packaging status" align="right">
+
 - Installed on : Tuesday, 14 November 2023, 03:00
 - **Hyprland package currently is not available in any Debian distro repository.**
 - Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles.
@@ -125,5 +129,3 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
 - There is news that the Debian [Hyprland](src/hyprland-tracker.jpeg) package is being packaged, hopefully it will be released soon.
-
-[![Repository status](https://repology.org/badge/vertical-allrepos/hyprland.svg)](https://repology.org/project/hyprland/versions)
