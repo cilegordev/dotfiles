@@ -12,17 +12,17 @@
 ## Screenshot
 
 |  Simple  |
-|          |
+|  -  |
 |  ![](src/sddm.png)  |
 | <p align="center"> **Lockscreen** </p> |
 
 |  Classic  |
-|           |
+|  -  |
 |  ![](src/sample.png)  |
 | <p align="center"> **Desktop Environment** </p> |
 
 |  Multitasking  |
-|                |
+|  -  |
 |  ![](src/workspace.png)  |
 | <p align="center"> **Workspace** </p> |
 
