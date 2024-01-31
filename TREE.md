@@ -289,8 +289,8 @@
 │   │               └── xsettings.xml
 │   └── xsettingsd
 │       └── xsettingsd.conf
+├── COPYING
 ├── LICENSE
-├── LICENSE-2
 ├── local
 │   └── share
 │       ├── applications
@@ -416,6 +416,7 @@
 │       │   ├── thunar-settings.desktop
 │       │   ├── thunar-volman-settings.desktop
 │       │   ├── update.desktop
+│       │   ├── vim.desktop
 │       │   ├── virt-manager.desktop
 │       │   ├── vulnhub.desktop
 │       │   ├── waterfox.desktop
@@ -529,7 +530,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-79 directories, 450 files
+79 directories, 451 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
