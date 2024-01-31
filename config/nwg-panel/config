@@ -69,7 +69,7 @@
         {
           "name": "poweroff",
           "icon": "gnome-logout",
-          "cmd": "~/.config/hypr/scripts/Wlogout.sh"
+          "cmd": "~/.config/hypr/scripts/wlogout.sh"
         }
       ]
     },
