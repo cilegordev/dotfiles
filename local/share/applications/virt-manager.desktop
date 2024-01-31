@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=KVM
+Name=K - VM
 Comment=Virtual Machine Manager
-Icon=virt-manager
+Icon=/usr/share/pixmaps/hyper-v.png
 Exec=sudo virt-manager
 Type=Application
 Terminal=false
