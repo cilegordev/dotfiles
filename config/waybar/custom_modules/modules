@@ -39,8 +39,8 @@
       "critical": 10,
     },
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": "󱘖 {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-full": "{icon} 100%",
     "format-alt": "{icon} {time}",
     "format-icons": [
@@ -86,7 +86,6 @@
     "format": " {:%H:%M}",
     "format-alt": " {:%A, %d %B %Y,  %R}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "on-click-right": "mode",
   },
   "clock#2": {
     "interval": 2,
@@ -109,7 +108,7 @@
       "▇",
       "█"
     ],
-    "on-click-right": "kitty --title btop -e btop",
+    "on-click-right": "xfce4-terminal --title btop -e btop",
   },
   "custom/menu": {
     "format": "",
@@ -208,7 +207,6 @@
       "▇",
       "█"
     ],
-      "on-click-right": "mode"
   },
   "disk": {
     "interval": 30,
@@ -274,9 +272,21 @@
       "10": "X",
     "urgent": "גּ",
     "active": "㉿",
-    "default": "襁",
+    "default": "",
     "sort-by-number": true
     },
+  },
+  "gamemode": {
+    "format": "{glyph}",
+    "format-alt": "{glyph} {count}",
+    "glyph": "",
+    "hide-not-running": true,
+    "use-icon": true,
+    "icon-name": "input-gaming-symbolic",
+    "icon-spacing": 4,
+    "icon-size": 20,
+    "tooltip": true,
+    "tooltip-format": "Games running: {count}"
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -298,13 +308,13 @@
     "interval": 1,
     "format": "{ifname}",
     "format-wifi": "{icon}",
-    "format-ethernet": "",
+    "format-ethernet": "",
     "format-disconnected": "",
-    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}   {bandwidthDownBytes}",
+    "format-linked": " {ifname} (No IP)",
     "tooltip-format-wifi": "{essid} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} ",
-    "tooltip-format-disconnected": " Disconnected",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": " Disconnected",
     "max-length": 50,
     "format-icons": [
       "",
@@ -335,15 +345,15 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "format-bluetooth": "{icon} 󰂰 {volume}%",
+    "format-bluetooth": "{icon}  {volume}%",
     "format-muted": "",
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "陸",
       "default": [
         "",
         "",
@@ -373,7 +383,7 @@
     "on-click-right": "pavucontrol -t 4",
     "on-scroll-up": "~/.config/hypr/scripts/volume.sh --mic-inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume.sh --mic-dec",
-    "scroll-step": 5,
+    "scroll-step": 5.0,
     "tooltip": false,
     "tooltip-format": "{volume}%",
   },
@@ -391,7 +401,7 @@
             "",
             ""
     ],
-    "on-click-right": "kitty -e radeontop",
+    "on-click-right": "xfce4-terminal -e radeontop",
   },
   "tray": {
   "interval": 1,
@@ -426,7 +436,6 @@
   },
   "custom/separator": {
     "format": " ",
-    "interval": "once",
     "tooltip": false
   },
 }
