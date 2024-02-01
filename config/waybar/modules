@@ -402,7 +402,7 @@
     "format": " ",
     "on-click": "~/.config/hypr/scripts/wallpaperSelect.sh",
     "on-click-right": "~/.config/hypr/scripts/wallpaper.sh swww",
-    "on-click-middle": "~/.config/hypr/scripts/waybarStyles.sh",
+    "on-click-middle": "~/.config/hypr/scripts/WaybarStyles.sh",
     "tooltip": true,
     "tooltip-format": "Change wallpaper or style"
   },

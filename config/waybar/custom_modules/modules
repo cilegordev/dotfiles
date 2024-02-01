@@ -408,12 +408,6 @@
   "icon-size": 24,
   "spacing": 8,
   },
-  "custom/splash": {
-    "format": " ",
-    "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/wlogout.sh",
-    "on-click-right": "xfce4-terminal -e ./update.sh",
-  },
   "custom/color1": {
     "format": "█",
     "on-click": "wl-copy '#2777ff'",
