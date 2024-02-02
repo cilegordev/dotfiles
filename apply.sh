@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Do you wan't xfce4 files? [Y/N]: " xfcedotfiles
+read -p "Do you wan't xfce files? [Y/N]: " xfcedotfiles
 
 sourceHypr=~/dotfiles/config/hypr
 targetHypr=~/.config/hypr
@@ -29,7 +29,7 @@ copy_with_backup() {
 
   # Check if the target directory exists
   if [ -d "$targetDir" ]; then
-    echo "folder $targetDir exist, creating backup..."
+    echo "folder $targetDir exists, backup created..."
     mv "$targetDir" "$backupDir"
   fi
 
@@ -73,6 +73,5 @@ copy_file "$sourceHome/.zsh_history" "$targetHome/.zsh_history"
 copy_file "$sourceHome/.zshrc" "$targetHome/.zshrc"
 copy_file "$sourceHome/capture-sddm.sh" "$targetHome/capture-sddm.sh"
 copy_file "$sourceHome/update.sh" "$targetHome/update.sh"
-# Add more copy_file lines for other files as needed
 
 echo "Hyprland dotfiles installed."

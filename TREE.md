@@ -1,5 +1,6 @@
 ```zsh
 .
+├── apply.sh
 ├── cache
 │   ├── kitty
 │   │   └── main.json
@@ -154,8 +155,7 @@
 │   │   ├── config-windoes.rasi
 │   │   ├── pywal-color
 │   │   │   ├── pywal-theme.rasi
-│   │   │   ├── pywal-theme-symbolic-link.rasi
-│   │   │   └── Readme
+│   │   │   └── pywal-theme-symbolic-link.rasi
 │   │   └── resolution
 │   │       ├── 1080p
 │   │       │   ├── config-compact.rasi
@@ -296,7 +296,6 @@
 │   └── xsettingsd
 │       └── xsettingsd.conf
 ├── COPYING
-├── copy.sh
 ├── home
 │   ├── capture-sddm.sh
 │   └── update.sh
@@ -516,7 +515,6 @@
 │       └── xfce4-panel-profiles
 │           └── winkex.tar.bz2
 ├── README.md
-├── SOLVE.md
 ├── src
 │   ├── cat-on-line.png
 │   ├── home-banner.png
@@ -569,7 +567,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-77 directories, 492 files
+77 directories, 490 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
