@@ -513,6 +513,7 @@
 │       └── xfce4-panel-profiles
 │           └── winkex.tar.bz2
 ├── README.md
+├── SOLVE.md
 ├── src
 │   ├── cat-on-line.png
 │   ├── home-banner.png
@@ -566,7 +567,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-76 directories, 490 files
+76 directories, 491 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

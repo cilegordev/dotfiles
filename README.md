@@ -102,7 +102,7 @@ cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp
 rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
-If you want Xfce you must install
+If you want Xfce you must install. Also Read [KNOW ISSUE](SOLVE.md)
 ```zsh
 sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
 ```
