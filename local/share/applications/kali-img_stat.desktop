@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=img_stat
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "img_stat"
+Icon=kali-img_stat
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=11-08-forensic-suites;
+X-Kali-Package=sleuthkit
+Hidden=true
+

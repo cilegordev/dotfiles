@@ -55,6 +55,7 @@
   - swappy
   - swaylock
   - swww
+  - **udiskie**
   - waybar
   - **wf-recorder**
   - **wl-clipboard**

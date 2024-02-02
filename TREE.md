@@ -26,6 +26,7 @@
 │   │   ├── dunstrc
 │   │   ├── dunstrc-symbolic-link
 │   │   ├── icons
+│   │   │   ├── ac-adapter.svg
 │   │   │   ├── airplane-mode-disabled-symbolic.svg
 │   │   │   ├── airplane-mode.svg
 │   │   │   ├── applications-games-symbolic.svg
@@ -33,6 +34,13 @@
 │   │   │   ├── audio-volume-low-symbolic.svg
 │   │   │   ├── audio-volume-medium-symbolic.svg
 │   │   │   ├── audio-volume-muted-blocking-symbolic.svg
+│   │   │   ├── battery-caution.svg
+│   │   │   ├── battery-empty-charging.svg
+│   │   │   ├── battery-full-charging.svg
+│   │   │   ├── battery-full.svg
+│   │   │   ├── battery-good-charging.svg
+│   │   │   ├── battery-good.svg
+│   │   │   ├── battery-missing.svg
 │   │   │   ├── brightness-100.png
 │   │   │   ├── brightness-20.png
 │   │   │   ├── brightness-40.png
@@ -44,6 +52,7 @@
 │   │   │   ├── multimedia-photo-viewer.svg
 │   │   │   ├── network-wired-offline.svg
 │   │   │   ├── network-wired-online.svg
+│   │   │   ├── preferences-system-power.svg
 │   │   │   ├── snap-bounding-box-edges.svg
 │   │   │   ├── swap-panels.svg
 │   │   │   ├── timer.png
@@ -73,6 +82,7 @@
 │   │   │   └── hyprwinwrap.so
 │   │   └── scripts
 │   │       ├── airplanemode.sh
+│   │       ├── battery.sh
 │   │       ├── brightness.sh
 │   │       ├── changelayout.sh
 │   │       ├── dunst.sh
@@ -167,9 +177,6 @@
 │   ├── swaylock
 │   │   └── config
 │   ├── wal
-│   │   ├── colorschemes
-│   │   │   ├── dark
-│   │   │   └── light
 │   │   └── templates
 │   │       ├── colors-rofi-dark.rasi
 │   │       └── colors-rofi-light.rasi
@@ -320,6 +327,8 @@
 │       │   ├── debian-uxterm.desktop
 │       │   ├── debian-xterm.desktop
 │       │   ├── discord.desktop
+│       │   ├── display-im6.q16.desktop
+│       │   ├── display-im6.q16hdri.desktop
 │       │   ├── engrampa.desktop
 │       │   ├── exploit-database.desktop
 │       │   ├── firefox-esr.desktop
@@ -332,19 +341,39 @@
 │       │   ├── htop.desktop
 │       │   ├── hyper-v.desktop
 │       │   ├── kali-aircrack-ng.desktop
+│       │   ├── kali-blkcalc.desktop
+│       │   ├── kali-blkcat.desktop
+│       │   ├── kali-blkls.desktop
+│       │   ├── kali-blkstat.desktop
 │       │   ├── kali-bugs.desktop
 │       │   ├── kali-burpsuite.desktop
 │       │   ├── kali-cherrytree.desktop
 │       │   ├── kali-crackmapexec.desktop
 │       │   ├── kali-docs.desktop
+│       │   ├── kali-ffind.desktop
 │       │   ├── kali-ffuf.desktop
+│       │   ├── kali-fls.desktop
 │       │   ├── kali-forums.desktop
+│       │   ├── kali-fsstat.desktop
 │       │   ├── kali-ghidra.desktop
+│       │   ├── kali-hfind.desktop
 │       │   ├── kali-hidpi-mode.desktop
 │       │   ├── kali-hydra.desktop
+│       │   ├── kali-icat-sleuthkit.desktop
+│       │   ├── kali-ifind.desktop
+│       │   ├── kali-ils-sleuthkit.desktop
+│       │   ├── kali-img_cat.desktop
+│       │   ├── kali-img_stat.desktop
+│       │   ├── kali-istat.desktop
+│       │   ├── kali-jcat.desktop
+│       │   ├── kali-jls.desktop
 │       │   ├── kali-john.desktop
+│       │   ├── kali-mactime-sleuthkit.desktop
 │       │   ├── kali-maltego.desktop
 │       │   ├── kali-maltego-installer.desktop
+│       │   ├── kali-mmcat.desktop
+│       │   ├── kali-mmls.desktop
+│       │   ├── kali-mmstat.desktop
 │       │   ├── kali-msfconsole.desktop
 │       │   ├── kali-netcat.desktop
 │       │   ├── kali-nethunter.desktop
@@ -352,9 +381,16 @@
 │       │   ├── kali-powershell-empire.desktop
 │       │   ├── kali-pwsh.desktop
 │       │   ├── kali-responder.desktop
+│       │   ├── kali-sigfind.desktop
+│       │   ├── kali-sorter.desktop
 │       │   ├── kali-sqlmap.desktop
+│       │   ├── kali-srch_strings.desktop
 │       │   ├── kali-tcpdump.desktop
 │       │   ├── kali-tools.desktop
+│       │   ├── kali-tsk_comparedir.desktop
+│       │   ├── kali-tsk_gettimes.desktop
+│       │   ├── kali-tsk_loaddb.desktop
+│       │   ├── kali-tsk_recover.desktop
 │       │   ├── kali-undercover.desktop
 │       │   ├── kali-www.desktop
 │       │   ├── kazam.desktop
@@ -530,7 +566,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-79 directories, 451 files
+76 directories, 490 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
