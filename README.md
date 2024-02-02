@@ -91,21 +91,33 @@
 ```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 ```
+## Automatic
+
+Run copy.sh
+```zsh
+~/./dotfiles/copy.sh
+```
+
+## Manually
 
 **Copy dotfiles** & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
 ```zsh
 cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
 ```
 
-***If you don't need Xfce you can remove before you copy***
+*If you don't need Xfce you can remove before you copy*
 ```zsh
 rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
-If you want Xfce you must install. Also Read [KNOW ISSUE](SOLVE.md)
+If you want Xfce you must install.
 ```zsh
 sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
 ```
+
+<div align="center">
+  Also Read : <a href="SOLVE.md">Know Issue</a>
+</div>
 
 # Keybinds
 

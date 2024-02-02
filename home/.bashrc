@@ -109,4 +109,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#zsh
+#exec zsh

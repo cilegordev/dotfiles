@@ -13,7 +13,7 @@ if [ ! -f ~/.config/hypr/.GLHF! ]; then
     	# Check if the ~/Pictures/wallpapers directory exists
     	if [ -d ~/Pictures/wallpapers ]; then
         	# Run wal with random wallpapers from ~/Pictures/wallpapers
-        	wal -i ~/Pictures/wallpapers/echo_hello_world.png
+        	wal -i ~/Pictures/wallpapers/exclsv/echo_hello_world.png
         	echo "Pywal initialized"
 		fi
 	fi

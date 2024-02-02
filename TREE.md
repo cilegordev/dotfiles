@@ -4,7 +4,6 @@
 │   ├── kitty
 │   │   └── main.json
 │   └── nwg-dock-pinned
-├── capture-sddm.sh
 ├── config
 │   ├── autostart
 │   │   ├── bluetooth.desktop
@@ -297,6 +296,10 @@
 │   └── xsettingsd
 │       └── xsettingsd.conf
 ├── COPYING
+├── copy.sh
+├── home
+│   ├── capture-sddm.sh
+│   └── update.sh
 ├── LICENSE
 ├── local
 │   └── share
@@ -525,7 +528,6 @@
 │   ├── swaylock.png
 │   └── workspace.png
 ├── TREE.md
-├── update.sh
 ├── wallpapers
 │   ├── ai7QjzH.jpg
 │   ├── BN07BKi.jpg
@@ -567,7 +569,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-76 directories, 491 files
+77 directories, 492 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

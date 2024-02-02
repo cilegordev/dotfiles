@@ -20,6 +20,9 @@ add **https** on your ``/etc/apt/sources.list`` <br>
 if xfce panel backup can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
+If you need switch bash to zsh use this <br>
+``sudo chsh -s $(which zsh) user`` <br> 
+
 If you have trouble **wlan0** can't detect on **nm-applet** and it say **"Device Not Ready"** <br>
 just remove all **Ethernet** on list. <br>
 
@@ -38,7 +41,7 @@ Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` on Hyprland. <
 cause it will make your broken screen 50/50 <br>
 
 If you annoying sound **"beeb" "beeb" "beeb"** on terminal or tty. <br>
-just turn turn off with use the one I have provided in .zshrc <br>
+just turn off with use the one I have provided in .zshrc <br>
 ``# disable beeb sound effect`` <br>
 ``#setterm --bfreq=0`` <br>
 ``#xset b off`` <br>
