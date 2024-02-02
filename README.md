@@ -87,7 +87,7 @@
 
 </details>
 
-# To apply
+# To implement
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
@@ -121,12 +121,17 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 
 <details>
   <summary>
-    <h2>KNOW ISSUE</h2>
+    <h2>Know Issue</h2>
   </summary>
   
+**Note** : If you use kali linux. That means you should know what kind of system you are using. Using Kali Linux means you understand basic knowledge such as using the Package Manager, CLI, etc. This should not be needed. but if it is related to Xfce or Hyprland I think there are several answers. <br>
+~ *because I really hate so much the question of wifi not working on kali linux.* <br>
+
+<h2> OK NEXT >>> </h2>
+
 I add package for xfce like ``kali-grant-root apt-transport-https psutils`` <br>
 use this for configure. <br>
-use sodo without asking password. <br>
+use sudo without asking password. <br>
 ``sudo dpkg-reconfigure kali-grant-root`` <br>
 then <br>
 ``Enable password-less privilege escalation`` <br>
@@ -136,41 +141,43 @@ then <br>
 ``root``    ``ALL=(ALL:ALL) ALL`` <br>
 ``user``    ``ALL=(ALL:ALL) ALL`` <br>
 
-add **https** on your ``/etc/apt/sources.list`` <br>
+Add **https** on your kali repository. <br>
+because it was previously installed ``apt-transport-https`` <br>
+then <br>
 ``sudo nano /etc/apt/sources.list`` <br>
 ``deb https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 ``deb-src https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 
-if xfce panel backup can't open or force close. <br>
+If ``xfce4-panel`` backup can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
-If you need switch bash to zsh use this <br>
+If you need switch bash to zsh use this. <br>
 ``sudo chsh -s $(which zsh) user`` <br> 
 
 If you have trouble **wlan0** can't detect on **nm-applet** and it say **"Device Not Ready"** <br>
 just remove all **Ethernet** on list. <br>
 
 If you have trouble when doing full screen on the application and it appears like a green splash. <br>
-try changing it ``vrr = 0`` on ``~/.config/hypr/hyprland.conf`` <br>
+try changing ``vrr = 0`` on ``~/.config/hypr/hyprland.conf`` <br>
 
 The sound will automatically be set at 75% and the mic will be disabled on startup. <br>
-Because I have made a special script for that ``~/.config/hypr/scripts/privacy.sh`` <br>
+because I have made a special script for that ``~/.config/hypr/scripts/privacy.sh`` <br>
 
-If you need open thunar as root <br>
+If you need open thunar as root. <br>
 ``sudo thunar`` and it say <br>
 ``(thunar:00000): Gtk-WARNING **: 00:00:00.000: cannot open display: :1`` <br>
-just open ``sudo -EH thunar`` <br>
+just run ``sudo -EH thunar`` <br>
 
 Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` on Hyprland. <br>
-cause it will make your broken screen 50/50 <br>
+cause it will make your broken screen. 50/50 <br>
 
 If you annoying sound **"beeb" "beeb" "beeb"** on terminal or tty. <br>
 just turn off with use the one I have provided in .zshrc <br>
 ``# disable beeb sound effect`` <br>
-``#setterm --bfreq=0`` <br>
-``#xset b off`` <br>
+``#setterm --bfreq=0`` ``#tty`` <br>
+``#xset b off`` ``#terminal`` <br>
 
-if you don't want **"core"** in your home directory. <br>
+If you don't want **"core"** in your home directory. <br>
 just reconfigure with ``nano /etc/sysctl.conf`` <br>
 move <br>
 ``kern.corefile=/var/log``                   ``#move it to directory`` <br>
