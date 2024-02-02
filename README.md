@@ -124,7 +124,7 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
     <h2>Know Issue</h2>
   </summary>
   
-**Note** : If you use kali linux. That means you should know what kind of system you are using. Using Kali Linux means you understand basic knowledge such as using the Package Manager, CLI, etc. This should not be needed. but if it is related to Xfce or Hyprland I think there are several answers. <br>
+**Note** : If you use Kali Linux. That means you should know what kind of system you are using. Using Kali Linux means you understand basic knowledge such as using the Package Manager, CLI, etc. This should not be needed. but if it is related to Xfce or Hyprland I think there are several answers. <br>
 ~ *because I really hate so much the question of wifi not working on kali linux.* <br>
 
 <h2> OK NEXT >>> </h2>
@@ -218,3 +218,7 @@ or disable it <br>
  <p align="center"> 
    <img src="src/cat-on-line.png">
  </p> 
+
+ # License
+
+ [GNU General Public License v3.0](LICENSE)

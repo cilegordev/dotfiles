@@ -153,24 +153,9 @@
 │   │   ├── config-short.rasi
 │   │   ├── config-waybar.rasi
 │   │   ├── config-windoes.rasi
-│   │   ├── pywal-color
-│   │   │   ├── pywal-theme.rasi
-│   │   │   └── pywal-theme-symbolic-link.rasi
-│   │   └── resolution
-│   │       ├── 1080p
-│   │       │   ├── config-compact.rasi
-│   │       │   ├── config-long.rasi
-│   │       │   ├── config.rasi
-│   │       │   ├── config-rofi-beats.rasi
-│   │       │   ├── config-short.rasi
-│   │       │   └── config-waybar.rasi
-│   │       └── 1440p
-│   │           ├── config-compact.rasi
-│   │           ├── config-long.rasi
-│   │           ├── config.rasi
-│   │           ├── config-rofi-beats.rasi
-│   │           ├── config-short.rasi
-│   │           └── config-waybar.rasi
+│   │   └── pywal-color
+│   │       ├── pywal-theme.rasi
+│   │       └── pywal-theme-symbolic-link.rasi
 │   ├── swappy
 │   │   └── config
 │   ├── swaylock
@@ -567,7 +552,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-77 directories, 490 files
+74 directories, 478 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>
