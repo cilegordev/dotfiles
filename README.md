@@ -97,9 +97,9 @@ git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 ```
 ## Automatic
 
-Run copy.sh
+Run apply.sh
 ```zsh
-~/./dotfiles/copy.sh
+~/./dotfiles/apply.sh
 ```
 
 ## Manually
