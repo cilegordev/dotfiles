@@ -2,10 +2,6 @@
 
 read -p "Do you wan't xfce files? [Y/N]: " xfcedotfiles
 
-sourceHypr=~/dotfiles/config/hypr
-targetHypr=~/.config/hypr
-backupHypr=~/.config/hypr-backup
-
 sourceCache=~/dotfiles/cache
 targetCache=~/.cache
 
@@ -16,7 +12,7 @@ sourceLocal=~/dotfiles/local
 targetLocal=~/.local
 
 sourceWallpapers=~/dotfiles/wallpapers
-targetWallpapers=~/Pictures
+targetWallpapers=~/Pictures/
 
 sourceHome=~/dotfiles/home
 targetHome=~/
@@ -57,8 +53,16 @@ else
   clear
 fi
 
+# Create ~/Pictures/wallpapers if it doesn't exist, make backup if it does
+if [ ! -d "$targetWallpapers" ]; then
+  mkdir -p "$targetWallpapers"
+else
+  echo "folder $targetWallpapers exists, backup created..."
+  mv "$targetWallpapers" "$targetWallpapers-backup"
+  mkdir -p "$targetWallpapers"
+fi
+
 # Copy each directory
-copy_with_backup "$sourceHypr" "$targetHypr"
 copy_with_backup "$sourceCache" "$targetCache"
 copy_with_backup "$sourceConfig" "$targetConfig"
 copy_with_backup "$sourceLocal" "$targetLocal"
