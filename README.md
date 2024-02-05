@@ -34,7 +34,7 @@
 - **File Manager** : thunar
 - **Archive Manager** : file-roller
 - **Task Manager** : xfce4-taskmanager
-- **Web Browser** : google-chrome-stable
+- **Web Browser** : google-chrome
 
 <details>
   <summary>
@@ -73,7 +73,7 @@
   - htop
   - kitty
   - logo-ls
-  - microsoft-edge-stable
+  - microsoft-edge
   - mousepad
   - mugshot
   - neofetch
@@ -89,7 +89,7 @@
 
 # To implement
 
-**Note** : If you need use it recommended use at clean install user.
+**Note** : If you need use it. recommended use at clean install user.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
@@ -106,14 +106,14 @@ Run apply.sh
 
 ## Manually
 
-**Optional** if you don't need xfce you can remove before you copy main command.
-```zsh
-rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
-```
-
-**Optional** if you want xfce you must install additional packages.
+**Optional Y** : If you want xfce you must install additional packages.
 ```zsh
 sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
+```
+
+**Optional N** : If you don't need xfce you can remove before you copy main command.
+```zsh
+rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
 Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
@@ -121,7 +121,7 @@ Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, wes
 mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/ && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/ && rm ~/.Hyprland_log*
 ```
 
-Add symlink.
+Add symlink, otherwise the dunst, rofi, waybar will malfunction.
 ```zsh
 ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config && ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css && ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper && ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc && ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
 ```
@@ -155,12 +155,13 @@ then ``sudo nano /etc/apt/sources.list`` <br>
 If ``xfce4-panel`` backup can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
-If ``keyboard-state`` not showing i think you need ``libinput`` <br>
-just install libinput-tools ``sudo apt install libinput-tools`` <br>
-then ``sudo usermod -aG input user`` <br>
-
 If you need switch bash to zsh use this. <br>
 ``sudo chsh -s $(which zsh) user`` <br> 
+
+If you need open thunar as root. <br>
+``sudo thunar`` and it say <br>
+``(thunar:00000): Gtk-WARNING **: 00:00:00.000: cannot open display: :1`` <br>
+just run ``sudo -EH thunar`` <br>
 
 If you have trouble **wlan0** can't detect on **nm-applet** and it say **"Device Not Ready"** <br>
 just remove all **Ethernet** on list. <br>
@@ -170,11 +171,6 @@ try changing ``vrr = 0`` on ``~/.config/hypr/hyprland.conf`` <br>
 
 The sound will automatically be set at 75% and the mic will be disabled on startup. <br>
 because I have made a special script for that ``~/.config/hypr/scripts/privacy.sh`` <br>
-
-If you need open thunar as root. <br>
-``sudo thunar`` and it say <br>
-``(thunar:00000): Gtk-WARNING **: 00:00:00.000: cannot open display: :1`` <br>
-just run ``sudo -EH thunar`` <br>
 
 Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` on Hyprland. <br>
 cause it will make your broken screen. 50/50 <br>
@@ -190,6 +186,10 @@ just reconfigure with ``nano /etc/sysctl.conf`` <br>
 ``fs.suid_dumpable=0``
 ``kernel.core_pattern= | /bin/false`` <br>
 
+If ``keyboard-state`` not showing i think you need ``libinput`` <br>
+just install libinput-tools ``sudo apt install libinput-tools`` <br>
+then ``sudo usermod -aG input user`` <br>
+
 <div align="center">
   I hope this it can helps you <a href="https://github.com/cilegordev/dotfiles/?tab=readme-ov-file#know-issue">thanks!</a>
 </div>
@@ -200,10 +200,10 @@ just reconfigure with ``nano /etc/sysctl.conf`` <br>
 
 |  Keys  |  Output  |
 |  -  |  -  |
-| <kbd>Super</kbd> + <kbd>Q</kbd> | Togglefloating
+| <kbd>Super</kbd> + <kbd>Q</kbd> | Floating
 | <kbd>Super</kbd> + <kbd>W</kbd> | Killactive
 | <kbd>Super</kbd> + <kbd>E</kbd> | Fullscreen
-| <kbd>Super</kbd> + <kbd>R</kbd> | Reload Waybar
+| <kbd>Super</kbd> + <kbd>R</kbd> | Reload
 | <kbd>Super</kbd> + <kbd>T</kbd> | Cava
 | <kbd>Super</kbd> + <kbd>Y</kbd> | Pipes
 | and use [HINT!](https://github.com/cilegordev/dotfiles/blob/8de73780fdc6317d27c9efe9ba75df7d8dbf51a7/config/hypr/hyprland.conf#L316) | for the rest |
