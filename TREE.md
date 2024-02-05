@@ -23,8 +23,6 @@
 │   │       ├── normalized_bars.frag
 │   │       └── pass_through.vert
 │   ├── dunst
-│   │   ├── dunstrc
-│   │   ├── dunstrc-symbolic-link
 │   │   ├── icons
 │   │   │   ├── ac-adapter.svg
 │   │   │   ├── airplane-mode-disabled-symbolic.svg
@@ -60,10 +58,8 @@
 │   │   │   └── touchpad-enabled-symbolic.svg
 │   │   ├── reload
 │   │   └── styles
-│   │       ├── dunstrc
 │   │       ├── dunstrc-dark
-│   │       ├── dunstrc-light
-│   │       └── dunstrc-symbolic-link
+│   │       └── dunstrc-light
 │   ├── eww
 │   │   ├── eww.scss
 │   │   ├── eww.yuck
@@ -154,8 +150,6 @@
 │   │   ├── config-waybar.rasi
 │   │   ├── config-windoes.rasi
 │   │   └── pywal-color
-│   │       ├── pywal-theme.rasi
-│   │       └── pywal-theme-symbolic-link.rasi
 │   ├── swappy
 │   │   └── config
 │   ├── swaylock
@@ -165,8 +159,6 @@
 │   │       ├── colors-rofi-dark.rasi
 │   │       └── colors-rofi-light.rasi
 │   ├── waybar
-│   │   ├── config
-│   │   ├── config-symbolic-link
 │   │   ├── custom_config
 │   │   │   ├── config-all-sides
 │   │   │   ├── config-bottom-left
@@ -193,30 +185,28 @@
 │   │   │   ├── mediaplayer-waybar.py
 │   │   │   └── modules
 │   │   ├── modules
-│   │   ├── style
-│   │   │   ├── catppuccin-themes
-│   │   │   │   ├── frappe.css
-│   │   │   │   ├── latte.css
-│   │   │   │   ├── macchiato.css
-│   │   │   │   └── mocha.css
-│   │   │   ├── style-black-&-white.css
-│   │   │   ├── style-catppuccin-latte.css
-│   │   │   ├── style-catppuccin-mocha.css
-│   │   │   ├── style-colorful.css
-│   │   │   ├── style-colors-border.css
-│   │   │   ├── style-colors.css
-│   │   │   ├── style-colors-line.css
-│   │   │   ├── style-costume-clear.css
-│   │   │   ├── style-costume-colorful.css
-│   │   │   ├── style-costume.css
-│   │   │   ├── style-costume-transparent.css
-│   │   │   ├── style-dark.css
-│   │   │   ├── style-default-hyprland.css
-│   │   │   ├── style-default-waybar.css
-│   │   │   ├── style-light.css
-│   │   │   └── style-pywal.css
-│   │   ├── style.css
-│   │   └── style-symbolic-link.css
+│   │   └── style
+│   │       ├── catppuccin-themes
+│   │       │   ├── frappe.css
+│   │       │   ├── latte.css
+│   │       │   ├── macchiato.css
+│   │       │   └── mocha.css
+│   │       ├── style-black-&-white.css
+│   │       ├── style-catppuccin-latte.css
+│   │       ├── style-catppuccin-mocha.css
+│   │       ├── style-colorful.css
+│   │       ├── style-colors-border.css
+│   │       ├── style-colors.css
+│   │       ├── style-colors-line.css
+│   │       ├── style-costume-clear.css
+│   │       ├── style-costume-colorful.css
+│   │       ├── style-costume.css
+│   │       ├── style-costume-transparent.css
+│   │       ├── style-dark.css
+│   │       ├── style-default-hyprland.css
+│   │       ├── style-default-waybar.css
+│   │       ├── style-light.css
+│   │       └── style-pywal.css
 │   ├── weston.ini
 │   ├── wlogout
 │   │   ├── layout
@@ -552,7 +542,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-74 directories, 478 files
+74 directories, 468 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

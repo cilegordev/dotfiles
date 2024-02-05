@@ -89,6 +89,8 @@
 
 # To implement
 
+**Note** : If you need use it recommended use at clean install user.
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
 Clone this repository
@@ -104,29 +106,24 @@ Run apply.sh
 
 ## Manually
 
-**Optional** if you don't need xfce you can remove before you copy
+**Optional** if you don't need xfce you can remove before you copy main command.
 ```zsh
 rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
-**Optional** if you want xfce you must install.
+**Optional** if you want xfce you must install additional packages.
 ```zsh
 sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
 ```
 
 Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
 ```zsh
-mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
+mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/ && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/ && rm ~/.Hyprland_log*
 ```
 
-Add symlink
+Add symlink.
 ```zsh
 ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config && ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css && ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper && ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc && ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
-```
-
-Copy attribute
-```zsh
-rm ~/dotfiles/home/.Hyprland* && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/
 ```
 
 <details>
