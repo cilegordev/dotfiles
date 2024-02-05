@@ -86,52 +86,20 @@
     #cpu,
     #disk,
     #idle_inhibitor,
-    #keyboard-state label,
-    #keyboard-state label.locked,
-    #keyboard-state,
     #memory,
     #mode,
-    #mpd,
     #network,
     #network\#speed,
     #pulseaudio,
-    #taskbar button,
-    #taskbar,
     #temperature,
     #tray,
-    #window,
-    #wireplumber,
-    #workspaces,
-    #custom-cycle_wall,
     #custom-keybinds,
-    #custom-light_dark,
-    #custom-lock,
     #custom-menu,
-    #custom-power_vertical,
-    #custom-power,
-    #custom-spotify,
-    #custom-updater,
-    #custom-weather,
-    #custom-weather.clearNight,
-    #custom-weather.cloudyFoggyDay,
-    #custom-weather.cloudyFoggyNight,
-    #custom-weather.default 
-    #custom-weather.rainyDay,
-    #custom-weather.rainyNight,
-    #custom-weather.severe,
-    #custom-weather.showyIcyDay,
-    #custom-weather.snowyIcyNight,
-    #custom-weather.sunnyDay {
+    #custom-weather {
         padding: 0px 6px;
         margin-bottom: -1px;
     }
-    #mode {
-        font-weight: bold;
-    }
-    #custom-power {
-        margin: 5px 5px;
-        padding: 1px 3px;
-    }
+    
     
     #backlight {
     	font-size: 16px;
@@ -139,7 +107,6 @@
     
     #pulseaudio {
         font-size: 16px;
-        border-radius: 5px;
     }
     
     #custom-media {
@@ -147,6 +114,7 @@
     }
     
     #tray {
+    	margin-right: -3px;
     	margin-top: -1px;
     }
     
@@ -176,21 +144,27 @@
     
     #custom-waybarstyle {
         font-size: 16px;
+        margin-right: 8px;
         margin-bottom: -1px;
     }    
 
     #custom-notification {
-        font-size: 16px;
+        font-size: 10px;
         margin-bottom: -1px;
     }
     
     #custom-reload {
         font-size: 16px;
+        margin-right: 8px;
         margin-bottom: -1px;
     }
     
     #custom-power-wlogout {
         font-size: 16px;
-        margin-right: 3px;
+        margin-right: 10px;
         margin-bottom: -1px;
+    }
+
+    #custom-thunarasroot {
+    	margin-bottom: -1px;
     }

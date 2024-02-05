@@ -91,7 +91,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
-**Note** : There maybe some differences in symlinks so adjust it to yourself.
+Clone this repository
 ```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 ```
@@ -104,19 +104,29 @@ Run apply.sh
 
 ## Manually
 
-**Copy dotfiles** & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
-```zsh
-cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
-```
-
-If you don't need Xfce you can remove before you copy
+**Optional** if you don't need xfce you can remove before you copy
 ```zsh
 rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
-If you want Xfce you must install.
+**Optional** if you want xfce you must install.
 ```zsh
 sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
+```
+
+Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
+```zsh
+mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/
+```
+
+Add symlink
+```zsh
+ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config && ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css && ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper && ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc && ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
+```
+
+Copy attribute
+```zsh
+rm ~/dotfiles/home/.Hyprland* && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/
 ```
 
 <details>
@@ -133,23 +143,24 @@ I add package for xfce like ``kali-grant-root apt-transport-https psutils`` <br>
 use this for configure. <br>
 use sudo without asking password. <br>
 ``sudo dpkg-reconfigure kali-grant-root`` <br>
-then <br>
-``Enable password-less privilege escalation`` <br>
+then ``Enable password-less privilege escalation`` <br>
+next ``sudo visudo`` <br>
 one more step <br>
-``sudo visudo`` <br>
-then <br>
 ``root``    ``ALL=(ALL:ALL) ALL`` <br>
 ``user``    ``ALL=(ALL:ALL) ALL`` <br>
 
 Add **https** on your kali repository. <br>
 because it was previously installed ``apt-transport-https`` <br>
-then <br>
-``sudo nano /etc/apt/sources.list`` <br>
+then ``sudo nano /etc/apt/sources.list`` <br>
 ``deb https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 ``deb-src https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 
 If ``xfce4-panel`` backup can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
+
+If ``keyboard-state`` not showing i think you need ``libinput`` <br>
+just install libinput-tools ``sudo apt install libinput-tools`` <br>
+then ``sudo usermod -aG input user`` <br>
 
 If you need switch bash to zsh use this. <br>
 ``sudo chsh -s $(which zsh) user`` <br> 
@@ -179,11 +190,8 @@ just turn off with use the one I have provided in .zshrc <br>
 
 If you don't want **"core"** in your home directory. <br>
 just reconfigure with ``nano /etc/sysctl.conf`` <br>
-move <br>
-``kern.corefile=/var/log``                   ``#move it to directory`` <br>
-or disable it <br>
-``kern.coredump=0``                          ``#disable coredump`` <br>
-``kern.corefile=/dev/null``                  ``#move it to directory`` <br>
+``fs.suid_dumpable=0``
+``kernel.core_pattern= | /bin/false`` <br>
 
 <div align="center">
   I hope this it can helps you <a href="https://github.com/cilegordev/dotfiles/?tab=readme-ov-file#know-issue">thanks!</a>

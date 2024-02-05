@@ -275,6 +275,9 @@ echo © OffSec Services Limited $(date +"%Y"). All rights reserved.
 echo ""
 #echo "$(zsh --version)"
 
+# disable core on home directory
+ulimit -S -c 0
+
 # disable beeb sound effect
 #setterm --bfreq=0
 #xset b off

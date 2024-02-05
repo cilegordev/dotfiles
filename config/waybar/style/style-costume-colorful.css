@@ -21,7 +21,6 @@
     	border-bottom: 3px solid rgba(106, 208, 255, 0.5);
         transition-property: background-color;
         transition-duration: .5s;
-        border-radius: 5px;
     }
     
     window#waybar.empty {
@@ -76,7 +75,6 @@
     #custom-menu {
         background-color: #2777ff;
         color: #ffffff;
-        border-radius: 5px;
         margin-left: 3px;
     }
 
@@ -84,7 +82,6 @@
     	font-size: 10px;
         background-color: #367bf0;
         border: solid 5px #367bf0;
-        border-radius: 5px;
     }
 
     #workspaces button {
@@ -114,7 +111,7 @@
     }
     
     #workspaces button.urgent {
-        background-color: #B4254B;
+        background-color: #FD7D00;
     }
     
     #backlight,
@@ -129,26 +126,18 @@
     #keyboard-state label.locked,
     #keyboard-state,
     #memory,
-    #mode,
-    #mpd,
     #network,
     #network\#speed,
     #pulseaudio,
-    #taskbar button,
-    #taskbar,
     #temperature,
-    #tray,
+    #upower,
+    #upower.charging,
     #window,
-    #wireplumber,
     #workspaces,
-    #custom-cycle_wall,
     #custom-keybinds,
-    #custom-light_dark,
-    #custom-lock,
     #custom-menu,
     #custom-power_vertical,
     #custom-power,
-    #custom-spotify,
     #custom-updater,
     #custom-weather,
     #custom-weather.clearNight,
@@ -163,26 +152,26 @@
     #custom-weather.sunnyDay {
         padding: 0px 6px;
         margin-bottom: -1px;
+        border-radius: 5px;
     }
-
-    #mode {
-        color: #cc3436;
-        font-weight: bold;
+    
+    #tray,
+    #custom-waybarstyle,
+    #custom-power-wlogout,
+    #custom-notification,
+    #custom-reload,
+    #custom-thunarasroot {
+    	border-radius: 5px;
+    	margin-bottom: -1px;
     }
-
-    #custom-power {
-        margin: 5px 5px;
-        padding: 1px 3px;
-    }
+    
     #clock {
         background-color: #64727D;
-        border-radius: 5px;
     }
     
     #battery {
         background-color: #ffffff;
         color: #000000;
-        border-radius: 5px;
     }
     
     #battery.charging, 
@@ -214,52 +203,43 @@
     
     #bluetooth {
         background-color: #2559b0;
-        border-radius: 5px;
     }
 
     #bluetooth.disabled {
         background-color: #f53c3c;
-        border-radius: 5px;
     }
 
     #cpu {
         background-color: #2ecc71;
         color: #ffffff;
-        border-radius: 5px;
     }
     
     #memory {
         background-color: #9b59b6;
-        border-radius: 5px;
     }
     
     #disk {
         background-color: #964B00;
-        border-radius: 5px;
     }
     
     #backlight {
     	font-size: 16px;
         color: #f0ffff;
         background-color: #90b1b1;
-        border-radius: 5px;
     }
     
     #network {
         background-color: #2980b9;
-        border-radius: 5px;
     }
     
     #network.disconnected {
         background-color: #f53c3c;
-        border-radius: 5px;
     }
     
     #pulseaudio {
         font-size: 16px;
         background-color: #f1c40f;
         color: #ffffff;
-        border-radius: 5px;
     }
     
     #pulseaudio.muted {
@@ -283,7 +263,6 @@
     
     #temperature {
         background-color: #f0932b;
-        border-radius: 5px;
     }
     
     #temperature.critical {
@@ -291,8 +270,8 @@
     }
     
     #tray {
+    	padding: 0px 1px;
         background-color: #2980b9;
-        border-radius: 5px;
     }
     
     #tray > .passive {
@@ -304,15 +283,23 @@
         background-color: #eb4d4b;
     }
     
+    #upower {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+    #upower.charging {
+        color: #ffffff;
+        background-color: #26A65B;
+    }
+    
     #idle_inhibitor {
         background-color: #2d3436;
-        border-radius: 5px;
     }
     
     #idle_inhibitor.activated {
         background-color: #ecf0f1;
         color: #2d3436;
-        border-radius: 5px;
     }
     
     #mpd {
@@ -343,17 +330,11 @@
     #keyboard-state {
         background-color: #97e1ad;
         color: #000000;
-        padding: 0 0px;
-        margin: 0 5px;
-        min-width: 16px;
+        font-size: 16px;
     }
     
     #keyboard-state > label {
         padding: 0 5px;
-    }
-    
-    #keyboard-state > label.locked {
-        background-color: rgba(0, 0, 0, 0.2);
     }
     
     #scratchpad {
@@ -367,49 +348,43 @@
     #custom-weather {
         color: #e6e6e6;
         background-color: #483d8b;
-        border-radius: 5px;
     }
     
     #custom-waybarstyle {
+    	padding: 0px 9px;
         font-size: 16px;
         color: #d2b48c;
         background-color: #663399;
-        border-radius: 5px;
-        margin-bottom: -1px;
     }
     
     #custom-keybinds {
         background-color: #ffffff;
         color: #000000;
-        border-radius: 5px;
     }
     
     #custom-power-wlogout {
+    	padding: 0px 7px;
         font-size: 16px;
         color: #fafad2;
         background-color: #f1c40f;
-        border-radius: 5px;
         margin-right: 3px;
-        margin-bottom: -1px;
     }    
 
     #custom-notification {
         font-size: 16px;
         background-color: #654321;
-        border-radius: 5px;
-        margin-bottom: -1px;
     }
 
     #custom-reload {
+    	padding: 0px 8px;
         font-size: 16px;
         color: #fedcba;
         background-color: #32c832;
-        border-radius: 5px;
-        margin-bottom: -1px;
     }
     
-    #taskbar {
-        background-color: #f53c3c;
-        color: #000000;
-        border-radius: 5px;
+    #custom-thunarasroot {
+    	padding: 0px 7px;
+    	font-size: 16px;
+        background-color: #B4254B;
+        color: #ffffff;
     }

@@ -12,10 +12,7 @@ sourceLocal=~/dotfiles/local
 targetLocal=~/.local
 
 sourceWallpapers=~/dotfiles/wallpapers
-targetWallpapers=~/Pictures/
-
-sourceHome=~/dotfiles/home
-targetHome=~/
+targetWallpapers=~/Pictures
 
 # Function to copy and handle backups
 copy_with_backup() {
@@ -69,13 +66,30 @@ copy_with_backup "$sourceLocal" "$targetLocal"
 cp -r "$sourceWallpapers" "$targetWallpapers"
 
 # Copy individual files
-copy_file "$sourceHome/.bashrc" "$targetHome/.bashrc"
-copy_file "$sourceHome/.face" "$targetHome/.face"
-copy_file "$sourceHome/.hushlogin" "$targetHome/.hushlogin"
-copy_file "$sourceHome/.twmrc" "$targetHome/.twmrc"
-copy_file "$sourceHome/.zsh_history" "$targetHome/.zsh_history"
-copy_file "$sourceHome/.zshrc" "$targetHome/.zshrc"
-copy_file "$sourceHome/capture-sddm.sh" "$targetHome/capture-sddm.sh"
-copy_file "$sourceHome/update.sh" "$targetHome/update.sh"
+rm ~/dotfiles/home/.Hyprland*
+sleep 1
+cp -r ~/dotfiles/home/.* ~/dotfiles/home/* ~/
+sleep 0.5
+clear
+
+# Generate symlink
+echo Add dunstrc
+ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc
+sleep 0.5
+echo Add config
+ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config
+sleep 0.5
+echo Add style.css
+ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css
+sleep 0.5
+echo Add .wallpaper
+ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper
+sleep 0.5
+echo Add dunstrc
+ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc
+sleep 0.5
+echo Add pywal-theme.rasi
+ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
+sleep 0.5
 
 echo "Hyprland dotfiles installed."

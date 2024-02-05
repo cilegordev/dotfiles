@@ -29,7 +29,7 @@ countdown() {
 # take shots
 shotnow() {
 	cd ${location} && grim - | tee "$file" | wl-copy
-	sleep 2
+	sleep 1
 	notify_view
 }
 

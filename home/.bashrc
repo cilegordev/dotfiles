@@ -109,4 +109,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+ulimit -S -c 0
 #exec zsh

@@ -134,13 +134,13 @@
     "tooltip": true,
   },
   "custom/keybinds": {
-    "format": " HINT!",
+    "format": " HINT!",
     "tooltip": false,
     "tooltip-format": "DING DONG!",
     "on-click": "~/.config/hypr/scripts/keyhints.sh",
   },
   "custom/waybarstyle": {
-    "format": "  ",
+    "format": "",
     "tooltip": false,
     "tooltip-format": "Change theme/style",
     "on-click": "~/.config/hypr/scripts/WaybarLayout.sh",
@@ -148,7 +148,7 @@
     "on-click-right": "~/.config/hypr/scripts/WaybarStyles.sh",
   },
   "custom/reload": {
-    "format": "  ",
+    "format": "",
     "tooltip": false,
     "tooltip-format": "Reload Waybar",
     "on-click": "~/.config/hypr/scripts/reload.sh",
@@ -156,7 +156,7 @@
     "on-click-right": "xfce4-terminal -e ./update.sh",
   },
   "custom/power-wlogout": {
-    "format": "  ",
+    "format": "",
     "tooltip": false,
     "on-click": "~/.config/hypr/scripts/wlogout.sh",
     "on-click-right": "pkill -f Hyprland",
@@ -182,9 +182,9 @@
     "escape": true
   },
   "custom/notification#dunst": {
-    "format": "  ",
+    "format": "  ",
     "format-alt-click": "click",
-    "format-alt": "  ",
+    "format-alt": "  ",
     "on-click": "dunstctl set-paused toggle",
     "tooltip": false,
   },
@@ -259,28 +259,28 @@
     },
   },
   "hyprland/workspaces#3": {
-    "active-only": false,
-    "all-outputs": true,
-    "disable-scroll": false,
-    "on-scroll-up": "hyprctl dispatch workspace e-1",
-    "on-scroll-down": "hyprctl dispatch workspace e+1",
-    "format": "{icon}",
-    "on-click": "activate",
-    "format-icons": {
-      "1": "I",
-      "2": "II",
-      "3": "III",
-      "4": "IV",
-      "5": "V",
-      "6": "VI",
-      "7": "VII",
-      "8": "VIII",
-      "9": "IX",
+  "active-only": false,
+  "all-outputs": true,
+  "disable-scroll": false,
+  "on-scroll-up": "hyprctl dispatch workspace e-1",
+  "on-scroll-down": "hyprctl dispatch workspace e+1",
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+      "1": "I", 
+      "2": "II", 
+      "3": "III", 
+      "4": "IV", 
+      "5": "V", 
+      "6": "VI", 
+      "7": "VII", 
+      "8": "VIII", 
+      "9": "IX", 
       "10": "X",
-      "urgent": "גּ",
-      "active": "㉿",
-      "default": "",
-      "sort-by-number": true
+    "urgent": "",
+    "active": "㉿",
+    "default": "",
+    "sort-by-number": true
     },
   },
   "gamemode": {
@@ -301,6 +301,15 @@
       "activated": "",
       "deactivated": "",
     },
+  },
+  "keyboard-state": {
+    "numlock": false,
+    "capslock": true,
+    "format": "{icon}",
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
+    }
   },
   "memory": {
     "interval": 10,
@@ -366,7 +375,7 @@
         "",
         "",
         ""
-      ],
+      ], 
       "ignored-sinks": [
         "Easy Effects Sink"
       ],
@@ -404,9 +413,9 @@
     "format-alt-click": "click",
     "format-alt": "{temperatureF}°F {icon}",
     "format-icons": [
-      "",
-      "",
-      ""
+            "",
+            "",
+            ""
     ],
     "on-click-right": "xfce4-terminal -e radeontop",
   },
@@ -414,6 +423,36 @@
     "interval": 1,
     "icon-size": 24,
     "spacing": 8,
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "wofi",
+      "rofi",
+    ]
+  },
+  "upower": {
+    "icon-size": 24,
+    "hide-if-empty": true,
+    "tooltip": true,
+    "tooltip-spacing": 20
+  },
+  "user": {
+    "format": "{work_M} ↑",
+    "interval": 60,
+    "height": 24,
+    "width": 24,
+    "icon": true,
+  },
+  "custom/thunarasroot": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "sudo -EH thunar",
   },
   "custom/color1": {
     "format": "█",

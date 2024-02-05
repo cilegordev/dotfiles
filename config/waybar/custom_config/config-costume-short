@@ -25,6 +25,9 @@
 			//"custom/weather",
 			"",
 		],
+		"modules-center": [
+			"",
+		],
 		"modules-right": [
 			//"network#speed",
 			//"network",
