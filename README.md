@@ -89,7 +89,7 @@
 
 # To implement
 
-**Note** : If you need use it. recommended use at clean install user.
+**Note** : If you need use it. recommended use at clean install user or add new user.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
@@ -121,7 +121,7 @@ Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, wes
 mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/ && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/ && rm ~/.Hyprland_log*
 ```
 
-Add symlink, otherwise the dunst, rofi, waybar will malfunction.
+Add symlink. otherwise the dunst, rofi, waybar will malfunction.
 ```zsh
 ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config && ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css && ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper && ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc && ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
 ```
@@ -183,7 +183,7 @@ just turn off with use the one I have provided in .zshrc <br>
 
 If you don't want **"core"** in your home directory. <br>
 just reconfigure with ``nano /etc/sysctl.conf`` <br>
-``fs.suid_dumpable=0``
+``fs.suid_dumpable=0`` <br>
 ``kernel.core_pattern= | /bin/false`` <br>
 
 If ``keyboard-state`` not showing i think you need ``libinput`` <br>
