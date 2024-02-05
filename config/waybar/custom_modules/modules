@@ -452,7 +452,7 @@
   "custom/thunarasroot": {
     "format": "",
     "tooltip": false,
-    "on-click": "sudo -EH thunar",
+    "on-click": "xhost si:localuser:root && sudo thunar",
   },
   "custom/color1": {
     "format": "█",
