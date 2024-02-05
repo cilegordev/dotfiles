@@ -270,7 +270,8 @@
     }
     
     #tray {
-    	padding: 0px 1px;
+    	font-size: 16px;
+    	padding: 0px 2px;
         background-color: #2980b9;
     }
     

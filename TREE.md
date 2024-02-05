@@ -493,7 +493,6 @@
 ├── src
 │   ├── cat-on-line.png
 │   ├── home-banner.png
-│   ├── hyprland-tracker.jpeg
 │   ├── menu.png
 │   ├── minecraft.png
 │   ├── sample.png
@@ -542,7 +541,7 @@
     │       └── root-highlighter.zsh
     └── zsh-syntax-highlighting.zsh
 
-74 directories, 468 files
+74 directories, 467 files
 ```
 
 <p align="center"> <img src="src/cat-on-line.png"> </p>

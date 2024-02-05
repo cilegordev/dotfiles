@@ -89,7 +89,7 @@
 
 # To implement
 
-**Note** : If you need use it. recommended use at clean install user or add new user.
+**Note** : If you use it. recommended use at clean install user or add new user.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
@@ -121,7 +121,7 @@ Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, wes
 mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/ && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/ && rm ~/.Hyprland_log*
 ```
 
-Add symlink. otherwise the dunst, rofi, waybar will malfunction.
+Add symlink. otherwise the dunst, rofi, waybar will be broken.
 ```zsh
 ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.config/waybar/custom_config/config-costume-short ~/.config/waybar/config && ln -sf ~/.config/waybar/style/style-costume-colorful.css ~/.config/waybar/style.css && ln -sf ~/Pictures/wallpapers/exclsv/echo_hello_world.png ~/.config/rofi/.wallpaper && ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/styles/dunstrc && ln -sf ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi/pywal-color/pywal-theme.rasi
 ```
@@ -173,7 +173,7 @@ The sound will automatically be set at 75% and the mic will be disabled on start
 because I have made a special script for that ``~/.config/hypr/scripts/privacy.sh`` <br>
 
 Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` on Hyprland. <br>
-cause it will make your broken screen. 50/50 <br>
+cause it will make your broken screen. **"50/50"** <br>
 
 If you annoying sound **"beeb" "beeb" "beeb"** on terminal or tty. <br>
 just turn off with use the one I have provided in .zshrc <br>
@@ -183,6 +183,7 @@ just turn off with use the one I have provided in .zshrc <br>
 
 If you don't want **"core"** in your home directory. <br>
 just reconfigure with ``nano /etc/sysctl.conf`` <br>
+``# disable core on home directory`` <br>
 ``fs.suid_dumpable=0`` <br>
 ``kernel.core_pattern= | /bin/false`` <br>
 
@@ -218,12 +219,12 @@ then ``sudo usermod -aG input user`` <br>
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
-- There is news that the Debian [Hyprland](src/hyprland-tracker.jpeg) package is being packaged, hopefully it will be released soon.
+- Hyprland package currently maintenance seee it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
 
  <p align="center"> 
    <img src="src/cat-on-line.png">
  </p> 
 
- # License
+# License
 
- [GNU General Public License v3.0](LICENSE)
+[GNU General Public License v3.0](LICENSE)

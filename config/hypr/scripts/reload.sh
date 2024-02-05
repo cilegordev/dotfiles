@@ -3,10 +3,11 @@
 directory=$HOME/.config/hypr/scripts
 
 # Kill already running process
-notification=(waybar dunst rofi nwg-panel nwg-dock-hyprland)
+notification=(waybar dunst rofi)
 for on in "${notification[@]}"; do
 	if [[ $(pidof ${on}) ]]; then
-		pkill -f ${on}
+		pkill ${on}
+		pkill -f nwg*
 	fi
 done
 
@@ -15,6 +16,9 @@ ${directory}/dunst.sh &
 
 # Lauch statusbar (waybar)
 ${directory}/waybar.sh &
+
+# Lauch bar (nwg-panel)
+# nwg-panel &
 
 # Lauch dock (nwg-dock-hyprland)
 nwg-dock-hyprland -d -hd 0 -i 40 -mb 5 &

@@ -100,7 +100,15 @@
         margin-bottom: -1px;
     }
     
-    
+    #tray,
+    #custom-waybarstyle,
+    #custom-power-wlogout,
+    #custom-notification,
+    #custom-reload,
+    #custom-thunarasroot {
+    	margin-bottom: -1px;
+    }
+
     #backlight {
     	font-size: 16px;
     }
@@ -114,6 +122,7 @@
     }
     
     #tray {
+    	font-size: 16px;
     	margin-right: -3px;
     	margin-top: -1px;
     }
