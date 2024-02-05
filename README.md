@@ -152,7 +152,7 @@ then ``sudo nano /etc/apt/sources.list`` <br>
 ``deb https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 ``deb-src https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 
-If ``xfce4-panel`` backup can't open or force close. <br>
+If ``xfce4-panel-profiles`` Backup and restore can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
 If you need switch bash to zsh use this. <br>
@@ -187,9 +187,9 @@ just reconfigure with ``nano /etc/sysctl.conf`` <br>
 ``fs.suid_dumpable=0`` <br>
 ``kernel.core_pattern= | /bin/false`` <br>
 
-If ``keyboard-state`` not showing i think you need ``libinput`` <br>
+If keyboard-state not showing on ``waybar`` i think you need ``libinput`` <br>
 just install libinput-tools ``sudo apt install libinput-tools`` <br>
-then ``sudo usermod -aG input user`` <br>
+then ``sudo usermod -a -G input user`` <br>
 
 <div align="center">
   I hope this it can helps you <a href="https://github.com/cilegordev/dotfiles/?tab=readme-ov-file#know-issue">thanks!</a>
@@ -219,7 +219,7 @@ then ``sudo usermod -aG input user`` <br>
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
-- Hyprland package currently maintenance seee it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
+- Hyprland Debian package currently maintenance seee it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
 
  <p align="center"> 
    <img src="src/cat-on-line.png">
