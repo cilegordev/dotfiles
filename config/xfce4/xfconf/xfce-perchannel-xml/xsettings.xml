@@ -18,13 +18,13 @@
     <property name="Hinting" type="int" value="1"/>
     <property name="RGBA" type="string" value="rgb"/>
     <property name="Antialias" type="int" value="1"/>
-    <property name="DPI" type="empty"/>
+    <property name="DPI" type="int" value="88"/>
   </property>
   <property name="Gtk" type="empty">
     <property name="CursorThemeName" type="string" value="Adwaita"/>
     <property name="CursorThemeSize" type="empty"/>
-    <property name="FontName" type="string" value="Cantarell 11"/>
-    <property name="MonospaceFontName" type="string" value="Monospace 11"/>
+    <property name="FontName" type="string" value="Cantarell 12"/>
+    <property name="MonospaceFontName" type="string" value="FiraCode Nerd Font 12"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuImages" type="empty"/>
     <property name="CanChangeAccels" type="empty"/>
@@ -35,11 +35,12 @@
     <property name="ToolbarIconSize" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
     <property name="DecorationLayout" type="string" value="menu:minimize,maximize,close"/>
-    <property name="DialogsUseHeader" type="empty"/>
+    <property name="DialogsUseHeader" type="bool" value="false"/>
     <property name="TitlebarMiddleClick" type="empty"/>
   </property>
   <property name="Xfce" type="empty">
     <property name="SyncThemes" type="empty"/>
+    <property name="LastCustomDPI" type="int" value="88"/>
   </property>
   <property name="Gdk" type="empty">
     <property name="WindowScalingFactor" type="empty"/>

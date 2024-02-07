@@ -3,8 +3,8 @@
 directory=$HOME/.config/hypr/scripts
 
 # Kill already running process
-notification=(waybar dunst rofi)
-for on in "${notification[@]}"; do
+run=(waybar dunst rofi)
+for on in "${run[@]}"; do
 	if [[ $(pidof ${on}) ]]; then
 		pkill ${on}
 		pkill -f nwg*

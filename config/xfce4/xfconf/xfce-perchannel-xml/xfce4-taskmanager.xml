@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<channel name="xfce4-settings-manager" version="1.0">
+<channel name="xfce4-taskmanager" version="1.0">
   <property name="last" type="empty">
     <property name="window-width" type="int" value="640"/>
     <property name="window-height" type="int" value="500"/>
+  </property>
+  <property name="window-maximized" type="bool" value="true"/>
+  <property name="window-width" type="int" value="400"/>
+  <property name="window-height" type="int" value="600"/>
+  <property name="columns" type="empty">
+    <property name="sort-type" type="uint" value="0"/>
+    <property name="sort-id" type="uint" value="0"/>
+    <property name="column-priority" type="bool" value="false"/>
+    <property name="column-uid" type="bool" value="true"/>
+  </property>
+  <property name="interface" type="empty">
+    <property name="handle-position" type="int" value="64"/>
   </property>
 </channel>

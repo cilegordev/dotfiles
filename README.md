@@ -93,7 +93,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/dotfiles?style=for-the-badge&color=888888)
 
-Clone this repository
+Clone this repository.
 ```zsh
 git clone https://github.com/cilegordev/dotfiles ~/dotfiles
 ```
@@ -152,18 +152,18 @@ then ``sudo nano /etc/apt/sources.list`` <br>
 ``deb https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 ``deb-src https://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware`` <br>
 
-If ``xfce4-panel-profiles`` Backup and restore can't open or force close. <br>
+If ``xfce4-panel-profiles`` "Backup and restore" can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
-If you need switch bash to zsh use this. <br>
-``sudo chsh -s $(which zsh) user`` <br> 
+If you need switch bash to zsh. <br>
+just run``sudo chsh -s $(which zsh) user`` <br> 
 
 If you need open thunar as root. <br>
 ``sudo thunar`` and it say <br>
 ``(thunar:00000): Gtk-WARNING **: 00:00:00.000: cannot open display: :1`` <br>
 just run ``sudo -EH thunar`` <br>
 
-If you have trouble **wlan0** can't detect on **nm-applet** and it say **"Device Not Ready"** <br>
+If you have trouble **wlan0** can't detect on ``nm-applet`` and it say **"Device Not Ready"** <br>
 just remove all **Ethernet** on list. <br>
 
 If you have trouble when doing full screen on the application and it appears like a green splash. <br>
@@ -172,11 +172,11 @@ try changing ``vrr = 0`` on ``~/.config/hypr/hyprland.conf`` <br>
 The sound will automatically be set at 75% and the mic will be disabled on startup. <br>
 because I have made a special script for that ``~/.config/hypr/scripts/privacy.sh`` <br>
 
-Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` on Hyprland. <br>
-cause it will make your broken screen. **"50/50"** <br>
+Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` if you need configure lockscreen on Hyprland. <br>
+because it will make your broken screen. **"50/50"** <br>
 
-If you annoying sound **"beeb" "beeb" "beeb"** on terminal or tty. <br>
-just turn off with use the one I have provided in .zshrc <br>
+If you annoying sound **"beeb" "beeb" "beeb"** when you press Tab on terminal or tty. <br>
+just turn off with use the one I have provided in **.zshrc** <br>
 ``# disable beeb sound effect`` <br>
 ``#setterm --bfreq=0`` ``#tty`` <br>
 ``#xset b off`` ``#terminal`` <br>
@@ -219,7 +219,7 @@ then ``sudo usermod -a -G input user`` <br>
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
 - And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
-- Hyprland Debian package currently maintenance seee it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
+- Hyprland Debian package currently maintenance see it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
 
  <p align="center"> 
    <img src="src/cat-on-line.png">

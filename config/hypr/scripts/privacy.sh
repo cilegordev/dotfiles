@@ -22,7 +22,11 @@ sudo rfkill block bluetooth
 sleep 1
 sudo systemctl disable cups
 sleep 1
+sudo /etc/init.d/ssh cups
+sleep 1
 sudo systemctl disable ssh.service
+sleep 1
+sudo /etc/init.d/ssh stop
 sleep 1
 sudo xhost si:localuser:root
 echo "\e[1;31mWarning: you are using the root account. You may harm your system 💀\e[0m"
