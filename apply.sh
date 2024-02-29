@@ -66,9 +66,9 @@ copy_with_backup "$sourceLocal" "$targetLocal"
 cp -r "$sourceWallpapers" "$targetWallpapers"
 
 # Copy individual files
-rm ~/dotfiles/home/.Hyprland*
-sleep 1
 cp -r ~/dotfiles/home/.* ~/dotfiles/home/* ~/
+sleep 0.5
+rm ~/.Hyprland_log*
 sleep 0.5
 clear
 
