@@ -116,7 +116,7 @@ sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip in
 rm -rf ~/dotfiles/config/autostart ~/dotfiles/config/menus ~/dotfiles/config/xfce4 ~/dotfiles/config/xsettingsd ~/dotfiles/local/share/applications ~/dotfiles/local/share/desktop-directories
 ```
 
-Copy dotfiles & include zsh, twm, eww, neofetch, polybar, nwg-dock-hyprland, weston etc.
+Copy dotfiles & including things that might be useful.
 ```zsh
 mkdir -p ~/.cache ~/.config ~/.local ~/Pictures/wallpapers && cp -r ~/dotfiles/cache/* ~/.cache/ && cp -r ~/dotfiles/config/* ~/.config/ && cp -r ~/dotfiles/local/* ~/.local/ && cp -r ~/dotfiles/wallpapers ~/Pictures/ && cp -r ~/dotfiles/home/* ~/dotfiles/home/.* ~/ && rm ~/.Hyprland_log*
 ```
