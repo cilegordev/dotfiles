@@ -28,6 +28,9 @@ bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+bindkey '^[[Y' redo                               # shift + tab redo last action
+bindkey "\e[1~" beginning-of-line		  # HOME TTY
+bindkey "\e[4~" end-of-line			  # END TTY
 
 # enable completion features
 autoload -Uz compinit
@@ -93,30 +96,31 @@ fi
 
 configure_prompt() {
     prompt_symbol=㉿
-    [ "$EUID" -eq 0 ] && prompt_symbol=㉿
+    # Skull emoji for root terminal
+    #[ "$EUID" -eq 0 ] && prompt_symbol=㉿
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-            PROMPT=$'%F{%}${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n%F{white}'$prompt_symbol$'%F{blue}%m%b%F{%}%B%(#.%F{white}:%F{blue}%(6~.%-1~//%4~.%5~)%F{white}#.%F{white}:%F%(6~.%-1~//%4~.%5~)%F{white}%F{white}$)%b%F{reset} '
+            PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
             # Right-side prompt with exit codes and background processes
-            #RPROMPT=$'%(?.. %? %F{red}%B%b%F{reset})%(1j. %j %F{yellow}%B%b%F{reset}.)'
+            #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
         oneline)
-            # Undercover Mode Ctrl + P
-            PS1=$'%F{%}${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}user%F{white}@%F{blue}localhost%b%F{%}%B%(#.%F{white}:%F{blue}%(6~.%-1~//%4~.%5~)%F{white}#.%F{white}:%F%(6~.%-1~//%4~.%5~)%F{white}%F{white}$)%b%F{reset} '
-            RPROMPT=
+            PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n%F{white}'$prompt_symbol$'%F{blue}%m%b%F{reset}:%B%F{%(#.blue.green)}%~%b%F{reset}%(#.#.$) '
+            RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
         backtrack)
             PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{red}%n@%m%b%F{reset}:%B%F{blue}%~%b%F{reset}%(#.#.$) '
             RPROMPT=
             ;;
     esac
+    unset prompt_symbol
 }
 
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
 # START KALI CONFIG VARIABLES
-PROMPT_ALTERNATIVE=twoline
-NEWLINE_BEFORE_PROMPT=yes
+PROMPT_ALTERNATIVE=oneline
+NEWLINE_BEFORE_PROMPT=no
 # STOP KALI CONFIG VARIABLES
 
 if [ "$color_prompt" = yes ]; then
@@ -191,8 +195,8 @@ bindkey ^P toggle_oneline_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*|Eterm|aterm|kterm|gnome*|alacritty)
-    TERM_TITLE=$'\e]0;${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%n@%m: %~\a'
-    TERM_TITLE=$'\e]0;Terminal\a'
+    #TERM_TITLE=$'\e]0;${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%n@%m: %~\a'
+    TERM_TITLE=$'\e]0;$(. /etc/os-release; echo "$NAME") - Terminal\a'
     ;;
 *)
     ;;

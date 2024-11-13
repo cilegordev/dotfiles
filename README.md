@@ -95,7 +95,7 @@
 
 Clone this repository.
 ```zsh
-git clone https://github.com/cilegordev/dotfiles ~/dotfiles
+git clone --depth=1 https://github.com/cilegordev/dotfiles ~/dotfiles
 ```
 ## Automatic
 
@@ -130,7 +130,7 @@ ln -sf ~/.config/dunst/styles/dunstrc-dark ~/.config/dunst/dunstrc && ln -sf ~/.
   <summary>
     <h2>Know Issue</h2>
   </summary>
-  
+
 **Note** : If you use Kali Linux. That means you should know what kind of system you are using. Using Kali Linux means you understand basic knowledge such as using the Package Manager, CLI, etc. This should not be needed. but if it is related to Xfce or Hyprland I think there are several answers. <br>
 *~because I really hate so much the question of wifi not working on kali linux.* <br>
 
@@ -141,10 +141,10 @@ use this for configure. <br>
 use sudo without asking password. <br>
 ``sudo dpkg-reconfigure kali-grant-root`` <br>
 then ``Enable password-less privilege escalation`` <br>
-next ``sudo visudo`` <br>
+next ``sudo EDITOR=nano visudo`` <br>
 one more step <br>
 ``root``    ``ALL=(ALL:ALL) ALL`` <br>
-``user``    ``ALL=(ALL:ALL) ALL`` <br>
+``user``    ``ALL=(ALL:ALL) NOPASSWD:ALL`` <br>
 
 Add **https** on your kali repository. <br>
 because it was previously installed ``apt-transport-https`` <br>
@@ -156,7 +156,7 @@ If ``xfce4-panel-profiles`` "Backup and restore" can't open or force close. <br>
 just install psutils ``pip install psutil`` <br>
 
 If you need switch bash to zsh. <br>
-just run``sudo chsh -s $(which zsh) user`` <br> 
+just run``chsh -s $(which zsh) user`` <br> 
 
 If you need open thunar as root. <br>
 ``sudo thunar`` and it say <br>
