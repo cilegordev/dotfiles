@@ -1,8 +1,7 @@
 # Dotfiles contents
 
 - **OS** : [Kali-Linux](https://www.kali.org/)
-- **DE** : [Hyprland](https://hyprland.org/)
-- **WM** : [Sway](https://swaywm.org/)
+- **WM** : [Hyprland](https://hyprland.org/)
 - **Themes** : [Adwaita-dark-PONIES](https://github.com/cilegordev/Flat-Adwaita)
 - **Icons**: [Flat-ZOMG-dark](https://github.com/cilegordev/Flat-Adwaita)
 - **Lockscreen**: [Kali-SDDM](https://github.com/cilegordev/kali-sddm)
@@ -108,7 +107,7 @@ Run apply.sh
 
 **Optional Y** : If you want xfce you must install additional packages.
 ```zsh
-sudo apt install xfce4* kali-grant-root apt-transport-https psutils -y && pip install psutil
+sudo apt install xfce4* kali-grant-root apt-transport-https python-psutil
 ```
 
 **Optional N** : If you don't need xfce you can remove before you copy main command.
@@ -141,9 +140,8 @@ use this for configure. <br>
 use sudo without asking password. <br>
 ``sudo dpkg-reconfigure kali-grant-root`` <br>
 then ``Enable password-less privilege escalation`` <br>
-next ``sudo EDITOR=nano visudo`` <br>
+next ``sudo nano /etc/sudoers.d/user`` <br>
 one more step <br>
-``root``    ``ALL=(ALL:ALL) ALL`` <br>
 ``user``    ``ALL=(ALL:ALL) NOPASSWD:ALL`` <br>
 
 Add **https** on your kali repository. <br>
@@ -176,13 +174,11 @@ Don't try ``systemctl suspend`` use ``hyprctl dispatch dpms off`` if you need co
 because it will make your broken screen. **"50/50"** <br>
 
 If you annoying sound **"beeb" "beeb" "beeb"** when you press Tab on terminal or tty. <br>
-just turn off with use the one I have provided in **.zshrc** <br>
-``# disable beeb sound effect`` <br>
-``#setterm --bfreq=0`` ``#tty`` <br>
-``#xset b off`` ``#terminal`` <br>
+just reconfigure with ``sudo nano /etc/modprobe.d/blacklist.conf`` <br>
+``blacklist pcspkr`` <br>
 
 If you don't want **"core"** in your home directory. <br>
-just reconfigure with ``nano /etc/sysctl.conf`` <br>
+just reconfigure with ``sudo nano /etc/sysctl.conf`` <br>
 ``# disable core on home directory`` <br>
 ``fs.suid_dumpable=0`` <br>
 ``kernel.core_pattern= | /bin/false`` <br>
@@ -213,13 +209,11 @@ then ``sudo usermod -a -G input user`` <br>
 
 <img src="https://repology.org/badge/vertical-allrepos/hyprland.svg" alt="Packaging status" align="right">
 
+- No longer maintained because Debian is not seriously committed to working on Hyprland in their repositories.
 - Installed on : Tuesday, 14 November 2023, 03:00
-- **Hyprland package currently is not available in any Debian distro repository.**
 - Install Hyprland based Debian distro using script by JaKooLit : [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) include dotfiles.
 - Forked from [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots) and i'm remake it almost 90%
 - **I can't promise if these dotfiles work on other device. and I configured it for 1366x768 not for below or above it and maybe need a little change in some aspects.**
-- And i'll back when a [kali-desktop-hyprland](https://www.kali.org/docs/general-use/metapackages/) [Tracker](https://pkg.kali.org/search?package_name=hyprland) [Index](https://http.kali.org/kali/pool/main/h/hyprland/)
-- Hyprland Debian package currently maintenance see it on [GitLab](https://salsa.debian.org/NyxTrail/hyprland)
 
  <p align="center"> 
    <img src="src/cat-on-line.png">
